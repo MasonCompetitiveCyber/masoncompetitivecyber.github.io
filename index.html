@@ -9,19 +9,18 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="masonstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </head>
 <body>
 <div class="container">
       <h1>Mason Competitive Cyber<i><small> A Registered Student Organization</small></i></h1>
-
-      <h3><br>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thanks for visiting our club!</h3>
+      <br><h3>Thanks for visiting our club!</h3>
 
 <p>Mason Competitive Cyber is a cybersecurity organization at George Mason University with the intention of spreading cybersecurity education and workforce development largely through training and subsequent competition.</p>
 
 <div class="section meetings">
 <h3>Meeting</h3>
-  <p><b>Our next meeting is at Johnson Center Meeting Room C on September 6 from 5:00pm to 6:00pm.</b></p>
+  <p><b>Our next meeting is at <span id="location"></span> on <span id="date"></span> from <span id="start"></span> to <span id="finish"></span></a>.</b></p>
   In addition our calendar is available <a href="/meeting/index.html">[here] on this website.</a>
 </div>
 
@@ -46,7 +45,7 @@
   <h3>
   <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Social</h3>
 
-  <p>The most important method of communication is our Slack.  Hit us up on <a href="https://masoncc.slack.com">Slack</a>, <a href="https://www.facebook.com/Mason-Competitive-Cyber-283139042020319/?fref=ts">Facebook</a>, or <a href="https://twitter.com/masoncompcyber">Twitter</a>. In addition, email us at masoncc@slack.com as needed. This coorespondence will reach our executive board.</p>
+  <p>The most important method of communication is our Slack.  Hit us up on <a href="https://masoncc.slack.com">Slack</a>, <a href="https://www.facebook.com/masoncompcyber">Facebook</a>, or <a href="https://twitter.com/masoncompcyber">Twitter</a>. In addition, email us at masoncc@slack.com as needed. This coorespondence will reach our executive board.</p>
 </div>
 
 <div class="section sponsors">
@@ -61,8 +60,25 @@
   <h3>
   <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsorship</h3>
 
-  <p>Please contact Michael Bailey at mbaile18 at gmu.edu to request details pertaining to sponsoring Mason Competitive Cyber. Tentative offerings are <a href="https://competitivecyber.club/static/sponsor.pdf">here (PDF)</a> but are subject to change so please confirm.</p>
+  <p>Please contact our club at masoncc@gmu.edu to request details pertaining to sponsoring Mason Competitive Cyber.</p>
 </div>
+
+  <script>
+    $.getJSON('/meeting/json', null, function(data) {
+      console.log('JSON data loaded')
+      $.each(data["meetings"], function(i, item) {
+      console.log('Iterating')
+        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
+          $("#location").html(item['location'])
+          $("#start").html(item['to'])
+          $("#finish").html(item['from'])
+          $('#date').html(item['meetingDate'])
+          return false;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
 

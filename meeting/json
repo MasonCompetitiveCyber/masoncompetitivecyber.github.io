@@ -1,6 +1,13 @@
 {
 "meetings": [
 {
+"meetingDate": "September 3",
+"from": "5:00pm",
+"to": "6:00pm",
+"location": "Johnson Center Meeting Room C",
+"year": "2016"
+},
+{
 "meetingDate": "September 6",
 "from": "5:00pm",
 "to": "6:00pm",
