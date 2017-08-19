@@ -70,7 +70,10 @@
       console.log('Iterating')
         if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
-          $("#")
+          $("#location").html(item['location'])
+          $("#start").html(item['to'])
+          $("#finish").html(item['from'])
+          $('#date').html(item['meetingDate'])
           return false;
         }
       });
