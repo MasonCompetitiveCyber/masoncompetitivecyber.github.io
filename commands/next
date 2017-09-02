@@ -8,7 +8,7 @@ echo Installing wget if it doesn't already exist on system
 apt install wget -y
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 chmod +x stegsolve.jar
-mkdir bin
+mkdir -p bin
 mv stegsolve.jar bin/
 echo Aliasing stegsolve
 alias stegsolve="/ccinstall/bin/stegsolve.jar"
