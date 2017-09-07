@@ -1,14 +1,14 @@
 {
 	"competitions": [
 		{
-			"name": "Test Old CTF",
-			"startDate": "September 12",
-			"endDate": "September 12",
-			"startTime": "6pm",
-			"endTime": "8pm",
-			"year": "2016",
-			"location": "GMU MIX@Fenwick",
-			"moreInfo": "https://competitivecyber.club/articles/bah.html"
+			"name": "Crack the Shell",
+			"startDate": "August 12",
+			"endDate": "August 12",
+			"startTime": "10am",
+			"endTime": "4pm",
+			"year": "2017",
+			"location": "O’Callaghan Annapolis Hotel",
+			"moreInfo": "https://competitivecyber.club/articles/hacked.html"
 		},
 		{
 			"name": "Booz Allen CTF",
