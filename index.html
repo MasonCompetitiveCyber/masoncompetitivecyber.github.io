@@ -1,80 +1,224 @@
-
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
     <title>Mason Competitive Cyber</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="  crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="masonstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome.min.css">
+	<link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link href="styles/custom.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/mcc.ico">
 
-  </head>
-<body>
+</head>
+<body id="pageBody">
+<div id="decorative2">
+    <div class="container">
+        <div class="divPanel topArea notop nobottom">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divLogo" class="pull-left">
+                        <a href="index.html" id="divSiteTitle">Mason Competitive Cyber</a><br />
+                        <a href="index.html" id="divTagLine">A Registered Student Organization</a>
+                    </div>
+
+                    <div id="divMenuRight" class="pull-right">
+                    <div class="navbar">
+                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                            NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-pills ddmenu">
+                                <li class="dropdown active"><a href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="meeting.html">Meetings</a>
+                                  <!--  <ul class="dropdown-menu">
+                            <li><a href="full.html">Meetings</a></li>
+                            
+                            </ul>-->
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="decorative1" style="position:relative">
+    <div class="container">
+
+        <div class="divPanel headerArea">
+            <div class="row-fluid">
+                <div class="span12">
+
+                        <div id="headerSeparator"></div>
+
+                        <div id="divHeaderText" class="page-content">
+                            <div id="divHeaderLine1">Mason Competitive Cyber</div><br />
+                            <div id="divHeaderLine2">Learning Cybersecurity Through Competition</div><br />
+                            <div id="divHeaderLine3"><a class="btn btn-large btn-primary" href="./meeting">Meetings</a></div>
+                        </div>
+
+                        <div id="headerSeparator2"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="contentOuterSeparator"></div>
+
 <div class="container">
-      <h1>Mason Competitive Cyber<i><small> A Registered Student Organization</small></i></h1>
-      <br><h3>Thanks for visiting our club!</h3>
 
-<p>Mason Competitive Cyber is a cybersecurity organization at George Mason University with the intention of spreading cybersecurity education and workforce development largely through training and subsequent competition.</p>
+    <div class="divPanel page-content">
 
-<div class="section meetings">
-<h3>Meeting</h3>
-  <p><b>Our next meeting is at <span id="location"></span> on <span id="date"></span> from <span id="start"></span> to <span id="finish"></span></a>.</b></p>
-  In addition our calendar is available <a href="/meeting/index.html">[here] on this website.</a>
+        <div class="row-fluid">
+
+                <div class="span12" id="divMain">
+
+                    <div class="lead">
+                    <h2>Welcome</h2>
+
+                    <h3>Mason Competitive Cyber is a cybersecurity organization at George Mason University with the intention of spreading cybersecurity education and workforce development largely through training and subsequent competition.
+                    <br>
+                    We don't expect any prior experience from our members, but we try to accomodate all tiers of technical ability.
+                    </h3>
+
+                    <br>
+
+                    </p>
+                    <div class="list_carousel responsive">
+                        <ul id="list_photos">
+                            <li><img src="images/1.jpg" class="img-polaroid">  </li>
+                            <li><img src="images/2.jpg" class="img-polaroid">  </li>
+                            <li><img src="images/3.jpeg" class="img-polaroid">  </li>
+                            <li><img src="images/4.jpeg" class="img-polaroid">  </li>
+                            <li><img src="images/5.jpeg" class="img-polaroid">  </li>                            
+                            <li><img src="images/6.jpeg" class="img-polaroid">  </li>
+                            <li><img src="images/7.jpg" class="img-polaroid">  </li>
+                            <li><img src="images/8.jpeg" class="img-polaroid">  </li>
+                            <li><img src="images/9.jpeg" class="img-polaroid">  </li>
+                        </ul>
+                    </div> 
+
+                    </div>
+
+                    <hr style="margin:35px 0 35px" />
+
+                    <h1 style="text-align: center;">So What Actual Competitions?</h1> 
+                        <p>In addition to competitions listed on CTFtime.org we intend to consider events listed on our <a href="/meeting">meetings and competition page</a>.<br>
+We also have not ruled out throwing our own events and have spoken with the IT Support Center and related student organizations on necessary approvals to have an attack/defense CTF.</p>
+
+
+					
+                    <hr style="margin:45px 0 35px" />
+                    
+                    <div class="lead" id="somesome">
+                        <h2>Club Updates</h2> 
+                        <h3>Regular updates on Club News, Events, and Meetings</h3>
+                    </div>
+                    <br />
+
+                    <div class="row-fluid">
+                        <div class="span8">
+
+                            <h3>Mason CC kicked off semester September 6th</h3>         
+
+                            <p>
+                                <img src="images/meeting1.png" class="img-polaroid" style="margin:12px 0px;">  
+                            </p>
+							
+                            <p>Mason Competitive Cyber had their first meeting of the semester Wednesday, September 6th, in JC Room D (basic track) and SUB1 3B (advanced track) with a great deal of success. Both rooms experienced higher visitor counts than expected. Both meeting slidedecks and an advanced session recording are available to members per request. The next meeting will be September 13th, though the room remains slightly uncertain.
+
+ 
+                            </p></hr><p>
+                            Any questions about the organization can be directed at Michael Bailey on Mason CC's Slack. Sign up <a href="https://masoncc.slack.com/">HERE</a> with your GMU address or email us at masoncc@gmu.edu if you're having any issues. 
+                            </p>
+                                                                                       
+                        </div>
+                        <div class="span4 sidebar">
+
+                            <div class="sidebox">
+                                <h3 class="sidebox-title">Upcoming Competition</h3>
+                                <p>All competitions should ideally be discussed in Slack before joining.</p>
+                                <p>CSAW CTF Qualification Round 2017 | September 15th noon - September 17th noon <a href="meeting.html">More Info</a></p> 
+                                <p>Booz Allen+MIX@Fenwick CTF | September 12th 6pm - September 12th 8pm <a href="https://www.boozallencybersim.com/register/competition/59a048551b01339136655a96">More Info</a></p>                       
+                            </div>
+
+                            <br />
+
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div id="footerInnerSeparator"></div>
+    </div>
+
 </div>
 
-<div class="section competitions">
-  <h3>So What Actual Competitions?</h3>
-  <p>In addition to competitions listed on <a href="https://ctftime.org/event/list/upcoming">CTFtime.org</a> we intend to consider events listed on our <a href="/meeting">meetings and competition page.</a><br>
-  We also have not ruled out throwing our own events and have spoken with the IT Support Center on necessary approvals to have an attack/defense CTF.
+<div id="footerOuterSeparator"></div>
+
+<div id="divFooter" class="footerArea">
+
+    <div class="container">
+
+        <div class="divPanel">
+
+            <div class="row-fluid">
+                
+                
+                
+            </div>
+
+            <br /><br />
+            <div class="row-fluid">
+                <div class="span12">
+                    <p class="copyright">
+                        Copyright © 2017 Mason Competitive Cyber.
+                    </p>
+
+                    <p class="social_bookmarks">
+                        <a href="https://www.facebook.com/masoncompcyber"><i class="social "></i> Facebook</a>
+			<a href="Twitter"><i class="social "></i> Twitter</a>
+			<a href="https://getconnected.gmu.edu/organization/masoncc/ico"><i class="social "></i> GetConnected</a>
+			<a href="https://masoncc.slack.com/"><i class="social "></i> Slack</a>
+			
+                    </p>
+                </div>
+            </div>
+            <br />
+
+        </div>
+
+    </div>
+    
 </div>
 
-<div class="section constitution">
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Membership and Constitution</h3>
-<p>Our membership is very informal. Please just attend meetings and join our <a href="https://masoncc.slack.com">Slack</a> to be a part of our community.
-<p><a href="https://getconnected.gmu.edu/organization/masoncc/DocumentLibrary/view/481552">[Our constitution]</a> is hosted on GetConnected as is <a href="https://getconnected.gmu.edu/organization/masoncc/">our organization roster and other key details, as mandated by George Mason University OSI.</a></p>
-</div>
+<script src="scripts/jquery.min.js" type="text/javascript"></script> 
+<script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="scripts/default.js" type="text/javascript"></script>
 
-<div class="section social">
-  <h3>
-  <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Social</h3>
 
-  <p>The most important method of communication is our Slack.  Hit us up on <a href="https://masoncc.slack.com">Slack</a>, <a href="https://www.facebook.com/masoncompcyber">Facebook</a>, or <a href="https://twitter.com/masoncompcyber">Twitter</a>. In addition, email us at masoncc@slack.com as needed. This coorespondence will reach our executive board.</p>
-</div>
+<script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script>
 
-<div class="section sponsors">
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsors</h3>
 
-<p>We haven't agreed to any yet, but see below if you're interested!</p>
-
-</div>
-
-<div class="section sponsorship">
-  <h3>
-  <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsorship</h3>
-
-  <p>Please contact our club at masoncc@gmu.edu to request details pertaining to sponsoring Mason Competitive Cyber.</p>
-</div>
-
-  <script>
-    $.getJSON('/meeting/json', null, function(data) {
-      console.log('JSON data loaded')
-      $.each(data["meetings"], function(i, item) {
-      console.log('Iterating')
-        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
-          console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
-          $("#location").html(item['location'])
-          $("#start").html(item['from'])
-          $("#finish").html(item['to'])
-          $('#date').html(item['meetingDate'])
-          return false;
-        }
-      });
-    });
-  </script>
 </body>
 </html>
-
