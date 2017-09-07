@@ -236,6 +236,20 @@ We also have not ruled out throwing our own events and have spoken with the IT S
       });
       $("#comps").html(entry)
     });
+    $.getJSON('/meeting/json', null, function(data) {
+      console.log('JSON data loaded')
+      $.each(data["meetings"], function(i, item) {
+      console.log('Iterating')
+        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
+          $("#location").html(item['location'])
+          $("#start").html(item['from'])
+          $("#finish").html(item['to'])
+          $('#date').html(item['meetingDate'])
+          return false;
+        }
+      });
+    });
 </script>
 
 <script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script>
