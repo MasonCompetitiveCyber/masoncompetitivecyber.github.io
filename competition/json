@@ -1,6 +1,16 @@
 {
 	"competitions": [
 		{
+			"name": "Test Old CTF",
+			"startDate": "Sept 12",
+			"endDate": "Sept 12",
+			"startTime": "6pm",
+			"endTime": "8pm",
+			"year": "2016",
+			"location": "GMU MIX@Fenwick",
+			"moreInfo": "https://competitivecyber.club/articles/bah.html"
+		},
+		{
 			"name": "Booz Allen CTF",
 			"startDate": "Sept 12",
 			"endDate": "Sept 12",
@@ -9,6 +19,16 @@
 			"year": "2017",
 			"location": "GMU MIX@Fenwick",
 			"moreInfo": "https://competitivecyber.club/articles/bah.html"
+		},
+		{
+			"name": "Capital One Wargame",
+			"startDate": "October 3",
+			"endDate": "October 3",
+			"startTime": "6pm",
+			"endTime": "9pm",
+			"year": "2017",
+			"location": "1680 Capital One Drive, McLean VA",
+			"moreInfo": "https://competitivecyber.club/articles/capone.html"
 		}
 	]
 }
