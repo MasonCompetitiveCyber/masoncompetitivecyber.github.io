@@ -274,7 +274,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
           if (item["startDate"] == item["endDate"]){
           entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
         } else {
-          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] = ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
+          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
         }
         }
       });
