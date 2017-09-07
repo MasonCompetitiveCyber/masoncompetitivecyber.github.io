@@ -224,9 +224,13 @@ We also have not ruled out throwing our own events and have spoken with the IT S
       $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
-        if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
-          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + '|' + item["startDate"] + ' ' + item["startTime"] + ' to '+ item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          } else {
+            entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          }
           console.log(entry)
         }
       });
