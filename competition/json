@@ -31,7 +31,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/bah.html"
 		},
 		{
-			"name":"CSAW Quals",
+			"name": "CSAW CTF Quals",
 			"startDate": "September 15",
 			"endDate": "September 17",
 			"startTime": "12pm",
@@ -39,6 +39,16 @@
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
+		},
+		{
+			"name": "DefCamp CTF Quals",
+			"startDate": "September 30",
+			"endDate": "October 1",
+			"startTime": "8am",
+			"endTime": "8am",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://dctf.def.camp/"
 		},
 		{
 			"name": "Capital One Wargame",
@@ -49,6 +59,26 @@
 			"year": "2017",
 			"location": "1680 Capital One Drive, McLean VA",
 			"moreInfo": "https://competitivecyber.club/articles/capone.html"
+		}, 
+		{
+			"name": "Pwn2Win CTF",
+			"startDate": "October 20",
+			"endDate": "October 22",
+			"startTime": "12:37pm",
+			"endTime": "12:37pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://pwn2win.party"
+		},
+		{
+			"name": "HITCON CTF Quals",
+			"startDate": "November 3",
+			"endDate": "November 5",
+			"startTime": "10pm",
+			"endTime": "9pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "http://ctf.hitcon.org/"
 		}
 	]
 }
