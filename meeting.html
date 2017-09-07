@@ -151,6 +151,8 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
   <th>Location</th>
   <th>Event</th>
 </tr>
+<div id="data"></div>
+<!--
 <tr>
 <td><b>✓</b><strike>August 12 10am-4pm</strike>
 </td>
@@ -182,12 +184,13 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
 <td>October 20th 12:37pm - October 22nd 12:37pm</td>
 <td>Online</td>
 <td>Pwn2Win CTF 2017</td>
-</tr><!--03 Nov., 22:00 EDT — 05 Nov. 2017, 21:00 EST-->
+</tr>
 <tr>
 <td>November 3rd 10pm – November 5th, 9pm 2017</td>
 <td>Online</td>
 <td>HITCON CTF 2017 Quals</td>
 </tr>
+-->
 </table>
 <br><br>
 <h3>In Person Under Consideration Events</h3>
@@ -265,16 +268,23 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
-        if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
-          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + '|' + item["startDate"] + ' ' + item["startTime"] + ' to '+ item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<tr><td>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          } else {
+            entry = entry + "<tr><td>" + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          }
           console.log(entry)
+        } else {
+
         }
       });
+      $("#data").html(entry)
     });
 </script>
 
-
+<!-- <b>✓</b><strike> -->
 
 
 </body>
