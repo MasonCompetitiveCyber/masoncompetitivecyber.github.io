@@ -227,9 +227,9 @@ We also have not ruled out throwing our own events and have spoken with the IT S
       if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
           if (item["startDate"] == item["endDate"]){
-          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a><br>'
           } else {
-            entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+            entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a><br>'
           }
           console.log(entry)
         }
