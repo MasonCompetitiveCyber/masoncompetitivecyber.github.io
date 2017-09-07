@@ -264,8 +264,8 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       entry = ""
       $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
-      console.log(Date.parse(item["startDate"] +  item["year"]))
-        if ( Date.now() - Date.parse(item["startDate"] +  item["year"]) < 0) {
+      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
+        if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
           entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + '|' + item["startDate"] + ' ' + item["startTime"] + ' to '+ item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
           console.log(entry)

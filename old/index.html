@@ -59,22 +59,24 @@
   <p>Please contact our club at masoncc@gmu.edu to request details pertaining to sponsoring Mason Competitive Cyber.</p>
 </div>
 
-  <script>
-    $.getJSON('/meeting/json', null, function(data) {
+<script>
+    $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
-      $.each(data["meetings"], function(i, item) {
+      console.log(data)
+      entry = ""
+      $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
-        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
-          console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
-          $("#location").html(item['location'])
-          $("#start").html(item['from'])
-          $("#finish").html(item['to'])
-          $('#date').html(item['meetingDate'])
-          return false;
+      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
+        if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
+          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + '|' + item["startDate"] + ' ' + item["startTime"] + ' to '+ item["endDate"] + ' ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a>'
+          console.log(entry)
         }
       });
+      $("")
     });
-  </script>
+</script>
+
 </body>
 </html>
 
