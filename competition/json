@@ -4,8 +4,9 @@
 			"name": "Booz Allen CTF",
 			"startDate": "Sept 12",
 			"endDate": "Sept 12",
-			"startTime": "6:00pm",
-			"endTime": "8:00pm",
+			"startTime": "6pm",
+			"endTime": "8pm",
+			"year": "2017",
 			"location": "GMU MIX@Fenwick",
 			"moreInfo": "https://competitivecyber.club/articles/bah.html"
 		}
