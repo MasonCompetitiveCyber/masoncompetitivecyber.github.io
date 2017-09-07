@@ -145,13 +145,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
 
 <br><br>
 <h3>Planned Competitions to Attend</h3>
-<table class="table table-bordered table-striped">
-<tr>
-  <th>Date and Time</th>
-  <th>Location</th>
-  <th>Event</th>
-</tr>
-<div id="data"></div>
+<table class="table table-bordered table-striped" id="data">
 <!--
 <tr>
 <td><b>✓</b><strike>August 12 10am-4pm</strike>
@@ -264,7 +258,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
     $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
       console.log(data)
-      entry = ""
+      entry = "<tr><th>Date and Time</th><th>Location</th><th>Event</th></tr>"
       $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
