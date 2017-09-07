@@ -101,6 +101,7 @@
 	],
 	"competitions": [
 		{
+			"name": "Booz Allen CTF",
 			"startDate": "Sept 12",
 			"endDate": "Sept 12",
 			"startTime": "6:00pm",
