@@ -2,8 +2,8 @@
 	"competitions": [
 		{
 			"name": "Test Old CTF",
-			"startDate": "Sept 12",
-			"endDate": "Sept 12",
+			"startDate": "September 12",
+			"endDate": "September 12",
 			"startTime": "6pm",
 			"endTime": "8pm",
 			"year": "2016",
@@ -12,8 +12,8 @@
 		},
 		{
 			"name": "Booz Allen CTF",
-			"startDate": "Sept 12",
-			"endDate": "Sept 12",
+			"startDate": "September 12",
+			"endDate": "September 12",
 			"startTime": "6pm",
 			"endTime": "8pm",
 			"year": "2017",
