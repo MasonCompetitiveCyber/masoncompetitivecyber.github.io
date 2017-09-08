@@ -18,7 +18,7 @@
 			"meetingDate": "September 13",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G (Tentative)",
+			"location": "Johnson Center Meeting Room G",
 			"year": "2017"
 		},
 		{
@@ -95,7 +95,7 @@
 			"meetingDate": "December 6",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room 239A",
+			"location": "Johnson Center Meeting Room B",
 			"year": "2017"
 		}
 	]
