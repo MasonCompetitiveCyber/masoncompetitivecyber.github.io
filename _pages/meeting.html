@@ -12,13 +12,19 @@ description: "Mason CC Meetings"
                 <a href="/">Home</a> &nbsp;/&nbsp; <span>Meetings</span>
             </div> 
 
-<h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Schedule</h3>
 <br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
+<h3>Meeting Dates and Locations</h3>
 <table class="table table-bordered table-striped" id="meetinglocationsanddates">
 
 </table>
+<br><br>
+<h3>Meeting Topics</h3>
+<table class="table table-bordered table-striped" id="meetingtopics">
+
+</table>
+
 
 <br><br>
 <h3>Planned Competitions to Attend</h3>
@@ -89,20 +95,42 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if (item["location"] == "Johnson Center 239A") { 
-        item["location"] = "<a href='/articles/239A/'>Johnson Center 239A</a>"
+        loc = "<a href='/articles/239A/'>Johnson Center 239A</a>"
       } else if (item["location"] == "SUB1 3A") { 
-        item["location"] = "<a href='/articles/SUB1/'>SUB1 3A</a>"
+        loc = "<a href='/articles/SUB1/'>SUB1 3A</a>"
       } else if (item["location"] == "SUB1 3B") { 
-        item["location"] = "<a href='/articles/SUB1/'>SUB1 3B</a>"
+        loc = "<a href='/articles/SUB1/'>SUB1 3B</a>"
+      } else {
+        loc = item["location"]
       }
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + item["advlocation"] + '</td></tr>'
+            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + loc + '</td></tr>'
           console.log(entry)
         } else {
-            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["advlocation"] + '</strike></td></tr>'
+            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + loc + '</strike></td><td><strike>' + item["advlocation"] + '</strike></td></tr>'
         }
       });
       $("#meetinglocationsanddates").html(entry)
+    });
+</script>
+
+<script>
+    $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date</th><th>Basic Topic</th><th>Advanced Topic</th></tr>"
+      $.each(data["meetings"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["basictopic"] + '</td><td>' + item["advtopic"] + '</td></tr>'
+          console.log(entry)
+        } else {
+            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["basictopic"] + '</strike></td><td><strike>' + item["advtopic"] + '</strike></td></tr>'
+        }
+      });
+      $("#meetingtopics").html(entry)
     });
 </script>
