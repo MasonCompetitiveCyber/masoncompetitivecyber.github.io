@@ -94,13 +94,21 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
-      loc = item["location"]
+      if (item["advlocation"] == "Johnson Center 239A") { 
+        loc = "<a href='/articles/239A/'>Johnson Center 239A</a>"
+      } else if (item["location"] == "SUB1 3A") { 
+        loc = "<a href='/articles/SUB1/'>SUB1 3A</a>"
+      } else if (item["location"] == "SUB1 3B") { 
+        loc = "<a href='/articles/SUB1/'>SUB1 3B</a>"
+      } else {
+        loc = item["advlocation"]
+      }
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
             entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + loc + '</td></tr>'
           console.log(entry)
         } else {
-            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + loc + '</strike></td><td><strike>' + item["advlocation"] + '</strike></td></tr>'
+            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + loc + '</strike></td></tr>'
         }
       });
       $("#meetinglocationsanddates").html(entry)
