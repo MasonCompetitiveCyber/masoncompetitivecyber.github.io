@@ -96,9 +96,9 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if (item["advlocation"] == "Johnson Center 239A") { 
         loc = "<a href='/articles/239A/'>Johnson Center 239A</a>"
-      } else if (item["location"] == "SUB1 3A") { 
+      } else if (item["advlocation"] == "SUB1 3A") { 
         loc = "<a href='/articles/SUB1/'>SUB1 3A</a>"
-      } else if (item["location"] == "SUB1 3B") { 
+      } else if (item["advlocation"] == "SUB1 3B") { 
         loc = "<a href='/articles/SUB1/'>SUB1 3B</a>"
       } else {
         loc = item["advlocation"]
