@@ -1,0 +1,7 @@
+srctweb:
+    image: jekyll/jekyll
+    command: jekyll serve -s './srctweb' -d './srctweb/_site' --trace --watch --incremental
+    ports:
+        - 4000:4000
+    volumes:
+        - .:/srv/jekyll

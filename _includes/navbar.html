@@ -1,0 +1,31 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand xolonium" href="/"><img src="/assets/img/SRCT_square.svg" width=24 height=24 alt=""/>&nbsp;&nbsp;Mason SRCT</a>
+    </div>
+
+    <div class="navbar-right collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        {% for link in site.data.navigation.main %}
+          {% if link.children == null %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% else %}
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">{{ link.title }} <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                {% for childLink in link.children %}
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ childLink.url }}">{{ childLink.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+# Site settings
+locale                   : "en-US"
+title                    : "Mason CC"
+email                    : "masoncc@gmu.edu"
+description              : "Mason CC is a student organization that learns cybersecurity through competition."
+author                   : "Mason CC"
+
+# the subpath of your site, e.g. /blog
+baseurl                  : ""
+# the base hostname & protocol for your site, e.g. http://example.com
+url                      : "https://competitivecyber.club"
+
+twitter:
+  username               : "masoncompcyber"
+github:
+  username               : "masoncompcyber"
+facebook:
+  username               : "masoncompcyber"
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Build settings
+markdown: kramdown
+
+
+theme: kramdown

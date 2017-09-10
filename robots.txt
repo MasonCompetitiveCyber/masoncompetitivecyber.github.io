@@ -1,0 +1,16 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: msnbot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: slurp
+Disallow:
+
+User-agent: *
+Disallow: /
+
+Sitemap: http://srct.gmu.edu/sitemap.xml
