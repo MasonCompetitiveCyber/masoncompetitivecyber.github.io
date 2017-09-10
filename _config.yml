@@ -36,4 +36,4 @@ defaults:
     values:
       layout: default
       jumbotron: false
-theme: jekyll-theme-cayman
+theme: kramdown
