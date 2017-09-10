@@ -22,7 +22,7 @@ facebook:
   publisher              :
 
 # Reading Files
-include: ['_pages','/articles/']
+include: ['_pages','_pages/articles']
 
 
 
