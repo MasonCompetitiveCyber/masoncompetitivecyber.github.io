@@ -88,6 +88,13 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+      if (item["location"] == "Johnson Center 239A") { 
+        item["location"] = "<a href='/articles/239A/'>Johnson Center 239A</a>"
+      } else if (item["location"] == "SUB1 3A") { 
+        item["location"] = "<a href='/articles/SUB1/'>SUB1 3A</a>"
+      } else if (item["location"] == "SUB1 3B") { 
+        item["location"] = "<a href='/articles/SUB1/'>SUB1 3B</a>"
+      }
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
             entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + item["advlocation"] + '</td></tr>'
