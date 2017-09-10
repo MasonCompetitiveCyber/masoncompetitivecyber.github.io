@@ -22,10 +22,10 @@ facebook:
   publisher              :
 
 # Reading Files
-include:
-  - .htaccess
-  - _pages
-  - _pages/articles
+include: ['_pages']
+
+
+
 exclude:
   - Gemfile
   - Gemfile.lock
