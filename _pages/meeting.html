@@ -85,7 +85,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       console.log('JSON data loaded')
       console.log(data)
       entry = "<tr><th>Date</th><th>Basic Location</th><th>Advanced Location</th></tr>"
-      $.each(data["competitions"], function(i, item) {
+      $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
