@@ -136,3 +136,31 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
     </div>
 
 </div>
+
+<script>
+    $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date and Time</th><th>Location</th><th>Event</th></tr>"
+      $.each(data["competitions"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
+      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<tr><td>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          } else {
+            entry = entry + "<tr><td>" + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          }
+          console.log(entry)
+        } else {
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
+        } else {
+          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
+        }
+        }
+      });
+      $("#data").html(entry)
+    });
+</script>
