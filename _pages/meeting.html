@@ -16,93 +16,9 @@ description: "Mason CC Meetings"
 <br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
-<table class="table table-bordered table-striped">
-<tr>
-  <th>Date</th>
-  <th>Location</th>
-  <th>Tentative Topic</th>
-  <th>Advanced Session</th>
-</tr>
-<tr>
-  <td>Sept 6</td>
-  <td>JC Meeting Room D<br>Advanced: <a href="/articles/SUB1/">SUB1 3B</a></td>
-  <td>Club Intro/Training CTF Challenges</td>
-  <td>Hackazon and more</td>
-</tr>
-<tr>
-  <td>Sept 13</td>
-  <td>JC Meeting Room G<br>Advanced: <a href="/articles/SUB1/">SUB1 3B</a></td>
-  <td>Web Exploitation</td>
-  <td>Forensics, Complete with Weird CSAW Problems</td>
-</tr>
-<tr>
-  <td>Sept 20</td>
-  <td>JC Meeting Room G<br>Advanced: <a href="/articles/SUB1/">SUB1 3A</a></td>
-  <td>Linux, Scripting, and Regex</td>
-  <td>Python and Ruby CTF Scripting, Regex</td>
-</tr>
-<tr>
-  <td>Sept 27</td>
-  <td>JC Meeting Room G<br>Advanced: <a href="/articles/239A/">JC 239A</a></td>
-  <td>Cryptography (not simple ciphers)</td>
-  <td>Obscure Web: Weird Web Problems</td>
-</tr>
-<tr>
-  <td>Oct 4</td>
-  <td>JC Meeting Room G<br>Advanced: <a href="/articles/239A/">JC 239A</a></td>
-  <td>Guest Lecture?</td>
-  <td>[ Pending Guest ]</td>
-</tr>
-<tr>
-  <td>Oct 11</td>
-  <td>JC Meeting Room C<br>Advanced: <a href="/articles/239A/">JC 239A</a></td>
-  <td>Forensics</td>
-  <td>hackthebox.eu, CND/Attack+Defend assessment</td>
-</tr>
-<tr>
-  <td>Oct 18</td>
-  <td>JC Meeting Room G<br>Advanced: JC Meeting Room C</td>
-  <td>Web Exploitation 2</td>
-  <td>Hardware Hacking with Chuck</td>
-</tr>
-<tr>
-  <td>Oct 25</td>
-  <td>JC Meeting Room G<br>Advanced: <a href="/articles/239A/">JC 239A</a></td>
-  <td>AWS EC2 (by popular demand)</td>
-  <td>Shellcode with Chris (caffix)</td>
-</tr>
-<tr>
-  <td>Nov 1</td>
-  <td>JC Meeting Room G<br>Advanced: JC Meeting Room B</td>
-  <td>Scripting 2</td>
-  <td>[ HELD FOR SPONSOR ]</td>
-</tr>
-<tr>
-  <td>Nov 8</td>
-  <td>JC Meeting Room G<br>Advancd: <a href="/articles/239A/">JC 239A</a></td>
-  <td>Networking</td>
-  <td>Format String with Chris (caffix)</td>
-</tr>
-<tr>
-  <td>Nov 15</td>
-  <td>JC Meeting Room G<br>Advanced: JC Meeting Room B</td>
-  <td>Steganography</td>
-  <td>RHME3 CTF live competing [ SPONSOR RAIN DATE ]</td>
-</tr>
-<tr>
-  <td>Nov 29</td>
-  <td>JC Meeting Room G<br>Advanced: JC Meeting Room B</td>
-  <td>Intro. Reverse Engineering</td>
-  <td>DEP and ASLR Bypass with Chris (caffix)</td>
-</tr>
-<tr>
-  <td>Dec 6</td>
-  <td>JC Meeting Room B<br>Advanced: <a href="/articles/239A/">JC 239A</a></td>
-  <td style="text-align: left">Reserved in case of chill meeting</td>
-  <td></td>
-</tr>
-</table>
+<table class="table table-bordered table-striped" id="meetinglocationsanddates">
 
+</table>
 
 <br><br>
 <h3>Planned Competitions to Attend</h3>
@@ -159,6 +75,25 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
         } else {
           entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
         }
+        }
+      });
+      $("#data").html(entry)
+    });
+</script>
+<script>
+    $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date</th><th>Basic Location</th><th>Advanced Location</th></tr>"
+      $.each(data["competitions"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + item["advlocation"] + '</td></tr>'
+          console.log(entry)
+        } else {
+            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["advlocation"] + '</strike></td></tr>'
         }
       });
       $("#data").html(entry)
