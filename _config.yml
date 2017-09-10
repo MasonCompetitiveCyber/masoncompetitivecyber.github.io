@@ -22,7 +22,7 @@ facebook:
   publisher              :
 
 # Reading Files
-include: ['_pages']
+include: ['_pages','_pages/articles']
 
 
 
@@ -32,7 +32,6 @@ exclude:
 
 # Build settings
 markdown: kramdown
-relative_permalinks: false
 
 defaults:
   # _pages
