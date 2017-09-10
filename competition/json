@@ -28,7 +28,7 @@
 			"endTime": "8pm",
 			"year": "2017",
 			"location": "GMU MIX@Fenwick",
-			"moreInfo": "https://competitivecyber.club/articles/bah.html"
+			"moreInfo": "https://competitivecyber.club/articles/booz/"
 		},
 		{
 			"name": "CSAW CTF Quals",
@@ -58,7 +58,7 @@
 			"endTime": "9pm",
 			"year": "2017",
 			"location": "1680 Capital One Drive, McLean VA",
-			"moreInfo": "https://competitivecyber.club/articles/capone.html"
+			"moreInfo": "https://competitivecyber.club/articles/capone/"
 		}, 
 		{
 			"name": "Pwn2Win CTF",
