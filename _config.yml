@@ -25,6 +25,7 @@ facebook:
 include:
   - .htaccess
   - _pages
+  - _pages/articles
 exclude:
   - Gemfile
   - Gemfile.lock
