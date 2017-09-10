@@ -5,98 +5,140 @@
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room C",
-			"year": "2016"
+			"year": "2016",
+			"advlocation": "SUB1 3B",
+			"advtopic": "Hackazon and more",
+			"basictopic": "Club Intro/Training CTF Challenges"
 		},
 		{
 			"meetingDate": "September 6",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room C",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "SUB1 3B",
+			"advtopic": "Hackazon and more",
+			"basictopic": "Club Intro/Training CTF Challenges"
 		},
 		{
 			"meetingDate": "September 13",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "SUB1 3B",
+			"advtopic": "Forensics, Complete with Weird CSAW Problems",
+			"basictopic": "Web Exploitation"
 		},
 		{
 			"meetingDate": "September 20",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "SUB1 3A",
+			"advtopic": "Python and Ruby CTF Scripting, Regex",
+			"basictopic": "Linux, Scripting, and Regex"
 		},
 		{
 			"meetingDate": "September 27",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC 239A",
+			"advtopic": "Obscure Web: Weird Web Problems",
+			"basictopic": "Cryptography (not simple ciphers)"
 		},
 		{
 			"meetingDate": "October 4",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC 239A",
+			"advtopic": "[ Pending Guest ]",
+			"basictopic": "AWS EC2"
 		},
 		{
 			"meetingDate": "October 11",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room C",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC 239A",
+			"advtopic": "hackthebox.eu, CND/Attack+Defend assessment",
+			"basictopic": "Possible Guest Speech"
 		},
 		{
 			"meetingDate": "October 18",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC Meeting Room C",
+			"advtopic": "Hardware Hacking with Chuck",
+			"basictopic": "Web Exploitation 2"
 		},
 		{
 			"meetingDate": "October 25",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC 239A",
+			"advtopic": "Hardware Hacking with Chuck",
+			"basictopic": "Forensics"
 		},
 		{
 			"meetingDate": "November 1",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC Meeting Room B",
+			"advtopic": "[ HELD FOR SPONSOR ]",
+			"basictopic": "Scripting 2"
 		},
 		{
 			"meetingDate": "November 8",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC 239A",
+			"advtopic": "Format String with Chris (caffix)",
+			"basictopic": "Networking"
 		},
 		{
 			"meetingDate": "November 15",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC Meeting Room B",
+			"advtopic": "RHME3 CTF live competing [ SPONSOR RAIN DATE ]",
+			"basictopic": "Steganography"
 		},
 		{
 			"meetingDate": "November 29",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC Meeting Room B",
+			"advtopic": "DEP and ASLR Bypass with Chris (caffix)",
+			"basictopic": "Intro. Reverse Engineering"
 		},
 		{
 			"meetingDate": "December 6",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
-			"year": "2017"
+			"year": "2017",
+			"advlocation": "JC Meeting Room B",
+			"advtopic": "",
+			"basictopic": "Reserved for relaxed/goodbye meeting"
 		}
 	]
 }
