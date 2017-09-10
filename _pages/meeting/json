@@ -1,0 +1,102 @@
+{
+	"meetings": [
+		{
+			"meetingDate": "September 3",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room C",
+			"year": "2016"
+		},
+		{
+			"meetingDate": "September 6",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room C",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "September 13",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "September 20",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "September 27",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "October 4",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "October 11",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room C",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "October 18",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "October 25",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "November 1",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "November 8",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "November 15",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "November 29",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room G",
+			"year": "2017"
+		},
+		{
+			"meetingDate": "December 6",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2017"
+		}
+	]
+}
