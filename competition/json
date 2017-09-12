@@ -41,6 +41,16 @@
 			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
 		},
 		{
+			"name": "MITRE CTF",
+			"startDate": "September 15",
+			"endDate": "September 16",
+			"startTime": "3pm",
+			"endTime": "3pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://mitrestemctf.org/"
+		},
+		{
 			"name": "DefCamp CTF Quals",
 			"startDate": "September 30",
 			"endDate": "October 1",
