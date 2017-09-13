@@ -44,4 +44,9 @@ dpkg -i libwxgtk*
 dpkg -i *.deb
 pip install stepic
 
+usr=$(who|cut -d\  -f1)
+if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O /root/Desktop/powpow.mp4; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O "/home/$usr/powpow.mp4"; fi
+
+if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O /root/Desktop/evidence.zip; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O "/home/$usr/evidence.zip"; fi
+
 echo Done! exiftool, steghide, stepic, mediainfo \(hopefully with GUI\) and stegsolve
