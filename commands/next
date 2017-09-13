@@ -44,6 +44,8 @@ dpkg -i libwxgtk*
 dpkg -i *.deb
 pip install stepic
 
+apt install --fix-broken -y
+
 usr=$(who|cut -d\  -f1)
 if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O /root/Desktop/powpow.mp4; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O "/home/$usr/powpow.mp4"; fi
 
