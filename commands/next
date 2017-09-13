@@ -55,5 +55,10 @@ if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2015/raw/ma
  -O "/home/$usr/Mandiant.pdf"; fi
 
 
+if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/rand_somewhere.rb -O /root/Desktop/rand_somewhere.rb; else wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/rand_somewhere.rb -O "/home/$usr/rand_somewhere.rb"; fi
+
+if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O /root/Desktop/flag.png.encrypted; else wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O "/home/$usr/flag.png.encrypted"; fi
+
+
 
 echo Done! exiftool, steghide, stepic, mediainfo \(hopefully with GUI\) and stegsolve
