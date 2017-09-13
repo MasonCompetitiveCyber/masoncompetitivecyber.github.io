@@ -41,4 +41,4 @@ wget http://ftp.us.debian.org/debian/pool/main/w/wxwidgets3.0/libwxgtk3.0-0_3.0.
 dpkg -i libwxgtk*
 
 dpkg -i *.deb
-echo Done! exiftool, steghide, mediainfo (hopefully with GUI) and stegsolve
+echo Done! exiftool, steghide, mediainfo \(hopefully with GUI\) and stegsolve
