@@ -20,4 +20,15 @@ fi
 apt-get update
 apt-get install unzip -y
 apt-get install metainfo -y  
+apt-get install git automake autoconf libtool pkg-config make g++ zlib1g-dev wget -y
+mkdir -p /ccinstall
+cd /ccinstall
+rm -rf /ccinstall/*
+wget https://mediaarea.net/download/binary/mediainfo-gui/0.7.99/mediainfo-gui_0.7.99-1_i386.Debian_8.0.deb
+wget https://mediaarea.net/download/binary/mediainfo/0.7.99/mediainfo_0.7.99-1_i386.Debian_8.0.deb
+wget https://mediaarea.net/download/binary/libmediainfo0/0.7.99/libmediainfo0_0.7.99-1_i386.Debian_8.0.deb
+wget https://mediaarea.net/download/binary/libzen0/0.4.37/libzen0_0.4.37-1_i386.Debian_8.0.deb
+dpkg -i libmediainfo* libzen*
+apt-get install libwxgtk3.0-dev -y
+dpkg -i *.deb
 echo Done! exiftool, steghide, and stegsolve
