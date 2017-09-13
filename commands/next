@@ -29,6 +29,8 @@ wget https://mediaarea.net/download/binary/mediainfo/0.7.99/mediainfo_0.7.99-1_i
 wget https://mediaarea.net/download/binary/libmediainfo0/0.7.99/libmediainfo0_0.7.99-1_i386.Debian_8.0.deb
 wget https://mediaarea.net/download/binary/libzen0/0.4.37/libzen0_0.4.37-1_i386.Debian_8.0.deb
 dpkg -i libmediainfo* libzen*
-apt-get install libwxgtk3.0-dev -y
+apt-get install libwxgtk-dev -y
+apt-get install libwxgtk-base -y
+
 dpkg -i *.deb
-echo Done! exiftool, steghide, and stegsolve
+echo Done! exiftool, steghide, mediainfo (hopefully with GUI) and stegsolve
