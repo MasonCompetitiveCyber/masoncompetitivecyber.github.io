@@ -51,7 +51,7 @@ if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/ma
 
 if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O /root/Desktop/evidence.zip; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O "/home/$usr/evidence.zip"; fi
 
-if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2015/blob/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf -O /root/Desktop/Mandiant.pdf; else wget https://github.com/ctfs/write-ups-2015/blob/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf
+if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2015/raw/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf -O /root/Desktop/Mandiant.pdf; else wget https://github.com/ctfs/write-ups-2015/raw/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf
  -O "/home/$usr/Mandiant.pdf"; fi
 
 
