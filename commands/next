@@ -17,4 +17,6 @@ echo Aliasing to root
 if [ -f /root/.bashrc ];  then
 echo alias stegsolve=\"/ccinstall/bin/stegsolve.jar\" >> /root/.bashrc
 fi
+apt-get update
+apt-get install metainfo -y  
 echo Done! exiftool, steghide, and stegsolve
