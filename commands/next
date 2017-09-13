@@ -59,6 +59,9 @@ if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/maste
 
 if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O /root/Desktop/flag.png.encrypted; else wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O "/home/$usr/flag.png.encrypted"; fi
 
+touch -t 201511130108 "/home/$usr/flag.png.encrypted"
+touch -t 201511130108 /root/Desktop/flag.png.encrypted
+
 
 
 echo Done! exiftool, steghide, stepic, mediainfo \(hopefully with GUI\) and stegsolve
