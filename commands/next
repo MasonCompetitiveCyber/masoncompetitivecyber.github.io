@@ -23,6 +23,7 @@ apt-get install metainfo -y
 apt-get install git automake autoconf libtool pkg-config make g++ zlib1g-dev wget -y
 mkdir -p /ccinstall
 cd /ccinstall
+apt purge libwxbase* -y
 rm -rf /ccinstall/*
 wget https://mediaarea.net/download/binary/mediainfo-gui/0.7.99/mediainfo-gui_0.7.99-1_i386.Debian_8.0.deb
 wget https://mediaarea.net/download/binary/mediainfo/0.7.99/mediainfo_0.7.99-1_i386.Debian_8.0.deb
@@ -41,4 +42,6 @@ wget http://ftp.us.debian.org/debian/pool/main/w/wxwidgets3.0/libwxgtk3.0-0_3.0.
 dpkg -i libwxgtk*
 
 dpkg -i *.deb
-echo Done! exiftool, steghide, mediainfo \(hopefully with GUI\) and stegsolve
+pip install stepic
+
+echo Done! exiftool, steghide, stepic, mediainfo \(hopefully with GUI\) and stegsolve
