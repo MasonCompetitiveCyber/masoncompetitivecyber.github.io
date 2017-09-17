@@ -35,9 +35,9 @@
 			"meetingDate": "September 27",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
+			"location": "Johnson Center 239A",
 			"year": "2017",
-			"advlocation": "Johnson Center 239A",
+			"advlocation": "Johnson Center Meeting Room G",
 			"advtopic": "Obscure Web: Weird Web Problems",
 			"basictopic": "Cryptography (not simple ciphers)"
 		},
