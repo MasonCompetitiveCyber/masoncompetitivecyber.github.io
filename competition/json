@@ -51,6 +51,16 @@
 			"moreInfo": "https://mitrestemctf.org/"
 		},
 		{
+			"name": "BackdoorCTF",
+			"startDate": "September 23",
+			"endDate": "September 24",
+			"startTime": "6:30pm",
+			"endTime": "6:30pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://backdoor.sdslabs.co"
+		},
+		{
 			"name": "DefCamp CTF Quals",
 			"startDate": "September 30",
 			"endDate": "October 1",
