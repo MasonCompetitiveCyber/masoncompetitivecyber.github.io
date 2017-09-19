@@ -77,3 +77,8 @@ $(document).ready(function () {
 
 });
 
+
+function joinSlack() {
+    window.open('join.slack.com/t/masoncc/signup?email='+document.getElementById('netid'),_blank)
+}
+
