@@ -104,7 +104,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       } else {
         loc = item["advlocation"]
       }
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
             entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + loc + '</td></tr>'
           console.log(entry)
@@ -124,7 +124,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) < 0) {
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
             entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["basictopic"] + '</td><td>' + item["advtopic"] + '</td></tr>'
           console.log(entry)
