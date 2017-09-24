@@ -78,14 +78,14 @@ $(document).ready(function () {
 });
 
 
-$('#button').click(function(){
+function joinSlack() {
     $.get( "https://nqsrlfzeie.execute-api.ap-south-1.amazonaws.com/prod/SlackInvites?email="+$("#netid").val()+'@gmu.edu', function( data ) {
     console.log(data);
         $("#response").html("You've been invited to our Slack. Please check your email." );
     }).fail(function() { 
         $("#response").html("Something went wrong signing you up for Slack. Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email='"+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.")
     });
-});
+};
 /*! konami-js v1.0.1 | http://mck.me/mit-license */
 var Konami={};(function(d,e){var f=d.sequence=function(){var b=Array.prototype.slice.call(arguments),c=0;return function(a){a=a||e.event;a=a.keyCode||a.which||a;if(a===b[c]||a===b[c=0])a=b[++c],"function"===typeof a&&(a(),c=0)}};d.code=function(b){return f(38,38,40,40,37,39,37,39,66,65,b)}})(Konami,window);
 
