@@ -104,7 +104,7 @@ function joinSlack() {
         })
         $("#response").html("<div class='alert alert-success'>You've been invited to our Slack. Please check your email.</div>");
     }).fail(function() { 
-        $("#response").html("div class='alert alert-block'>"+sorry+"Something went wrong signing you up for Slack. Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</div>")
+        $("#response").html("<div class='alert alert-block'>"+sorry+"Something went wrong signing you up for Slack. Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</div>")
     });
 
 };
