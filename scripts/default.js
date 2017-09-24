@@ -86,6 +86,7 @@ function joinSlack() {
             sorry = "Sorry, "+fname+". "
         }
         catch(err) {
+            console.log(err)
             welcome = ""
             sorry = ""
         }
