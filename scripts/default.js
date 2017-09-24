@@ -83,7 +83,7 @@ function joinSlack() {
     console.log(data);
         $("#response").html("You've been invited to our Slack. Please check your email." );
     }).fail(function() { 
-        $("#response").html("Something went wrong signing you up for Slack. Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email='"+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.")
+        $("#response").html("Something went wrong signing you up for Slack. Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.")
     });
 };
 /*! konami-js v1.0.1 | http://mck.me/mit-license */
