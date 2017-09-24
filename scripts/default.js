@@ -80,14 +80,14 @@ $(document).ready(function () {
 
 function joinSlack() {
     $.get( "https://nqsrlfzeie.execute-api.ap-south-1.amazonaws.com/prod/SlackInvites?email="+$("#netid").val()+'@gmu.edu', function( data ) {
-    console.log(data)
+    console.log(data);
     alert( "You've been invited to our Slack. Please check your email." );
     });
 }
 
 $('#button').click(function(){
     $.get( "https://nqsrlfzeie.execute-api.ap-south-1.amazonaws.com/prod/SlackInvites?email="+$("#netid").val()+'@gmu.edu', function( data ) {
-    console.log(data)
+    console.log(data);
     alert( "You've been invited to our Slack. Please check your email." );
     });
 });
