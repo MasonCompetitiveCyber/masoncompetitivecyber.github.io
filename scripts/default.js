@@ -84,7 +84,7 @@ function joinSlack() {
     alert( "You've been invited to our Slack. Please check your email." );
     });
 }
-$('#clickable').click(function(){
+$('#button').click(function(){
     joinSlack();
 }
 /*! konami-js v1.0.1 | http://mck.me/mit-license */
