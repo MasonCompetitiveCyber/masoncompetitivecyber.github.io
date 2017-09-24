@@ -31,7 +31,11 @@ description: "Mason CC"
                     <h2>Join our Chat!</h2>
                     <p>If you are a George Mason student, enter your NetID below and you should get an email in your inbox!</p> 
                     <div class="form-group">
-                    <input type="text" class="form-control" id="netid" placeholder="NetID"><br><button type="button" onclick="javascript:joinSlack();" id="button" class="btn btn-primary">Join our Slack</button>
+                    <div class="input-append">
+                      <input class="span2" id="netid" type="text">
+                      <span class="add-on">@gmu.edu</span>
+                    </div><br>
+                    <button type="button" onclick="javascript:joinSlack();" id="button" class="btn btn-primary btn-large">Join our Slack</button>
                     <br><p><div id="response"></div>
                   </div>
                     <hr>
