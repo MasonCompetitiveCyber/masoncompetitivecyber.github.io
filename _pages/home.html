@@ -32,10 +32,12 @@ description: "Mason CC"
                     <p>If you are a George Mason student, enter your NetID below and you should get an email in your inbox!</p> 
                     <div class="form-group">
                     <div class="input-append">
+                    <form onsubmit="javascript:joinSlack();">
                       <input class="span2" id="netid" style="text-align: right;" type="text">
                       <span class="add-on">@gmu.edu</span>
                     </div><br>
                     <button type="button" onclick="javascript:joinSlack();" id="button" class="btn btn-primary btn-large">Join our Slack</button>
+                  </div>
                     <br><p><div id="response"></div>
                   </div>
                     <hr>
