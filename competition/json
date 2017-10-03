@@ -81,6 +81,26 @@
 			"moreInfo": "https://competitivecyber.club/articles/capitalone/"
 		}, 
 		{
+			"name": "Hack Dat Kiwi 2017",
+			"startDate": "October 13",
+			"endDate": "October 14",
+			"startTime": "12am",
+			"endTime": "11:59pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "http://hack.dat.kiwi/"
+		}, 
+		{
+			"name": "Catch the Ghost",
+			"startDate": "October 21",
+			"endDate": "October 21",
+			"startTime": "9am",
+			"endTime": "4pm",
+			"year": "2017",
+			"location": "613 Global Way, Linthicum Heights, MD",
+			"moreInfo": "https://hackeducate.com/catch-the-ghost.html"
+		}, 
+		{
 			"name": "Pwn2Win CTF",
 			"startDate": "October 20",
 			"endDate": "October 22",
