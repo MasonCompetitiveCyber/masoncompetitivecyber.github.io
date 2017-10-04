@@ -124,8 +124,23 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
-          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+      time = item["to"]
+      if (time.includes('pm')) {
+        time = time.split('pm')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        hour = parseInt(hour) + 12
+        time = hour + ":" + min
+      } else {
+        time = time.split('am')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        time = hour + ":" + min
+      }
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {
+          console.log(item["meetingDate"])
+          console.log(time)
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"] + ' ' + time))
             entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["basictopic"] + '</td><td>' + item["advtopic"] + '</td></tr>'
           console.log(entry)
         } else {
