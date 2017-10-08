@@ -79,6 +79,7 @@ $(document).ready(function () {
 
 
 function joinSlack() {
+        $('#chatjoin').prop("disabled",true);
         noplus = $("#netid").val().split('+')[0]
         $.get('https://api.srct.gmu.edu/peoplefinder/v1/basic/all/'+noplus,function(data) {
         try {
@@ -92,18 +93,20 @@ function joinSlack() {
         }
         })
 
-    $.get( "https://nqsrlfzeie.execute-api.ap-south-1.amazonaws.com/prod/SlackInvites?email="+encodeURIComponent($("#netid").val())+'@gmu.edu', function() {
-        }).always(function(data) {
-            console.log(data['status'])
-        if (data['status'] == '200') {
-            $("#response").html("<div class='alert alert-success'>"+welcome+"You've been invited to our Slack. Please check your email.</div>");
-            console.log('itwered')
-        }
-    }).fail(function(data) { 
-        if (data['status'] != '200') {
-            $("#response").html("<div class='alert alert-block'>"+sorry+"Error: " + data['responseText'] +". Are you already signed up? If not, please contact masoncc@gmu.edu and click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</div>")
-        }
-    });
+        $.get( "https://nqsrlfzeie.execute-api.ap-south-1.amazonaws.com/prod/SlackInvites?email="+encodeURIComponent($("#netid").val())+'@gmu.edu', function() {
+            }).always(function(data) {
+                console.log(data['status'])
+            if (data['status'] == '200') {
+                $("#response").html("<div class='alert alert-success'>"+welcome+"You've been invited to our Slack. Please check your email.</div>");
+                console.log('itwered')
+            }
+        }).fail(function(data) { 
+            if (data['status'] != '200') {
+                $("#response").html("<div class='alert alert-block'>"+sorry+"Error: " + data['responseText'] +". Are you already signed up? If not, please contact masoncc@gmu.edu and <b>click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</b></div>")
+            }
+        });
+
+        $('#chatjoin').prop("disabled",false);
 
 };
 /*! konami-js v1.0.1 | http://mck.me/mit-license */
