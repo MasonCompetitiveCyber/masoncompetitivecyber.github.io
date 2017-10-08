@@ -97,14 +97,16 @@ function joinSlack() {
                 console.log(data['status'])
             if (data['status'] == '200') {
                 $("#response").html("<div class='alert alert-success'>"+welcome+"You've been invited to our Slack. Please check your email.</div>");
+                $('#chatjoin').prop("disabled",false);
                 console.log('itwered')
             }
         }).fail(function(data) { 
             if (data['status'] != '200') {
                 $("#response").html("<div class='alert alert-block'>"+sorry+"Error: " + data['responseText'] +". Are you already signed up? If not, please contact masoncc@gmu.edu and <b>click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</b></div>")
+                $('#chatjoin').prop("disabled",false);
             }
         });
-        $('#chatjoin').prop("disabled",false);
+        
 };
 /*! konami-js v1.0.1 | http://mck.me/mit-license */
 var Konami={};(function(d,e){var f=d.sequence=function(){var b=Array.prototype.slice.call(arguments),c=0;return function(a){a=a||e.event;a=a.keyCode||a.which||a;if(a===b[c]||a===b[c=0])a=b[++c],"function"===typeof a&&(a(),c=0)}};d.code=function(b){return f(38,38,40,40,37,39,37,39,66,65,b)}})(Konami,window);
