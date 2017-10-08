@@ -80,6 +80,8 @@ $(document).ready(function () {
 
 function joinSlack() {
         $('#chatjoin').prop("disabled",true);
+        
+        $('#joinup').attr('onsubmit','return false;')
         noplus = $("#netid").val().split('+')[0]
         $.get('https://api.srct.gmu.edu/peoplefinder/v1/basic/all/'+noplus,function(data) {
         try {
@@ -98,12 +100,15 @@ function joinSlack() {
             if (data['status'] == '200') {
                 $("#response").html("<div class='alert alert-success'>"+welcome+"You've been invited to our Slack. Please check your email.</div>");
                 $('#chatjoin').prop("disabled",false);
+                $('#joinup').attr('onsubmit','javascript:joinSlack();return false;')
                 console.log('itwered')
             }
         }).fail(function(data) { 
             if (data['status'] != '200') {
                 $("#response").html("<div class='alert alert-block'>"+sorry+"Error: " + data['responseText'] +". Are you already signed up? If not, please contact masoncc@gmu.edu and <b>click <a href='https://join.slack.com/t/masoncc/signup?email="+$("#netid").val()+"@gmu.edu'>this link</a> to join manually.</b></div>")
                 $('#chatjoin').prop("disabled",false);
+                $('#joinup').attr('onsubmit','javascript:joinSlack();return false;')
+
             }
         });
         
