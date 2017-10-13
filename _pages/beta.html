@@ -103,6 +103,7 @@ function readMeeting(id) {
     };
 
   })})};
+var newid = 0
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
   console.log('JSON data loaded')
   console.log(data)
@@ -124,7 +125,6 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
         min = time.split(':')[1]
         time = hour + ":" + min
       }
-      var newid = 0
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      
         console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
         if (newid == 0) {
