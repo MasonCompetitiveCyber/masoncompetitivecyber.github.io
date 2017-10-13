@@ -15,22 +15,29 @@ description: "Mason CC Meetings"
 <br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
-<h3>Meeting Dates and Locations</h3>
-<table class="table table-bordered table-striped" id="meetinglocationsanddates">
 
-</table>
-<br><br>
 <h3>Meeting Topics</h3><br>
-<b>Topics are somewhat tentative to best accomodate guest speakers.</b><br>
-<div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
+<div class='row'>
+<div class='col-md-1'></div>
+<div class='col-md-10'>
+Mason CC has two concurrent meetings: Basic and advanced. We encourage people to make their own decisions on where to go and try out either one. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. 
+</div>
+<div class='col-md-1'></div>
+</div>
+<div class='row'>
+<div class='col-md-6'>
+  <b>Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting. </b><br>
+  <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
 
+  </div>
+<div class='col-md-6' id='meetingcontent'>
+
+</div>
+</div>
 
 
 
 </div>
-
-
-<br><br>
 <h3>Planned Competitions to Attend</h3>
 <table class="table table-bordered table-striped" id="data">
 
@@ -87,18 +94,17 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
         }
         }
       });
-      $("#meetingdrop").html(entry)
+      $("#data").html(entry)
     });
 </script>
 <script>
 function readMeeting(id) {
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
-    console.log(data)
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
-      return item
+      data = 'On ' + item['meetingDate'] + ' training will be going over ' + item['basictopic'] + ' in ' + item['location'] + ', whereas advanced will be going over ' + item['advtopic'] + ' at ' + item['location'] + '.'
     };
   })})};
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
