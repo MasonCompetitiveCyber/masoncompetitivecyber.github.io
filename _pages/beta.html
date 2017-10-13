@@ -11,8 +11,8 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
 
 <h3>Meetings</h3><br>
 <div class='row'>
-  <div class='span1'></div>
-  <div class='span10'>
+  <div class='span3'></div>
+  <div class='span9'>
   Mason CC has two concurrent meetings: Basic and advanced. We encourage people to make their own decisions on where to go and try out either one. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting.
   </div>
   <div class='span1'></div>
@@ -93,7 +93,7 @@ function readMeeting(id) {
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
-      data = 'On ' + item['meetingDate'] + ' training will be going over ' + item['basictopic'] + ' in ' + item['location'] + ', whereas advanced will be going over ' + item['advtopic'] + ' at ' + item['location'] + '.'
+      data = 'On ' + item['meetingDate'] + ' training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['location'] + '</b>.'
       $('#meetingcontent').html(data)
     };
 
