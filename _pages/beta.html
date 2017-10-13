@@ -9,19 +9,19 @@ description: "Mason CC Meetings"
   padding-left: 10%;
 }
 </style>
-<br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
-For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
+<div class='row-fluid'>
+  <div class='span1'></div>
+  <div class='span10'>
+  <b>All meetings are Wednesday 5-6pm unless otherwise noted.</b> Mason CC has two concurrent meetings: Basic and advanced. <ul>We encourage people to make their own decisions on where to go and try out either one.</ul> How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting.
+  </div>
+  <div class='span1'></div>
+</div>
+
 <br><br>
 
 <h3>Meetings<div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
     </div></h3><br>
-<div class='row-fluid'>
-  <div class='span1'></div>
-  <div class='span10'>
-  Mason CC has two concurrent meetings: Basic and advanced. We encourage people to make their own decisions on where to go and try out either one. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting.
-  </div>
-  <div class='span1'></div>
-</div>
+
 <div class='row-fluid'>
 <div class='span3'>
     <b></b><br><br>
@@ -107,6 +107,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   console.log('JSON data loaded')
   console.log(data)
   entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  readMeeting(data['meetings']['0']['id'])
   $.each(data["meetings"], function(i, item) {
   console.log('Iterating')
   console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
