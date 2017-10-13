@@ -107,11 +107,15 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   console.log('JSON data loaded')
   console.log(data)
   entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-  readMeeting(data['meetings']['0']['id'])
   $.each(data["meetings"], function(i, item) {
   console.log('Iterating')
   console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+  var unset = 1;
   if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
+      if (unset == 1) {
+        readMeeting(item['id'])
+        unset = 0;
+      }
       console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
         entry = entry + "<li><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>" 
       console.log(entry)
