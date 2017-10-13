@@ -93,7 +93,7 @@ function readMeeting(id) {
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
-      data = 'On ' + item['meetingDate'] + ' training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['location'] + '</b>.'
+      data = 'On ' + item['meetingDate'] + ' training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
       $('#meetingcontent').html(data)
     };
 
