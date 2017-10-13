@@ -22,7 +22,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
 <br><br>
 <h3>Meeting Topics</h3><br>
 <b>Topics are somewhat tentative to best accomodate guest speakers.</b><br>
-<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+<div id="#meetingdrop" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
 
 
@@ -86,7 +86,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
         }
         }
       });
-      $("#data").html(entry)
+      $("#meetingdrop").html(entry)
     });
 </script>
 <script>
@@ -99,7 +99,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-            entry = entry + "<a class='dropdown-item' href='#'>" + item["meetingDate"] + "</a>" 
+            entry = entry + "<a class='dropdown-item' href='#'>" + item["meetingDate"] + "</option>" 
           console.log(entry)
         } else {
           // Do not generate an entry
