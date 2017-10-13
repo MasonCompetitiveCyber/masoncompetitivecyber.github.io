@@ -125,7 +125,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
         time = hour + ":" + min
       }
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-        entry = entry + "<li><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>" 
+        entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>" 
       console.log(entry)
     } else {
       // Do not generate an entry
