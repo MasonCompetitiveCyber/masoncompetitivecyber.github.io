@@ -2,6 +2,7 @@
 	"meetings": [
 
 		{
+			"id": "0",
 			"meetingDate": "September 6",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -12,6 +13,7 @@
 			"basictopic": "Club Intro/Training CTF Challenges"
 		},
 		{
+			"id": "1",
 			"meetingDate": "September 13",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -22,6 +24,7 @@
 			"basictopic": "Web Exploitation"
 		},
 		{
+			"id": "2",
 			"meetingDate": "September 20",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -32,6 +35,7 @@
 			"basictopic": "Linux, Scripting, and Regex"
 		},
 		{
+			"id": "3",
 			"meetingDate": "September 27",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -42,6 +46,7 @@
 			"basictopic": "Cryptography (not simple ciphers)"
 		},
 		{
+			"id": "4",
 			"meetingDate": "October 4",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -52,6 +57,7 @@
 			"basictopic": "Amazon Web Services EC2"
 		},
 		{
+			"id": "5",
 			"meetingDate": "October 11",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -62,6 +68,7 @@
 			"basictopic": "Rob Shein of PwC on Car Hacking"
 		},
 		{
+			"id": "6",
 			"meetingDate": "October 18",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -72,6 +79,7 @@
 			"basictopic": "Web Exploitation 2"
 		},
 		{
+			"id": "7",
 			"meetingDate": "October 25",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -82,6 +90,7 @@
 			"basictopic": "Forensics"
 		},
 		{
+			"id": "8",
 			"meetingDate": "November 1",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -92,6 +101,7 @@
 			"basictopic": "Scripting 2"
 		},
 		{
+			"id": "9",
 			"meetingDate": "November 8",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -102,6 +112,7 @@
 			"basictopic": "Networking"
 		},
 		{
+			"id": "10",
 			"meetingDate": "November 15",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -112,6 +123,7 @@
 			"basictopic": "Steganography"
 		},
 		{
+			"id": "11",
 			"meetingDate": "November 29",
 			"from": "5:00pm",
 			"to": "6:00pm",
@@ -122,6 +134,7 @@
 			"basictopic": "Intro. Reverse Engineering"
 		},
 		{
+			"id": "12",
 			"meetingDate": "December 6",
 			"from": "5:00pm",
 			"to": "6:00pm",
