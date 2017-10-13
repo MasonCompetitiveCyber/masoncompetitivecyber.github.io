@@ -9,7 +9,8 @@ description: "Mason CC Meetings"
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
 
-<h3>Meetings</h3><br>
+<h3>Meetings    <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
+    </div></h3><br>
 <div class='row-fluid'>
   <div class='span1'></div>
   <div class='span10'>
@@ -20,8 +21,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
 <div class='row-fluid'>
 <div class='span3'>
     <b></b><br><br>
-    <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
-    </div>
+
 <div class='span6' id='meetingcontent'>
 
 </div>
@@ -94,7 +94,7 @@ function readMeeting(id) {
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
       $('button.btn.btn-primary.dropdown-toggle').html(item['meetingDate']+'<span class=\'caret\'></span>')
-      data = 'On ' + item['meetingDate'] + ' training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
+      data = 'On ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
       $('#meetingcontent').html(data)
     };
 
