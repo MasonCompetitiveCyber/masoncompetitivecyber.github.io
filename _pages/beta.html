@@ -124,7 +124,12 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
         min = time.split(':')[1]
         time = hour + ":" + min
       }
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+      var newid = 0
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      
+        console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+        if (newid == 0) {
+          newid = item['id']
+        }
         entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>" 
       console.log(entry)
     } else {
