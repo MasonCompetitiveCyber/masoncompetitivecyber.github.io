@@ -100,7 +100,7 @@ function readMeeting(id) {
     if ( id == item['id'] ){
       return item
     };
-  })});
+  })})};
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
   console.log('JSON data loaded')
   console.log(data)
