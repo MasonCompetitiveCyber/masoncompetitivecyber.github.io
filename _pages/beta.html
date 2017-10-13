@@ -112,7 +112,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   console.log('Iterating')
   console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
 
-      time = item["to"]
+      time = item["from"]
       if (time.includes('pm')) {
         time = time.split('pm')[0]
         hour = time.split(':')[0]
