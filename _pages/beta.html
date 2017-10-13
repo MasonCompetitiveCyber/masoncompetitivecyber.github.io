@@ -100,7 +100,7 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-            entry = entry + "<li><a href=javascript:readMeeting('" + item['meetingDate'].replace('"', ''); + ')>' + item["meetingDate"] + "</a></li>" 
+            entry = entry + "<li><a href=javascript:readMeeting('" + item['id'] + ')>' + item["meetingDate"] + "</a></li>" 
           console.log(entry)
         } else {
           // Do not generate an entry
