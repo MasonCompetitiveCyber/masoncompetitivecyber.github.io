@@ -130,7 +130,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
         if (newid == 0) {
           newid = item['id']
         }
-        entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>" 
+        entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>"
       console.log(entry)
     } else {
       // Do not generate an entry
@@ -138,6 +138,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
     }
   });
   entry = entry + '</ul></button>'
+  readMeeting(newid)
   $("#meetingdrop").html(entry)
 });
 </script>
