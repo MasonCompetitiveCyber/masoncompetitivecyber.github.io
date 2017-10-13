@@ -112,19 +112,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   console.log('Iterating')
   console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
 
-      time = item["from"]
-      if (time.includes('pm')) {
-        time = time.split('pm')[0]
-        hour = time.split(':')[0]
-        min = time.split(':')[1]
-        hour = parseInt(hour) + 12
-        time = hour + ":" + min
-      } else {
-        time = time.split('am')[0]
-        hour = time.split(':')[0]
-        min = time.split(':')[1]
-        time = hour + ":" + min
-      }
+      time = '23:00'
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      
         console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
         if (newid == 0) {
