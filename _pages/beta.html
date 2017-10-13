@@ -94,13 +94,13 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
       console.log(data)
-      entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Select a Meeting Here <span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+      entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-            entry = entry + "<li><a href='#'>" + item["meetingDate"] + "</a></li>" 
+            entry = entry + "<li><a href=javascript:readMeeting('" + item['meetingDate'] + "')" + item["meetingDate"] + "</a></li>" 
           console.log(entry)
         } else {
           // Do not generate an entry
