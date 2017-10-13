@@ -6,28 +6,23 @@ description: "Mason CC Meetings"
 ---
 <div class="container-fluid">
 
-        <div class="breadcrumbs">
-                <a href="/">Home</a> &nbsp;/&nbsp; <span>Meetings</span>
-            </div> 
-            
 <br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
 
 <h3>Meetings</h3><br>
 <div class='row'>
-<div class='col-md-1'></div>
-<div class='col-md-10'>
-Mason CC has two concurrent meetings: Basic and advanced. We encourage people to make their own decisions on where to go and try out either one. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. 
-</div>
-<div class='col-md-1'></div>
+  <div class='col-md-1'></div>
+  <div class='col-md-10'>
+  Mason CC has two concurrent meetings: Basic and advanced. We encourage people to make their own decisions on where to go and try out either one. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. 
+  </div>
+  <div class='col-md-1'></div>
 </div>
 <div class='row'>
 <div class='col-md-6'>
-  <b>Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting. </b><br><br>
-  <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
-
-  </div>
+    <b>Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting. </b><br><br>
+    <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
+    </div>
 <div class='col-md-6' id='meetingcontent'>
 
 </div>
@@ -120,7 +115,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
         entry = entry
     }
   });
-  entry = entry + '</ul></div>'
+  entry = entry + '</ul></button>'
   $("#meetingdrop").html(entry)
 });
 </script>
