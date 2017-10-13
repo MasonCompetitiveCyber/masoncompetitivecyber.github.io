@@ -1,0 +1,146 @@
+---
+layout: default
+permalink: /beta/
+title: CC Meetings
+description: "Mason CC Meetings"
+---
+<div class="container">
+
+    <div class="divPanel page-content">
+
+        <div class="breadcrumbs">
+                <a href="/">Home</a> &nbsp;/&nbsp; <span>Meetings</span>
+            </div> 
+
+<br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
+For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
+<br><br>
+<h3>Meeting Dates and Locations</h3>
+<table class="table table-bordered table-striped" id="meetinglocationsanddates">
+
+</table>
+<br><br>
+<h3>Meeting Topics</h3><br>
+<b>Topics are somewhat tentative to best accomodate guest speakers.</b><br>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+
+
+</div>
+
+
+<br><br>
+<h3>Planned Competitions to Attend</h3>
+<table class="table table-bordered table-striped" id="data">
+
+</table>
+<br><br>
+<h3>In Person Under Consideration Events</h3>
+
+<table class="table table-bordered table-striped">
+<tr>
+  <th>Date and Time</th>
+  <th>Location</th>
+  <th>Event</th>
+</tr>
+<tr>
+<td>February 23 – March 1, 2017**</td>
+<td>GMU (then regionals maybe at Johns Hopkins)**</td>
+<td>MACCDC</td>
+</tr>
+</table>
+
+**We have to acquire the registration fee and a mentor. It will be a limited team. MACCDC hasn't released exact dates.
+
+</div>
+</div>
+<br><br>
+        
+
+        <div id="footerInnerSeparator"></div>
+    </div>
+
+</div>
+
+<script>
+    $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date and Time</th><th>Location</th><th>Event</th></tr>"
+      $.each(data["competitions"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
+      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+          console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<tr><td>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          } else {
+            entry = entry + "<tr><td>" + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
+          }
+          console.log(entry)
+        } else {
+          if (item["startDate"] == item["endDate"]){
+          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
+        } else {
+          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
+        }
+        }
+      });
+      $("#data").html(entry)
+    });
+</script>
+<script>
+    $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date</th><th>Basic Location</th><th>Advanced Location</th></tr>"
+      $.each(data["meetings"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+            entry = entry + "<a class='dropdown-item' href='#'>" + item["meetingDate"] + "</a>" 
+          console.log(entry)
+        } else {
+          // Do not generate an entry
+            entry = entry
+        }
+      });
+      $("#meetinglocationsanddates").html(entry)
+    });
+</script>
+
+<script>
+    $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
+      console.log('JSON data loaded')
+      console.log(data)
+      entry = "<tr><th>Date</th><th>Basic Topic</th><th>Advanced Topic</th></tr>"
+      $.each(data["meetings"], function(i, item) {
+      console.log('Iterating')
+      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+      time = item["to"]
+      if (time.includes('pm')) {
+        time = time.split('pm')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        hour = parseInt(hour) + 12
+        time = hour + ":" + min
+      } else {
+        time = time.split('am')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        time = hour + ":" + min
+      }
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {
+          console.log(item["meetingDate"])
+          console.log(time)
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"] + ' ' + time))
+            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["basictopic"] + '</td><td>' + item["advtopic"] + '</td></tr>'
+          console.log(entry)
+        } else {
+            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["basictopic"] + '</strike></td><td><strike>' + item["advtopic"] + '</strike></td></tr>'
+        }
+      });
+      $("#meetingtopics").html(entry)
+    });
+</script>
