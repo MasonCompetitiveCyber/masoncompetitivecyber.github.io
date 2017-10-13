@@ -1,32 +1,33 @@
 ---
 layout: default
-permalink: /oldmeeting/
+permalink: /meeting/
 title: CC Meetings
 description: "Mason CC Meetings"
 ---
-<div class="container">
+<style>
+.btn-group {
+  padding-left: 10%;
+}
+</style><br><br>
+<div class='row-fluid'>
+  <div class='span1'></div>
+  <div class='span10'>
+  <b>All meetings are Wednesday 5-6pm unless otherwise noted.</b> Mason CC has two concurrent meetings: Basic and advanced. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. Topics are slightly tentative to best accomodate guest speakers. Please click the button to set your meeting. <a href="/oldmeeting/">Looking for the old interface?</a> It still works!
+  </div>
+  <div class='span1'></div>
+</div>
 
-    <div class="divPanel page-content">
-
-        <div class="breadcrumbs">
-                <a href="/">Home</a> &nbsp;/&nbsp; <span>Meetings</span>
-            </div> 
-
-<br>All meetings are Wednesday 5-6pm unless otherwise noted.<br><br><b>As a reminder, no meetings or competitions are compulsory, but we do ask that someone at exec has at least seen your face or heard of you at one point before you claim to be a member.</b>
-For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
-<h3>Meeting Dates and Locations</h3>
-<table class="table table-bordered table-striped" id="meetinglocationsanddates">
+<h3>Meetings</h3><br>
 
-</table>
-<br><br>
-<h3>Meeting Topics</h3><br>
-<b>Topics are somewhat tentative to best accomodate guest speakers.</b><br>
-<table class="table table-bordered table-striped" id="meetingtopics">
+<div class='row-fluid'>
+  <div class='span3'>
+    <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink"></div>
+  </div><br>
+  <div class='span6' id='meetingcontent'>
 
-</table>
-
-
+  </div>
+</div>
 <br><br>
 <h3>Planned Competitions to Attend</h3>
 <table class="table table-bordered table-striped" id="data">
@@ -88,32 +89,44 @@ For a JSON version, <a href="https://competitivecyber.club/meeting/json">click h
     });
 </script>
 <script>
+function readMeeting(id) {
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
-      console.log('JSON data loaded')
-      console.log(data)
-      entry = "<tr><th>Date</th><th>Basic Location</th><th>Advanced Location</th></tr>"
-      $.each(data["meetings"], function(i, item) {
-      console.log('Iterating')
-      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
-      if (item["advlocation"] == "Johnson Center 239A") { 
-        loc = "<a href='/articles/239A/'>Johnson Center 239A</a>"
-      } else if (item["advlocation"] == "SUB1 3A") { 
-        loc = "<a href='/articles/SUB1/'>SUB1 3A</a>"
-      } else if (item["advlocation"] == "SUB1 3B") { 
-        loc = "<a href='/articles/SUB1/'>SUB1 3B</a>"
-      } else {
-        loc = item["advlocation"]
-      }
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"]) <= 0) {
-          console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
-            entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["location"] + '</td><td>' + loc + '</td></tr>'
-          console.log(entry)
-        } else {
-            entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + loc + '</strike></td></tr>'
+    console.log('JSON data loaded')
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    $.each(data["meetings"], function(i, item) {
+    if ( id == item['id'] ){
+      $('button.btn.btn-primary.dropdown-toggle').html(item['meetingDate']+'<span class=\'caret\'></span>')
+      data = 'On ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
+      $('#meetingcontent').html(data)
+    };
+
+  })})};
+var newid = 0
+$.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
+  console.log('JSON data loaded')
+  console.log(data)
+  entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  $.each(data["meetings"], function(i, item) {
+  console.log('Iterating')
+  console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
+
+      time = '23:00'
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      
+        console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
+        if (newid == 0) {
+          newid = item['id']
         }
-      });
-      $("#meetinglocationsanddates").html(entry)
-    });
+        entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>"
+      console.log(entry)
+    } else {
+      // Do not generate an entry
+        entry = entry
+    }
+  });
+  entry = entry + '</ul></button>'
+  readMeeting(newid)
+  $("#meetingdrop").html(entry)
+});
 </script>
 
 <script>
