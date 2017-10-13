@@ -16,7 +16,7 @@ description: "Mason CC Meetings"
 For a JSON version, <a href="https://competitivecyber.club/meeting/json">click here</a>. 
 <br><br>
 
-<h3>Meeting Topics</h3><br>
+<h3>Meetings</h3><br>
 <div class='row'>
 <div class='col-md-1'></div>
 <div class='col-md-10'>
@@ -26,7 +26,7 @@ Mason CC has two concurrent meetings: Basic and advanced. We encourage people to
 </div>
 <div class='row'>
 <div class='col-md-6'>
-  <b>Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting. </b><br>
+  <b>Topics are somewhat tentative to best accomodate guest speakers. Please click the below button to set your meeting. </b><br><br>
   <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink">
 
   </div>
@@ -34,10 +34,7 @@ Mason CC has two concurrent meetings: Basic and advanced. We encourage people to
 
 </div>
 </div>
-
-
-
-</div>
+</div><br><br>
 <h3>Planned Competitions to Attend</h3>
 <table class="table table-bordered table-striped" id="data">
 
@@ -105,7 +102,9 @@ function readMeeting(id) {
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
       data = 'On ' + item['meetingDate'] + ' training will be going over ' + item['basictopic'] + ' in ' + item['location'] + ', whereas advanced will be going over ' + item['advtopic'] + ' at ' + item['location'] + '.'
+      $('#meetingcontent').html(data)
     };
+
   })})};
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
   console.log('JSON data loaded')
