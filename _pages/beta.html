@@ -73,7 +73,7 @@ h3 {
 <script>
 
 
-function readMeeting(id) {
+function readCompetition(id) {
     $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
