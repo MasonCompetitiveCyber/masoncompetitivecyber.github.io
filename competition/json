@@ -98,18 +98,7 @@
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "http://hack.dat.kiwi/"
-		}, 
-		{
-			"id": "9",
-			"name": "Catch the Ghost",
-			"startDate": "October 21",
-			"endDate": "October 21",
-			"startTime": "9am",
-			"endTime": "4pm",
-			"year": "2017",
-			"location": "613 Global Way, Linthicum Heights, MD",
-			"moreInfo": "https://hackeducate.com/catch-the-ghost.html"
-		}, 
+		},
 		{
 			"id": "10",
 			"name": "Pwn2Win CTF",
@@ -120,6 +109,17 @@
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "https://pwn2win.party"
+		},
+		{
+			"id": "8",
+			"name": "RUSecure CTF Prelims",
+			"startDate": "October 13",
+			"endDate": "December 2",
+			"startTime": "12am",
+			"endTime": "11:59pm",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://www.radford.edu/content/csat/home/itec/rusecure-ctf-contest.html"
 		},
 		{
 			"id": "11",
