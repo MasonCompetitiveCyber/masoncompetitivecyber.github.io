@@ -76,10 +76,10 @@ h3 {
 function readCompetition(id) {
     $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
-    entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-    $.each(data["meetings"], function(i, item) {
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    $.each(data["competitions"], function(i, item) {
     if ( id == item['id'] ){
-      $('button.btn.btn-primary.dropdown-toggle').html(item['name']+'<span class=\'caret\'></span>')
+      $('#compbutton').html(item['name']+'<span class=\'caret\'></span>')
       data = 'Name:  ' + name
       $('#competitionfield').html(data)
     };
@@ -90,7 +90,7 @@ function readCompetition(id) {
 
 var newbit = 0;
 $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
-  entry =  "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  entry =  "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
   $.each(data["competitions"], function(i, item) {
   console.log(Date.parse(item["endDate"] + ' ' + item["year"]))
   if ( Date.now() - Date.parse(item["endDate"] +  ' ' +  item["year"] + ' ' + '23:59') < 0) {
@@ -108,10 +108,10 @@ $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(
 function readMeeting(id) {
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
-    entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
-      $('button.btn.btn-primary.dropdown-toggle').html(item['meetingDate']+'<span class=\'caret\'></span>')
+      $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
       data = 'On ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
       $('#meetingcontent').html(data)
     };
