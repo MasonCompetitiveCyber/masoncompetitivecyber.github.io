@@ -80,7 +80,7 @@ function readCompetition(id) {
     $.each(data["competitions"], function(i, item) {
     if ( id == item['id'] ){
       $('#compbutton').html(item['name']+'<span class=\'caret\'></span>')
-      data = 'Name:  ' + name
+      data = 'Name:  ' + id['name']
       $('#competitionfield').html(data)
     };
 
@@ -121,7 +121,7 @@ var newid = 0
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
   console.log('JSON data loaded')
   console.log(data)
-  entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
   $.each(data["meetings"], function(i, item) {
 
       time = '18:30'
