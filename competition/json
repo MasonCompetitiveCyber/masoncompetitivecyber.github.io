@@ -1,6 +1,7 @@
 {
 	"competitions": [
 		{
+			"id": "0",
 			"name": "Crack the Shell",
 			"startDate": "August 12",
 			"endDate": "August 12",
@@ -11,6 +12,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/hackeducate.html"
 		},
 		{
+			"id": "1",
 			"name": "Tokyo Western CTF",
 			"startDate": "September 1",
 			"endDate": "September 3",
@@ -21,6 +23,7 @@
 			"moreInfo": "https://ctftime.org/event/474"
 		},
 		{
+			"id": "2",
 			"name": "Booz Allen CTF",
 			"startDate": "September 12",
 			"endDate": "September 12",
@@ -31,6 +34,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/booz/"
 		},
 		{
+			"id": "3",
 			"name": "CSAW CTF Quals",
 			"startDate": "September 15",
 			"endDate": "September 17",
@@ -41,6 +45,7 @@
 			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
 		},
 		{
+			"id": "4",
 			"name": "MITRE CTF",
 			"startDate": "September 15",
 			"endDate": "September 16",
@@ -51,6 +56,7 @@
 			"moreInfo": "https://mitrestemctf.org/"
 		},
 		{
+			"id": "5",
 			"name": "BackdoorCTF",
 			"startDate": "September 23",
 			"endDate": "September 24",
@@ -61,6 +67,7 @@
 			"moreInfo": "https://backdoor.sdslabs.co"
 		},
 		{
+			"id": "6",
 			"name": "DefCamp CTF Quals",
 			"startDate": "September 30",
 			"endDate": "October 1",
@@ -71,6 +78,7 @@
 			"moreInfo": "https://dctf.def.camp/"
 		},
 		{
+			"id": "7",
 			"name": "Capital One Wargame",
 			"startDate": "October 3",
 			"endDate": "October 3",
@@ -81,6 +89,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/capitalone/"
 		}, 
 		{
+			"id": "8",
 			"name": "Hack Dat Kiwi 2017",
 			"startDate": "October 13",
 			"endDate": "October 14",
@@ -91,6 +100,7 @@
 			"moreInfo": "http://hack.dat.kiwi/"
 		}, 
 		{
+			"id": "9",
 			"name": "Catch the Ghost",
 			"startDate": "October 21",
 			"endDate": "October 21",
@@ -101,6 +111,7 @@
 			"moreInfo": "https://hackeducate.com/catch-the-ghost.html"
 		}, 
 		{
+			"id": "10",
 			"name": "Pwn2Win CTF",
 			"startDate": "October 20",
 			"endDate": "October 22",
@@ -111,6 +122,7 @@
 			"moreInfo": "https://pwn2win.party"
 		},
 		{
+			"id": "11",
 			"name": "HITCON CTF Quals",
 			"startDate": "November 3",
 			"endDate": "November 5",
