@@ -71,9 +71,23 @@ h3 {
 </div>
 
 <script>
-function readCompetition(id) {
-  console.log(id)
-}
+
+
+function readMeeting(id) {
+    $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
+    console.log('JSON data loaded')
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    $.each(data["meetings"], function(i, item) {
+    if ( id == item['id'] ){
+      $('button.btn.btn-primary.dropdown-toggle').html(item['name']+'<span class=\'caret\'></span>')
+      data = 'Name:  ' + name
+      $('#competitionfield').html(data)
+    };
+
+    })})
+};
+
+
 var newbit = 0;
 $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
   entry =  "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
