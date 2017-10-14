@@ -100,7 +100,7 @@
 			"moreInfo": "http://hack.dat.kiwi/"
 		},
 		{
-			"id": "10",
+			"id": "9",
 			"name": "Pwn2Win CTF",
 			"startDate": "October 20",
 			"endDate": "October 22",
@@ -111,7 +111,7 @@
 			"moreInfo": "https://pwn2win.party"
 		},
 		{
-			"id": "8",
+			"id": "10",
 			"name": "RUSecure CTF Prelims",
 			"startDate": "October 13",
 			"endDate": "December 2",
