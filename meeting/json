@@ -78,6 +78,17 @@
 			"advtopic": "Hardware Hacking with Chuck",
 			"basictopic": "Web Exploitation 2"
 		},
+    {
+      "id": "13",
+      "meetingDate": "October 22",
+      "from": "3:00pm",
+      "to": "6:00pm",
+      "location": "Johnson Center Meeting Room A",
+      "year": "2017",
+      "advlocation": "[none]",
+      "advtopic": "[none]",
+      "basictopic": "Basic Linux with Mike"
+    },
 		{
 			"id": "7",
 			"meetingDate": "October 25",
