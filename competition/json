@@ -123,14 +123,14 @@
 		},
 				{
 			"id": "12",
-			"name": "HITCON CTF Quals",
-			"startDate": "November 3",
-			"endDate": "November 5",
-			"startTime": "10pm",
-			"endTime": "9pm",
+			"name": "RC3 CTF",
+			"startDate": "November 17",
+			"endDate": "November 19",
+			"startTime": "9pm",
+			"endTime": "11:59pm",
 			"year": "2017",
 			"location": "Online",
-			"moreInfo": "http://ctf.hitcon.org/"
+			"moreInfo": "https://rc3ctf.rc3.club/"
 		}
 	]
 }
