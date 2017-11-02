@@ -22,7 +22,7 @@ h3 {
 
 <br><br>
 <h3>Meeting Info<div id="meetingdrop" class="btn-group" style='padding-left: 3%' aria-labelledby="dropdownMenuLink"></div><br><br></h3><br>
-
+<br><br><a href="https://videos.competitivecyber.club"><button type="button" id="chatjoin" id="button" class="btn btn-primary btn-large">Meeting Recordings</button></a><br><br>
 <div class='row-fluid'>
   <div class='span2' style="text-align: right;"></div>
   <div class='span8' style='text-align: center;' id='meetingcontent'>
@@ -60,7 +60,7 @@ h3 {
 </div>
 </div>
 <br><br>
-        
+
 
         <div id="footerInnerSeparator"></div>
     </div>
@@ -122,7 +122,7 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   $.each(data["meetings"], function(i, item) {
 
       time = '18:30'
-      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {      
+      if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {
         console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
         if (newid == 0) {
           newid = item['id']
