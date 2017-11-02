@@ -109,7 +109,7 @@
 			"year": "2017",
 			"advlocation": "Johnson Center Meeting Room B",
 			"advtopic": "Docker: Virtualization for Poor People",
-			"basictopic": "Scripting 2"
+			"basictopic": "Networking"
 		},
 		{
 			"id": "9",
@@ -120,7 +120,7 @@
 			"year": "2017",
 			"advlocation": "Johnson Center 239A",
 			"advtopic": "Format String with Chris (caffix)",
-			"basictopic": "Networking"
+			"basictopic": "GRIMM Challenge"
 		},
 		{
 			"id": "10",
