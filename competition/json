@@ -111,23 +111,13 @@
 			"moreInfo": "https://pwn2win.party"
 		},
 		{
-			"id": "10",
-			"name": "HITCON CTF Qualifier Round",
-			"startDate": "November 3",
-			"endDate": "November 5",
-			"startTime": "10:00pm",
-			"endTime": "9:00pm",
-			"year": "2017",
-			"location": "Online",
-			"moreInfo": "http://ctf.hitcon.org/"
-		},
-		{
 			"id": "11",
 			"name": "RC3 CTF",
 			"startDate": "November 17",
 			"endDate": "November 19",
 			"startTime": "9:00pm",
 			"endTime": "11:59pm",
+			"channel": "<#C7RDA0RE2|RC3 CTF Channel>",
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "https://rc3ctf.rc3.club/"
