@@ -1,6 +1,5 @@
 {
-	"competitions": [
-		{
+	"competitions": [{
 			"id": "0",
 			"name": "Crack the Shell",
 			"startDate": "August 12",
@@ -121,7 +120,7 @@
 			"location": "Online",
 			"moreInfo": "http://ctf.hitcon.org/"
 		},
-				{
+		{
 			"id": "12",
 			"name": "RC3 CTF",
 			"startDate": "November 17",
@@ -131,6 +130,4 @@
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "https://rc3ctf.rc3.club/"
-		}
-	]
-}
+		}]}
