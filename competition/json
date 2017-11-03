@@ -1,5 +1,6 @@
 {
-	"competitions": [{
+	"competitions": [
+		{
 			"id": "0",
 			"name": "Crack the Shell",
 			"startDate": "August 12",
