@@ -111,7 +111,7 @@
 			"moreInfo": "https://pwn2win.party"
 		},
 		{
-			"id": "11",
+			"id": "10",
 			"name": "HITCON CTF Quals",
 			"startDate": "November 3",
 			"endDate": "November 5",
@@ -122,7 +122,7 @@
 			"moreInfo": "http://ctf.hitcon.org/"
 		},
 		{
-			"id": "12",
+			"id": "11",
 			"name": "RC3 CTF",
 			"startDate": "November 17",
 			"endDate": "November 19",
