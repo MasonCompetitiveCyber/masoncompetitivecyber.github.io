@@ -1,21 +1,4 @@
-<script>
-(function() {
 
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(2000)
-            .delay(2000)
-            .fadeOut(2000, showNextQuote);
-    }
-
-    showNextQuote();
-
-})();
-</script>
 <style>
 .quotes {display: none; visibility: hidden;}
 </style>
@@ -33,10 +16,10 @@
                         <div id="divHeaderText" class="page-content">
                             <div id="maintitle">Mason Competitive Cyber</div><br />
                             <div id="subtitle">
-                                <div class="quotes">Learning Cybersecurity Through Competition</div><br />
-                                <div class="quotes">Solving Silly Little Puzzles Since 2016</div><br />
-                                <div class="quotes">Everyone's Favorite Shell Popping Patriots</div><br />
-                                <div class="quotes">Who Needs Friday Night Parties When You Can Have Binary Exploitation</div><br />
+                                <div class="quotes">Learning Cybersecurity Through Competition</div>
+                                <div class="quotes">Solving Silly Little Puzzles Since 2016</div>
+                                <div class="quotes">Everyone's Favorite Shell Popping Patriots</div>
+                                <div class="quotes">Who Needs Friday Night Parties When You Can Have Binary Exploitation</div>
                             </div>
                             <div id="meetingbutton"><a class="btn btn-large btn-primary" href="/meeting/">Key Details</a></div>
                         </div>
