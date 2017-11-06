@@ -8,7 +8,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "Android Security & APK Reverse Engineering",
 			"basictopic": "[none]"
 		},
 		{
@@ -19,7 +19,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "Writing Metasploit Payloads for Fun and Profit",
 			"basictopic": "[none]"
 		},
 		{
@@ -30,7 +30,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "Heap Exploitation",
 			"basictopic": "[none]"
 		},
 		{
@@ -41,7 +41,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "Exploitation Mitigations",
 			"basictopic": "[none]"
 		},
 		{
@@ -62,9 +62,9 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Room F",
 			"year": "2018",
-			"advlocation": "Johnson Center Gold Room",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advlocation": "Johnson Center Gold Room [likely cancellation]",
+			"advtopic": "Likely cancelled",
+			"basictopic": "Power Grid Security with PwC"
 		},
 		{
 			"id": "7",
