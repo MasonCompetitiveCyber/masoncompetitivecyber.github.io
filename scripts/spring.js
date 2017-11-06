@@ -15,9 +15,9 @@ function readSpringMeeting(id) {
 
 
 function springify(){
-  var springmode = 1
   var newid = 0
   if (springmode == 0) {
+    springmode = 1
     $.getJSON('/meeting/spring?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
       console.log(data)
@@ -129,6 +129,6 @@ function springify(){
           });
           $("#meetingtopics").html(entry)
         });
-        var springmode = 0
+        springmode = 0
       }
 }
