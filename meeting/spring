@@ -1,84 +1,84 @@
 {
 	"meetings": [
 		{
-			"id": "0",
+			"id": "1",
 			"meetingDate": "January 31",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Hackazon and more",
-			"basictopic": "Club Intro/Training CTF Challenges"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "1",
+			"id": "2",
 			"meetingDate": "February 7",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Forensics, Complete with Weird CSAW Problems",
-			"basictopic": "Web Exploitation"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "2",
+			"id": "3",
 			"meetingDate": "February 14",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "backdoorCTF practice arena",
-			"basictopic": "Linux, Scripting, and Regex"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "3",
+			"id": "4",
 			"meetingDate": "February 21",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Sam (of Kudu Dynamics) on CSAW CTF 2017 problems",
-			"basictopic": "Cryptography (not simple ciphers)"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "4",
+			"id": "5",
 			"meetingDate": "February 28",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Python and Ruby CTF scripting, Regex",
-			"basictopic": "Amazon Web Services EC2"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "5",
+			"id": "6",
 			"meetingDate": "March 7",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Room F",
 			"year": "2018",
 			"advlocation": "Johnson Center Gold Room",
-			"advtopic": "CANCELLED: GO TO BASIC IN ROOM C",
-			"basictopic": "Rob Shein of PwC on Car Hacking"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "6",
+			"id": "7",
 			"meetingDate": "March 21",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Hardware Hacking with Chuck",
-			"basictopic": "Web Exploitation 2"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "7",
+			"id": "8",
 			"meetingDate": "March 28",
 			"from": "3:00pm",
 			"to": "6:00pm",
@@ -86,62 +86,62 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room C",
 			"advtopic": "[none]",
-			"basictopic": "Basic Linux with Mike"
+			"basictopic": "[none]"
 		},
 		{
-			"id": "8",
+			"id": "9",
 			"meetingDate": "April 4",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Shellcode with Chris (caffix)",
-			"basictopic": "Forensics"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "9",
+			"id": "10",
 			"meetingDate": "April 11",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Docker: Virtualization for Poor People",
-			"basictopic": "Networking"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "10",
+			"id": "11",
 			"meetingDate": "April 18",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room C",
-			"advtopic": "Format String with Chris (caffix)",
-			"basictopic": "GRIMM Challenge"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "11",
+			"id": "12",
 			"meetingDate": "April 25",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "HackTheBox.eu (GET AN INVITE)",
-			"basictopic": "Steganography"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		},
 		{
-			"id": "12",
+			"id": "13",
 			"meetingDate": "May 2",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room G",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "DEP and ASLR Bypass with Chris (caffix)",
-			"basictopic": "Intro. Reverse Engineering"
+			"advtopic": "[none]",
+			"basictopic": "[none]"
 		}
 	]
 }
