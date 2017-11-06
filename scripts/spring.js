@@ -129,5 +129,6 @@ function springify(){
           });
           $("#meetingtopics").html(entry)
         });
+        var springmode = 0
       }
 }
