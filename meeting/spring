@@ -9,6 +9,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Android Security & APK Reverse Engineering",
+			"advby": "",
 			"basictopic": "[none]"
 		},
 		{
@@ -16,11 +17,11 @@
 			"meetingDate": "February 7",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room E",
+			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Writing Metasploit Payloads for Fun and Profit",
-			"basictopic": "[none]"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Power Grid Security with PwC",
+			"basictopic": "Power Grid Security with PwC"
 		},
 		{
 			"id": "3",
@@ -30,7 +31,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Heap Exploitation",
+			"advtopic": "Writing Metasploit Payloads",
 			"basictopic": "[none]"
 		},
 		{
@@ -41,7 +42,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Exploitation Mitigations",
+			"advtopic": "Heap Exploitation",
 			"basictopic": "[none]"
 		},
 		{
@@ -52,7 +53,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "Disk Forensics",
 			"basictopic": "[none]"
 		},
 		{
@@ -63,8 +64,8 @@
 			"location": "Johnson Center Room F",
 			"year": "2018",
 			"advlocation": "Johnson Center Gold Room [likely cancellation]",
-			"advtopic": "Likely cancelled",
-			"basictopic": "Power Grid Security with PwC"
+			"advtopic": "Pending Guest Speaker Agreement",
+			"basictopic": "Pending Guest Speaker Agreement"
 		},
 		{
 			"id": "7",
@@ -74,7 +75,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
+			"advtopic": "",
 			"basictopic": "[none]"
 		},
 		{
@@ -85,8 +86,8 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room C",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "Pending DFIR Speaker",
+			"basictopic": "Pending DFIR Speaker"
 		},
 		{
 			"id": "9",
