@@ -61,11 +61,11 @@
 			"meetingDate": "March 7",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Room F",
+			"location": "Johnson Center Room F (or Gold Room, keep posted)",
 			"year": "2018",
-			"advlocation": "Johnson Center Gold Room [likely cancellation]",
-			"advtopic": "Pending Guest Speaker Agreement",
-			"basictopic": "Pending Guest Speaker Agreement"
+			"advlocation": "Johnson Center Room F (or Gold Room, keep posted)",
+			"advtopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
+			"basictopic": "Corey Sheldon of Fedora, Ameridea on System Hardening"
 		},
 		{
 			"id": "7",
