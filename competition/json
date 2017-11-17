@@ -120,4 +120,16 @@
 			"year": "2017",
 			"location": "Online",
 			"moreInfo": "https://rc3ctf.rc3.club/"
-		}]}
+		},
+		{
+			"id": "12",
+			"name": "VMI CTF (INVITE ONLY)",
+			"startDate": "November 17",
+			"endDate": "November 19",
+			"startTime": "12:01am",
+			"endTime": "11:59pm",
+			"year": "2017",
+			"location": "VMI - INVITE ONLY",
+			"moreInfo": "https://competitivecyber.club"
+		}
+	]}
