@@ -26,11 +26,11 @@ Maxi codes are a thing<br />
 <br /><br />
 Sure enough, in the Photos directory of the virtual machine we're provided, we're met with 3 JPGs, two of which immediately load. It's worth noting I saw the "New Hint" but visited the problem before the Hint dump. Let's run some standard tools against it, such as strings.
 <br />
-<img src="/images/tuctfwriteup/threejpgs.png" width=20%>
+<img src="/images/tuctfwriteup/threejpgs.png" width=40%>
 <br /><br />
 When we try to string them, we see an immediate first part from the first JPG. In a shocking twist, the first part of the flag is TUCTF{, like literally every other problem.
 <br />
-<img src="/images/tuctfwriteup/part1strings.png" width=20%>
+<img src="/images/tuctfwriteup/part1strings.png" width=40%>
 <br /><br />
 In addition, when we strings the second file, we can't help but notice a filename at them end of the strings dump. It's a .txt file, which immediately my mind jumped to the idea it may be in a ZIP embedded in a picture because I've literally made CTF problems like that, but for those who are less CTF inclined, it's a giveaway that it's a text file yet doesn't have any strings-readable content, which means it may be compressed.
 <br />
@@ -62,8 +62,8 @@ to 00000780 makes for:<br />
 <img src="/images/tuctfwriteup/pngfix.png" ><br /><br />
 As the hint says, Maxi codes exist, but googling "qr code circle in middle" literally returns the Maxi code Wikipedia page so the hint definitely wasn't necessary. I downloaded an iPhone app to translate the Maxi Code and got the third portion: InThePixels}
 <br /><br />
-<img src="/images/tuctfwriteup/scanning-maxi.png" style="width: 10%">
-<img src="/images/tuctfwriteup/scanned-maxi.png" style="width: 10%">
+<img src="/images/tuctfwriteup/scanning-maxi.png" style="width: 30%">
+<img src="/images/tuctfwriteup/scanned-maxi.png" style="width: 30%">
 
 <br /><br />
 Full flag: <i>TUCTF{DevilsInThePixels}</i>. Thank you to the University of Tulsa's asciioverflow for putting on a great event and thank you for the rest of MasonCC0 for competing with me.
