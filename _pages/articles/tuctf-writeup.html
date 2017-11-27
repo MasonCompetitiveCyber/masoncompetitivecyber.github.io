@@ -1,0 +1,72 @@
+---
+layout: article
+permalink: /articles/tuctf-thousand-words/
+title:
+description: "Mason CC"
+---
+<h3>Worth a Thousand Words Writeup</h3>
+<b>By Michael Bailey</b>
+<p>
+I figured I'd take the opportunity to cover a recent 100 point problem from TUCTF, which ended Nov 26 at 6pm, that I really took a personal interest in.<br /><br />
+Challenge Text:<br />
+<code>
+Worth a Thousand Words<br />
+<br />
+I guess it's a little vain, but oh well<br />
+<br />
+New Hint: The aspect ratio is 16:9<br />
+<br />
+<br />
+Hint dump:<br />
+3 pictures in the folder<br />
+Each has part of the flag<br />
+Aspect ratio for pic 3 is 16x9<br />
+Maxi codes are a thing<br />
+</code>
+<br /><br />
+Sure enough, in the Photos directory of the virtual machine we're provided, we're met with 3 JPGs, two of which immediately load. It's worth noting I saw the "New Hint" but visited the problem before the Hint dump. Let's run some standard tools against it, such as strings.
+<br /><br />
+<img src="/images/tuctfwriteup/threejpgs.png" width=20%>
+<br /><br />
+When we try to string them, we see an immediate first part from the first JPG. In a shocking twist, the first part of the flag is TUCTF{, like literally every other problem.
+<br />
+<img src="/images/tuctfwriteup/part1strings.png" width=20%>
+<br /><br />
+In addition, when we strings the second file, we can't help but notice a filename at them end of the strings dump. It's a .txt file, which immediately my mind jumped to the idea it may be in a ZIP embedded in a picture because I've literally made CTF problems like that, but for those who are less CTF inclined, it's a giveaway that it's a text file yet doesn't have any strings-readable content, which means it may be compressed.
+<br />
+<img src="/images/tuctfwriteup/part2strings.png" width=20%>
+<br /><br />
+As such, introducing one of my more common tools: <b>foremost</b>. People also like scalpel but if foremost doesn't work, I only use scalpel as a last resort. Foremost is used to carve files out of other files. As images have strict endings and can have basically anything thrown on the end of them, they're popular targets to have data embedded in them so it's never a bad idea to run foremost against them. It never hurts to run tools in a CTF.
+<br />
+<img src="/images/tuctfwriteup/foremost.png" width=20%>
+<br />Sure enough, we get a ZIP file. Unzip it and we get the next flag.<br /><br />
+Thus far we're up to <i>TUCTF{Devil
+<br /><br />
+Time for the tricky one: 3.jpg. The broken JPG. Well, it's broken, but it's not really a JPG. Strings reveals it starts with "PNGSARECOOLER" and has a variety of bytes consistent with PNGs, such as IHDR and IDAT.
+<br /><br />
+<img src="/images/tuctfwriteup/pngstrings.png" width=20% ><br /><br />
+If we take a known good PNG, it becomes pretty easy to copy-paste over the hex in any hex editor (I use Hex Fiend), the header and rename the file to 3.png. But this still isn't enough to make it readable.
+<br />
+<img src="/images/tuctfwriteup/pngfix.gif"><br /><br />
+We turn our attention to the hint at this point, which clarifies it's aspect ratio. If we look at the image's properties, we see it's set to a ridiculous width. File clarifies it's 1375733632 x 1080.
+<br /><br />
+<code>
+⇒  file 3.png
+3.png: PNG image data, 1375733632 x 1080, 8-bit/color RGBA, interlaced
+</code>
+<br /><br />
+I went writeup diving from here and saw <a href="https://github.com/ctfs/write-ups-2015/tree/master/seccon-quals-ctf-2015/stegano/steganography-2">this.</a> It basically clarified everything. I saw after the IHDR bit in the hex, <a href="http://www.binaryhexconverter.com/decimal-to-hex-converter">using my handy dandy decimal to hex converter</a>, 52000780 was representing the width. Since the hint specifies 16x9 and clearly 1375733632 is the wrong amount, we want it to be 1920 (napkin math says so, 1080/9 * 16 = 1920) x 1080. Using our past convertor, the bytes we want is not 52000780, but rather 780. Meaning all we have to do is null out the "52" byte to make it 00000780.
+<br />
+<img src="/images/tuctfwriteup/pngbytes.png"><br />
+to:<br />
+<img src="/images/tuctfwriteup/pngfixed.png"><br />
+makes for:<br />
+<img src="/images/tuctfwriteup/pngfixed.png"><br /><br />
+As the hint says, Maxi codes exist, but googling "qr code circle in middle" literally returns the Maxi code Wikipedia page so the hint definitely wasn't necessary. I downloaded an iPhone app to translate the Maxi Code and got the third portion: InThePixels}
+<br /><br />
+<img src="/images/tuctfwriteup/scanning-maxi.png">
+<img src="/images/tuctfwriteup/scanned-maxi.png">
+
+<br /><br />
+Full flag: <i>TUCTF{DevilsInThePixels}</i>. Thank you to the University of Tulsa's asciioverflow for putting on a great event and thank you for the rest of MasonCC0 for competing with me.
+</p>
