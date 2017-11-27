@@ -34,17 +34,17 @@ When we try to string them, we see an immediate first part from the first JPG. I
 <br /><br />
 In addition, when we strings the second file, we can't help but notice a filename at them end of the strings dump. It's a .txt file, which immediately my mind jumped to the idea it may be in a ZIP embedded in a picture because I've literally made CTF problems like that, but for those who are less CTF inclined, it's a giveaway that it's a text file yet doesn't have any strings-readable content, which means it may be compressed.
 <br />
-<img src="/images/tuctfwriteup/part2strings.png" width=20%>
+<img src="/images/tuctfwriteup/part2strings.png" style="width: 20%">
 <br /><br />
 As such, introducing one of my more common tools: <b>foremost</b>. People also like scalpel but if foremost doesn't work, I only use scalpel as a last resort. Foremost is used to carve files out of other files. As images have strict endings and can have basically anything thrown on the end of them, they're popular targets to have data embedded in them so it's never a bad idea to run foremost against them. It never hurts to run tools in a CTF.
 <br />
-<img src="/images/tuctfwriteup/foremost.png" width=20%>
+<img src="/images/tuctfwriteup/foremost.png" style="width: 20%">
 <br />Sure enough, we get a ZIP file. Unzip it and we get the next flag.<br /><br />
 Thus far we're up to <i>TUCTF{Devil
 <br /><br />
 Time for the tricky one: 3.jpg. The broken JPG. Well, it's broken, but it's not really a JPG. Strings reveals it starts with "PNGSARECOOLER" and has a variety of bytes consistent with PNGs, such as IHDR and IDAT.
 <br /><br />
-<img src="/images/tuctfwriteup/pngstrings.png" width=20% ><br /><br />
+<img src="/images/tuctfwriteup/pngstrings.png" style="width: 20%" ><br /><br />
 If we take a known good PNG, it becomes pretty easy to copy-paste over the hex in any hex editor (I use Hex Fiend), the header and rename the file to 3.png. But this still isn't enough to make it readable.
 <br />
 <img src="/images/tuctfwriteup/pngfix.gif"><br /><br />
@@ -59,7 +59,7 @@ I went writeup diving from here and saw <a href="https://github.com/ctfs/write-u
 <br />
 <img src="/images/tuctfwriteup/pngbytes.png"><br />
 to 00000780 makes for:<br />
-<img src="/images/tuctfwriteup/pngfix.png"><br /><br />
+<img src="/images/tuctfwriteup/pngfix.png" ><br /><br />
 As the hint says, Maxi codes exist, but googling "qr code circle in middle" literally returns the Maxi code Wikipedia page so the hint definitely wasn't necessary. I downloaded an iPhone app to translate the Maxi Code and got the third portion: InThePixels}
 <br /><br />
 <img src="/images/tuctfwriteup/scanning-maxi.png" style="width: 10%">
