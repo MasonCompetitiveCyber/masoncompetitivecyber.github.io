@@ -123,12 +123,23 @@
 		},
 		{
 			"id": "12",
+			"name": "Juniors CTF",
+			"startDate": "December 1",
+			"endDate": "December 3",
+			"startTime": "11:00am",
+			"endTime": "11:00am",
+			"year": "2017",
+			"location": "Online",
+			"moreInfo": "https://ctftime.org/event/537"
+		},
+		{
+			"id": "12",
 			"name": "VMI CTF (INVITE ONLY)",
 			"startDate": "February 23",
 			"endDate": "February 24",
 			"startTime": "12:01am",
 			"endTime": "11:59pm",
-			"year": "2017",
+			"year": "2018",
 			"location": "VMI - INVITE ONLY",
 			"moreInfo": "https://competitivecyber.club"
 		}
