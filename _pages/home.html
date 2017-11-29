@@ -166,7 +166,7 @@ description: "Mason CC"
       $.each(data["competitions"], function(i, item) {
       console.log('Iterating')
       console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
-      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
+      if ( Date.now() - Date.parse(item["startDate"] +  ' '  +  item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
           if (item["startDate"] == item["endDate"]){
           entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a><br>'
@@ -182,7 +182,7 @@ description: "Mason CC"
       console.log('JSON data loaded')
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
-        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
+        if ( Date.now() - Date.parse(item["meetingDate"] +  '  11:59pm  ' + item["year"]) < 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
           $("#location").html(item['location'])
           $("#start").html(item['from'])
