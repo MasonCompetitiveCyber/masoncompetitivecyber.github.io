@@ -182,7 +182,7 @@ description: "Mason CC"
       console.log('JSON data loaded')
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
-        if ( Date.now()-1 - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 0) {
+        if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]) < 1) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
           $("#location").html(item['location'])
           $("#start").html(item['from'])
@@ -190,6 +190,8 @@ description: "Mason CC"
           $("#advloc ").html(item['advlocation'])
           $('#date').html(item['meetingDate'])
           return false;
+        } else {
+          console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
         }
       });
     });
