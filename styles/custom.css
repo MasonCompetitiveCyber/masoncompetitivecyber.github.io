@@ -326,7 +326,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
  .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#399957;}
 
-#divHeaderText {padding-top: 200px; padding-bottom: 30px; border-color: rgb(51, 51, 51); text-align: left;}
+#divHeaderText {padding-top: 75px; padding-bottom: 0px; border-color: rgb(51, 51, 51); text-align: left;}
 
 #decorative2{background-image:-moz-linear-gradient(bottom,#369656,#40ac62);background-image:-o-linear-gradient(bottom,#369656,#40ac62);background-image:-webkit-gradient(linear,left top, left bottom,from(#369656),to(#40ac62));background-image:-webkit-linear-gradient(bottom,#369656,#40ac62);background-image:linear-gradient(to bottom,#40ac62,#369656);background-image:linear-gradient(bottom,#369656,#40ac62);}
 
