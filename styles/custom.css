@@ -221,7 +221,7 @@ body{background-image: none; background-position: initial initial; background-re
 
 #divSiteTitle{font-family: 'Century Gothic', sans-serif; color: rgb(255, 255, 255); font-size: 28px; text-shadow: none; line-height: 42px; letter-spacing: 2px; text-transform: uppercase; font-weight: normal; font-style: normal;}
 
-#divTagLine {font-family: 'Century Gothic', sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 5px; line-height: 22px; color: rgb(255, 255, 255); text-shadow: none; padding-left: 3px; padding-right: 3px; font-weight: normal; font-style: normal;}
+#divTagLine {font-family: 'Abel, sans-serif', sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; line-height: 22px; color: rgb(255, 255, 255); text-shadow: none; padding-left: 3px; padding-right: 3px; font-weight: normal; font-style: normal;}
 
 .navContainer {margin-top: 0px; }
 
