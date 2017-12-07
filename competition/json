@@ -134,6 +134,17 @@
 		},
 		{
 			"id": "13",
+			"name": "Hack the Holidays",
+			"startDate": "December 16",
+			"endDate": "December 16",
+			"startTime": "10:00am",
+			"endTime": "4:00pm",
+			"year": "2018",
+			"location": "613 Global Way, Linthicum Heights, MD",
+			"moreInfo": "https://hackeducate.com/holidays.pdf"
+		},
+		{
+			"id": "14",
 			"name": "CyberFusion",
 			"startDate": "February 23",
 			"endDate": "February 24",
