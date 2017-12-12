@@ -133,25 +133,25 @@
 			"moreInfo": "https://ctftime.org/event/537"
 		},
 		{
-			"id": "13",
-			"name": "Hack the Holidays",
-			"startDate": "December 16",
-			"endDate": "December 16",
-			"startTime": "10:00am",
-			"endTime": "4:00pm",
-			"year": "2018",
-			"location": "613 Global Way, Linthicum Heights, MD",
-			"moreInfo": "https://hackeducate.com/holidays.pdf"
-		},
-		{
 			"id": "14",
-			"name": "CyberFusion",
+			"name": "Cyber Fusion",
 			"startDate": "February 23",
 			"endDate": "February 24",
 			"startTime": "12:01am",
 			"endTime": "11:59pm",
 			"year": "2018",
-			"location": "VMI - INVITE ONLY - DO NOT ASK US FOR AN INVITE",
-			"moreInfo": "https://competitivecyber.club"
+			"location": "VMI - INVITE ONLY - LOCKED REGISTRATION",
+			"moreInfo": "http://conferences.vmi.edu/cyberfusion/"
+		},
+		{
+			"id": "15",
+			"name": "CryptoParty CTF",
+			"startDate": "March 3",
+			"endDate": "March 3",
+			"startTime": "10:30am",
+			"endTime": "6:00pm",
+			"year": "2018",
+			"location": "The HUB",
+			"moreInfo": "https://cryptoparty.gmu.io"
 		}
 	]}
