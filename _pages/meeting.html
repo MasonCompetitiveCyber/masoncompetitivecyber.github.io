@@ -1,9 +1,11 @@
 ---
 layout: default
-permalink: /mediummeeting/
-title: CC Meetings
+permalink: /meeting/
+title: Meetings
 description: "Mason CC Meetings"
 ---
+<script src='/scripts/spring.js?bust=2'></script>
+
 <style>
 .btn-group {
   padding-left: 10%;
@@ -11,53 +13,116 @@ description: "Mason CC Meetings"
 h3 {
   text-align: center;
 }
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2d7845;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2d7845;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+Try it Yourself »
+
 </style><br><br>
 <div class='row-fluid'>
   <div class='span1'></div>
   <div class='span10'>
+  Mason CC has two concurrent meetings: Basic and advanced, though difficulty varies per topic and should be considered individually, not based on the track. Topics are slightly tentative to best accomodate guest speakers. <a href="/oldmeeting/">Looking for the old interface?</a> It still works!<center><br><br><a href="https://videos.competitivecyber.club"><button type="button" style="padding-right: 10px;" id="button" class="btn btn-info btn-medium">Meeting Recordings</button></a>
 
-  <b>All meetings are Wednesday 5-6pm unless otherwise noted.</b> Mason CC has two concurrent meetings: Basic and advanced. How advanced the advanced track is depends on the topic and speaker heavily. Feel free to ask questions in Slack. Topics are slightly tentative to best accomodate guest speakers. Please click the button to set your meeting. <a href="/oldmeeting/">Looking for the old interface?</a> It still works!
+    <a href="https://go.gmu.edu/masonccbeginners"><button type="button" style="padding-right: 10px;"  id="button" class="btn btn-info btn-medium">Starting Out?</button></a>
+
+  </a><a href="https://go.gmu.edu/cctraining"><button type="button" style="padding-right: 10px;"  id="button" class="btn btn-info btn-medium">Resources (includ. Slides)</button></a><br><br>
+
+</center>
   </div>
   <div class='span1'></div>
 </div>
 
 <br><br>
-<h3>Meetings</h3><br>
 
 
 <div class='row-fluid'>
-  <div class='span4' style="text-align: right;">
-    <div id="meetingdrop" class="btn-group" aria-labelledby="dropdownMenuLink"></div><br><br>
-  </div>
-  <div class='span6' style='text-align: left; padding-left: 5%' id='meetingcontent'>
 
+  <div class='span1' style="text-align: right;"></div>
+  <div class='span5' style='text-align: center;' >
+    <h3>Meeting Info
+      <div id="meetingdrop" class="btn-group" style='padding-left: 3%' aria-labelledby="dropdownMenuLink"></div><br>
+
+      <br></h3><br>
+
+  <div id='meetingcontent'></div><br /><!--
+  <br />Spring Preview<br />Please note everything about the Spring is basically a guess<br /><label class="switch">
+            <input type="checkbox" onclick="springify()">
+            <span class="slider round"></span>
+          </label><br />
+-->  </div>
+  <div class='span5' style='text-align: center;' >
+    <h3>Future Competitions<div id="cdrop" style='padding-left: 3%' class="btn-group" aria-labelledby="dropdownMenuLink"></div><br><br></h3>
+    <div id='competitionfield'></div>
   </div>
+  <div class='span1' style="text-align: right;"></div>
 </div>
 <br><br>
-<h3>Planned Competitions to Attend</h3>
-<table class="table table-bordered table-striped" id="data">
-
-</table>
 <br><br>
-<h3>In Person Under Consideration Events</h3>
-
-<table class="table table-bordered table-striped">
-<tr>
-  <th>Date and Time</th>
-  <th>Location</th>
-  <th>Event</th>
-</tr>
-<tr>
-<td>February 23 – March 1, 2017**</td>
-<td>GMU (then regionals maybe at Johns Hopkins)**</td>
-<td>MACCDC</td>
-</tr>
-</table>
-
-**We have to acquire the registration fee and a mentor. It will be a limited team. MACCDC hasn't released exact dates.
 
 </div>
+
+<hr>
+<center>
+<h3>Upcoming Events</h3>
+<b>CryptoParty - March 3rd 2018 - <a href="https://cryptoparty.gmu.io">Link</a></b>
 </div>
+</center>
 <br><br>
 
 
@@ -67,41 +132,48 @@ h3 {
 </div>
 
 <script>
+
+
+function readCompetition(id) {
     $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
-      console.log('JSON data loaded')
-      console.log(data)
-      entry = "<tr><th>Date and Time</th><th>Location</th><th>Event</th></tr>"
-      $.each(data["competitions"], function(i, item) {
-      console.log('Iterating')
-      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
-      if ( Date.now() - Date.parse(item["startDate"] +  ' ' +  item["year"]) < 0) {
-          console.log(Date.now() - Date.parse(item["startDate"] +  item["year"]))
-          if (item["startDate"] == item["endDate"]){
-          entry = entry + "<tr><td>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
-          } else {
-            entry = entry + "<tr><td>" + item["startDate"] + ' ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</td><td>' + item["location"] + '</td><td>' + item["name"] + '</td></tr>'
-          }
-          console.log(entry)
-        } else {
-          if (item["startDate"] == item["endDate"]){
-          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
-        } else {
-          entry = entry + "<tr><td><b>✓</b><strike>" + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '</strike></td><td><strike>' + item["location"] + '</strike></td><td><strike>' + item["name"] + '</strike></td></tr>'
-        }
-        }
-      });
-      $("#data").html(entry)
-    });
-</script>
-<script>
+    console.log('JSON data loaded')
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    $.each(data["competitions"], function(i, item) {
+    if ( id == item['id'] ){
+      $('#compbutton').html(item['name']+'<span class=\'caret\'></span>')
+      data = 'Name:  <b>' + item['name'] + '</b><br>Starts: <b>' +  item['startDate'] + ' ' + item['startTime'] + '</b><br>Ends: <b>' + item['endDate'] + ' ' + item['endTime'] + '</b><br>Location: <b>' + item['location'] + '<br><a href="' + item['moreInfo'] + '">More info</a>'
+      $('#competitionfield').html(data)
+    };
+
+    })})
+};
+
+
+var newbit = 0;
+$.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(data) {
+  entry =  "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  $.each(data["competitions"], function(i, item) {
+  console.log(Date.parse(item["endDate"] + ' ' + item["year"]))
+  if ( Date.now() - Date.parse(item["endDate"] +  ' ' +  item["year"] + ' ' + '23:59') < 0) {
+      if (newbit == 0) {
+        newbit = item['id']
+      }
+        entry = entry + "<li class='selectorbs'><a href=javascript:readCompetition(" + item['id'] + ")>" + item["name"] + "</a></li>"
+    }
+  });
+  entry = entry + '</ul></button>'
+  readCompetition(newbit)
+  $("#cdrop").html(entry)
+});
+
 function readMeeting(id) {
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
-    entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
-      $('button.btn.btn-primary.dropdown-toggle').html(item['meetingDate']+'<span class=\'caret\'></span>')
-      data = 'On ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b>.'
+      $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
+      data = 'On Wednesday, ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from 5-6pm.'
       $('#meetingcontent').html(data)
     };
 
@@ -110,12 +182,10 @@ var newid = 0
 $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
   console.log('JSON data loaded')
   console.log(data)
-  entry = "<button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
+  entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
   $.each(data["meetings"], function(i, item) {
-  console.log('Iterating')
-  console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
 
-      time = '23:00'
+      time = '18:30'
       if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {
         console.log(Date.now() - Date.parse(item["meetingDate"] +  item["year"]))
         if (newid == 0) {
@@ -132,9 +202,6 @@ $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data
   readMeeting(newid)
   $("#meetingdrop").html(entry)
 });
-</script>
-
-<script>
     $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
       console.log(data)
