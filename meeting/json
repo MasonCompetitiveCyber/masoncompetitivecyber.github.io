@@ -10,7 +10,7 @@
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Android Security & APK Reverse Engineering",
 			"advby": "",
-			"basictopic": "[none]"
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "2",
@@ -32,7 +32,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Writing Metasploit Payloads",
-			"basictopic": "[none]"
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "4",
@@ -43,7 +43,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Heap Exploitation",
-			"basictopic": "[none]"
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "5",
@@ -54,7 +54,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Disk Forensics",
-			"basictopic": "[none]"
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "6",
@@ -76,7 +76,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "",
-			"basictopic": "[none]"
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "8",
@@ -97,8 +97,8 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "[none set]",
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "10",
@@ -108,8 +108,8 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "[none set]",
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "11",
@@ -119,8 +119,8 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room C",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "[none set]",
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "12",
@@ -130,8 +130,8 @@
 			"location": "Johnson Center Meeting Room G",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "[none set]",
+			"basictopic": "[none set]"
 		},
 		{
 			"id": "13",
@@ -141,8 +141,8 @@
 			"location": "Johnson Center Meeting Room G",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "[none]",
-			"basictopic": "[none]"
+			"advtopic": "[none set]",
+			"basictopic": "[none set]"
 		}
 	]
 }

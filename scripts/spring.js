@@ -7,7 +7,7 @@ function readSpringMeeting(id) {
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
       $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
-      data = 'On Wednesday, ' + item['meetingDate'] + ' basic training will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas advanced will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from 5-6pm.'
+      data = 'On Wednesday, ' + item['meetingDate'] + ' yellow track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas green track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from 5-6pm.'
       $('#meetingcontent').html(data)
     };
 
@@ -44,7 +44,7 @@ function springify(){
         $.getJSON('/meeting/spring?nocache=' + (new Date()).getTime(), null, function(data) {
           console.log('JSON data loaded')
           console.log(data)
-          entry = "<tr><th>Date</th><th>Basic Topic</th><th>Advanced Topic</th></tr>"
+          entry = "<tr><th>Date</th><th>Yellow Track</th><th>Green Track</th></tr>"
           $.each(data["meetings"], function(i, item) {
           console.log('Iterating')
           console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
@@ -100,7 +100,7 @@ function springify(){
         $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function(data) {
           console.log('JSON data loaded')
           console.log(data)
-          entry = "<tr><th>Date</th><th>Basic Topic</th><th>Advanced Topic</th></tr>"
+          entry = "<tr><th>Date</th><th>Yellow Track</th><th>Green Track</th></tr>"
           $.each(data["meetings"], function(i, item) {
           console.log('Iterating')
           console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
