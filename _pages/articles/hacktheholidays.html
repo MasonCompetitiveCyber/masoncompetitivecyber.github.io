@@ -10,15 +10,15 @@ description: "Mason CC"
   <p>Hack The Holidays hosted by HackEducate was an event we sent a small team to held on 613 Global Way, Linthicum Heights, MD. CC did relatively okay, placing 5th out of 8 in a competiton that involved larger company teams. We did enjoy the problems, especially when infrastructure becomes a PART of the problem, rather than the orgaizers just uploading files. <b>They also did an exceptional job getting a venue together, food, etc.</b> Below we are going to break down a few of the problems we liked, but it's important to note a few problems relied on tools like DirBuster, which utilize brute forcing. Especially when networking is problematic (which it was), CC does not brute force in any fashion because it's against rules in a variety of competitions, so we didn't last long in 1st place. Please note some of this is off of memory.</p>
   <br />
   <br />
-  </div><div class="span3">
+  </div><div class="span6">
   <img src="https://farm5.staticflickr.com/4734/24242800997_fa72c947df_h.jpg"/>
   </div>
 </div>
 <div class="row">
-  <div class="span3">
+  <div class="span4">
   <img src="https://pbs.twimg.com/media/DRLvrWmWAAYc0Pu.jpg:large"/>
   </div>
-  <div class="span6">
+  <div class="span8">
     <p>CC scored a total of approximately 875. Problems ranged from 50-500 points, with them mostly coming in two stages: One problem to get read access on a box, one to get root on that box. The total was as such:
       <ul>
         <li>Subdomain Hijack - Value: 500 (only one team was allowed to solve this)</li>
@@ -43,17 +43,17 @@ description: "Mason CC"
   </div>
 </div>
 <div class="row">
-<div class="span6">
-  Without further ado, let's get into our nest egg problem, the "Sudomain Hijack" problem. You had to take over test.hackedctf.com, which is exhibited by hosting content at that domain. It was a relatively simple one, largely predicated on knowledge of AWS S3, a storage service run by Amazon Web Services. It's largely known as a storage service, but it also works as a static website hosting service. As a result of this, you can point your domain to it and ccreate a bucket (effectively a top level folder, if you aren't familiar with AWS) by the name of that domain in AWS, hosting your content there.
-</div>
-<div class="span6">
-  <img src="/images/nosuchbucket.png" />
-<br />
-<i>Fig 1. Simulated Example of NoSuchBucket in AWS S3, what you'd see if the bucket is not created but the domain is pointed at S3</i>
-<br /><br />
-<img src="/images/accessdenied.png" />
-<br />
-<i>Fig 2. Simulated Example of Access Denied in AWS S3, what you'd see if the bucket is parked but content isn't being served</i>
-</div>
+  <div class="span6">
+    Without further ado, let's get into our nest egg problem, the "Sudomain Hijack" problem. You had to take over test.hackedctf.com, which is exhibited by hosting content at that domain. It was a relatively simple one, largely predicated on knowledge of AWS S3, a storage service run by Amazon Web Services. It's largely known as a storage service, but it also works as a static website hosting service. As a result of this, you can point your domain to it and ccreate a bucket (effectively a top level folder, if you aren't familiar with AWS) by the name of that domain in AWS, hosting your content there.
+  </div>
+  <div class="span6">
+    <img src="/images/nosuchbucket.png" />
+  <br />
+  <i>Fig 1. Simulated Example of NoSuchBucket in AWS S3, what you'd see if the bucket is not created but the domain is pointed at S3</i>
+  <br /><br />
+  <img src="/images/accessdenied.png" />
+  <br />
+  <i>Fig 2. Simulated Example of Access Denied in AWS S3, what you'd see if the bucket is parked but content isn't being served</i>
+  </div>
 <br/>
 </div>
