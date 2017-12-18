@@ -93,8 +93,11 @@ msf > use linux/http/<span style="background-color: black;color: red;">webcalend
 <br />
            Id  Name<br />
            --  ----<br />
-           0   WebCalendar 1.2.4 on Linux<br />
+           0   WebCalendar 1.2.4 on Linux<br /><br />
 
+    </p>
+    <p>
+      Ultimately, you'd find yourself with a standard shell.
     </p>
   </div>
   <div class="span6">
@@ -106,9 +109,17 @@ msf > use linux/http/<span style="background-color: black;color: red;">webcalend
   <div class="span6">
     <b>Web Admin</b>
     <br />
-    Web Admin was compounded on the prior problem involving the shell we got in Web User.
+    <p>Web Admin was compounded on the prior problem involving the shell we got in Web User. It involved a misuse of the system() call. In /home/leo/ on the system, the only user with a home directory, you found a <b>run</b> binary with <a href="https://en.wikipedia.org/wiki/Setuid">setuid</a> set and root ownership. When it executes, it executes as root. Any static analysis at all, which we did by base64'ing the file a la <i>base64 /home/leo/run</i>, copying the base64 of the file, then decoding it back into the file and throwing it in our team's comms channel, reveals it simply ran <i>system("cat /etc/passwd")</i> in C. <a href="https://www.go4expert.com/articles/exploit-c-t24920/">This is not a new vulnerability,</a> and I've seen it in a CTF when they made Twitch collectively exploit a binary in a "Twitch plays" fashion (the chat votes on the keystrokes), but the idea rests on the fact that "cat"'s location is decided by the PATH variable, which is under the user's control. Running <i>export PATH=/tmp:$PATH</i> means if you put a valid executable named /tmp/cat (must chmod +x to make it executable). I made /tmp/cat a one line shell script, first running ls /root to reveal a flag.txt file, then doing cat /root/flag.txt. The issue here is that you just broke cat to fix this. I caused an infinite loop on multiple occasions and kept having to kill my session and re-exploit. Ultimately, creating a one line shell script in /tmp/cat and invoking /home/leo/run results in the execution of /tmp/cat and as such, reading the flag.txt to the shell.</p>
   </div>
   <div class="span6">
     <b>Git User 2</b>
+    <br />
+    <p>Git User 2 was interesting, because it was both a Gitlist server at port 80 and a Jenkins server at port 8080. I should disclose we used our (only) hint on this challenge. Gitlist was running a vulnerable version (0.4) and was succeptable to a no-auth RCE. The exploit code is available at the bottom of the blog (safe to click) <a href="http://hatriot.github.io/blog/2014/06/29/gitlist-rce/">here</a>. The biggest pain is you have to consider the system, and how the exploit makes assumptions on infrastructure. It assumes you're attaching /var/www/gitlist, but we're attacking /var/www/html. Setting /var/www/html gives us a simple PHP shell, and if we change our base64 payload to a more complex PHP shell, which we spent too much time on, we're granted that. We then used that shell to find the flag and read it.</p>
   </div>
+</div>
+
+<div class="row" style="padding-top: 5%">
+  <div class="span4"></div>
+  <div class="span4" style="text-align: center"><h3>Thank you HackEd!</h3></div>
+  <div class="span4"></div>
 </div>
