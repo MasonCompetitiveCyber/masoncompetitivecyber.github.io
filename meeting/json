@@ -9,8 +9,8 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room E",
 			"advtopic": "CC Intro + Profiling & Dissecting a Web App: Recon to Probing",
-			"advby": "CC Intro + ",
-			"basictopic": "[none set]"
+			"advby": "",
+			"basictopic": "CC Intro +  ..."
 		},
 		{
 			"id": "2",
@@ -32,7 +32,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Love our Logs: Using Splunk to identify threats and patterns",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "4",
@@ -43,7 +43,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Heap Exploitation with @caffix",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "5",
@@ -54,7 +54,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Disk Forensics",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "6",
@@ -76,7 +76,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "8",
@@ -120,7 +120,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Android Security & APK Reverse Engineering",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "12",
@@ -131,7 +131,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Writing Metasploit Payloads",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		},
 		{
 			"id": "13",
@@ -142,7 +142,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Pending Hopeful Cryptography Member Talk",
-			"basictopic": "[none set]"
+			"basictopic": "[topic not yet declared]"
 		}
 	]
 }
