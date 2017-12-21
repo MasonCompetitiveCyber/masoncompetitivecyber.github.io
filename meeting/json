@@ -8,7 +8,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room E",
-			"advtopic": "Android Security & APK Reverse Engineering",
+			"advtopic": "Profiling & Dissecting a Web App: Recon to Probing",
 			"advby": "",
 			"basictopic": "[none set]"
 		},
@@ -31,7 +31,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Writing Metasploit Payloads",
+			"advtopic": "Love our Logs: Using Splunk to identify threats and patterns",
 			"basictopic": "[none set]"
 		},
 		{
@@ -75,7 +75,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Profiling & Dissecting a Web App: Recon to Probing",
+			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
 			"basictopic": "[none set]"
 		},
 		{
@@ -108,8 +108,8 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none set]",
-			"basictopic": "[none set]"
+			"advtopic": "Pending Career Services Speaker",
+			"basictopic": "Pending Career Services Speaker"
 		},
 		{
 			"id": "11",
@@ -119,7 +119,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none set]",
+			"advtopic": "Android Security & APK Reverse Engineering",
 			"basictopic": "[none set]"
 		},
 		{
@@ -130,7 +130,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none set]",
+			"advtopic": "Writing Metasploit Payloads",
 			"basictopic": "[none set]"
 		},
 		{
@@ -141,7 +141,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[none set]",
+			"advtopic": "Pending Hopeful Cryptography Member Talk",
 			"basictopic": "[none set]"
 		}
 	]
