@@ -133,18 +133,18 @@
 			"moreInfo": "https://ctftime.org/event/537"
 		},
 		{
-			"id": "14",
+			"id": "13",
 			"name": "AWS Security Coding Challenge",
 			"startDate": "December 21",
 			"endDate": "December 21",
 			"startTime": "9:30am",
 			"endTime": "1:00pm",
-			"year": "2018",
+			"year": "2017",
 			"location": "AWS's Herndon Worldgate Office",
 			"moreInfo": "https://twitter.com/masoncompcyber/status/943896249358483456"
 		},
 		{
-			"id": "15",
+			"id": "14",
 			"name": "Cyber Fusion",
 			"startDate": "February 23",
 			"endDate": "February 24",
@@ -155,7 +155,7 @@
 			"moreInfo": "http://conferences.vmi.edu/cyberfusion/"
 		},
 		{
-			"id": "16",
+			"id": "15",
 			"name": "CryptoParty CTF",
 			"startDate": "March 3",
 			"endDate": "March 3",
