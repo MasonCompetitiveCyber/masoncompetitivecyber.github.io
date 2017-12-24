@@ -269,7 +269,7 @@ h1 {font-family: 'Source Sans Pro', sans-serif; font-weight: normal; font-style:
 
 .sidebox a{color: rgb(54, 150, 86);}
 
-#decorative1{position: relative; background-color: rgb(240, 240, 240); background-image: url(images/GRIMM_meeting.jpg); -webkit-background-size: cover; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;
+#decorative1{position: relative; background-color: rgb(240, 240, 240); background-image: url(/images/GRIMM_meeting.jpg); -webkit-background-size: cover; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;
 -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
 -moz-box-shadow:    0px 3px 11px rgba(0, 0, 0, 0.7);
 box-shadow:         0px 3px 11px rgba(0, 0, 0, 0.7);}
