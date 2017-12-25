@@ -10,7 +10,7 @@
 			"advlocation": "Johnson Center Meeting Room E",
 			"advtopic": "CC Intro + Profiling & Dissecting a Web App: Recon to Probing",
 			"advby": "",
-			"basictopic": "CC Intro +  ..."
+			"basictopic": "CC Intro +  Scanning & Attacking Hosts (metasploit/nmap)"
 		},
 		{
 			"id": "2",
@@ -32,7 +32,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Love our Logs: Using Splunk to identify threats and pattern",
-			"basictopic": "[topic not yet declared]"
+			"basictopic": "Video Game Reversing (such as NES Emulators)"
 		},
 		{
 			"id": "4",
@@ -43,7 +43,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Heap Exploitation with @caffix",
-			"basictopic": "[topic not yet declared]"
+			"basictopic": "Physical Security, Lockpicking, & NFC"
 		},
 		{
 			"id": "5",
@@ -53,8 +53,8 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Disk Forensics",
-			"basictopic": "[topic not yet declared]"
+			"advtopic": "Post-Exploitation: Understanding your position and Priv-Esc",
+			"basictopic": "Host Based Forensics"
 		},
 		{
 			"id": "6",
@@ -76,7 +76,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
-			"basictopic": "[topic not yet declared]"
+			"basictopic": "Antivirus Evasion"
 		},
 		{
 			"id": "8",
