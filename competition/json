@@ -164,6 +164,16 @@
 			"year": "2018",
 			"location": "The HUB",
 			"moreInfo": "https://cryptoparty.gmu.io"
+		},
+		{
+			"id": "16",
+			"name": "VT Summit",
+			"startDate": "March 17",
+			"endDate": "March 17",
+			"startTime": "12:01am",
+			"endTime": "11:59pm",
+			"year": "2018",
+			"location": "Blacksburg, VA",
+			"moreInfo": "https://competitivecyber.club/articles/vtsummit/"
 		}
-
 	]}
