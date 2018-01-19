@@ -8,7 +8,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room E",
-			"advtopic": "CC Intro + Profiling & Dissecting a Web App: Recon to Probing",
+			"advtopic": "CC Intro + Profiling & Dissecting a Web App: Recon to Scanning",
 			"advby": "",
 			"basictopic": "CC Intro +  Scanning & Attacking Hosts (metasploit/nmap)"
 		},
