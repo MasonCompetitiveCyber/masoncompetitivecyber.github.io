@@ -144,7 +144,29 @@
 			"moreInfo": "https://twitter.com/masoncompcyber/status/943896249358483456"
 		},
 		{
-		"id": "14",
+			"id": "14",
+			"name": "Sharif CTF",
+			"startDate": "February 2",
+			"endDate": "February 3",
+			"startTime": "01:30am",
+			"endTime": "13:30pm",
+			"year": "2018",
+			"location": "Online",
+			"moreInfo": "http://ctf.sharif.edu/"
+		},
+		{
+			"id": "15",
+			"name": "Harekaze CTF",
+			"startDate": "February 10",
+			"endDate": "February 11",
+			"startTime": "01:00am",
+			"endTime": "01:00am",
+			"year": "2018",
+			"location": "Online",
+			"moreInfo": "https://harekaze.com/ctf.html"
+		},
+		{
+		"id": "16",
 		"name": "BSidesNOVA CTF (Time Tentative)",
 		"startDate": "February 24",
 		"endDate": "February 24",
@@ -155,7 +177,7 @@
 		"moreInfo": "https://BSidesNOVA.org/"
 		},
 		{
-			"id": "15",
+			"id": "17",
 			"name": "Cyber Fusion",
 			"startDate": "February 23",
 			"endDate": "February 24",
@@ -166,7 +188,7 @@
 			"moreInfo": "http://conferences.vmi.edu/cyberfusion/cyber-cup/"
 		},
 		{
-			"id": "16",
+			"id": "18",
 			"name": "CryptoParty CTF",
 			"startDate": "March 3",
 			"endDate": "March 3",
@@ -177,7 +199,7 @@
 			"moreInfo": "https://cryptoparty.gmu.io"
 		},
 		{
-			"id": "17",
+			"id": "19",
 			"name": "VT Summit",
 			"startDate": "March 17",
 			"endDate": "March 17",
@@ -188,7 +210,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/vtsummit/"
 		},
 		{
-			"id": "18",
+			"id": "20",
 			"name": "UMDCTF (Time Tentative)",
 			"startDate": "April 7",
 			"endDate": "April 7",
@@ -197,5 +219,16 @@
 			"year": "2018",
 			"location": "Unknown, probably UMD",
 			"moreInfo": "http://csec.umd.edu/"
+		},
+		{
+			"id": "21",
+			"name": "STEM CTF: Cyber Challenge 2018",
+			"startDate": "April 20",
+			"endDate": "April 21",
+			"startTime": "07:00pm",
+			"endTime": "07:00pm",
+			"year": "2018",
+			"location": Online",
+			"moreInfo": "https://mitrestemctf.org/"
 		}
 	]}
