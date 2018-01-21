@@ -189,11 +189,11 @@
 		},
 		{
 			"id": "18",
-			"name": "UMDCTF",
+			"name": "UMDCTF (Time Tentative)",
 			"startDate": "April 7",
 			"endDate": "April 7",
-			"startTime": "Unknown",
-			"endTime": "Unknown",
+			"startTime": "12:01am",
+			"endTime": "11:59pm",
 			"year": "2018",
 			"location": "Unknown, probably UMD",
 			"moreInfo": "http://csec.umd.edu/"
