@@ -199,7 +199,18 @@
 			"moreInfo": "https://cryptoparty.gmu.io"
 		},
 		{
-			"id": "19",
+			"id": "20",
+			"name": "UMBC DawgCTF",
+			"startDate": "March 11",
+			"endDate": "March 11",
+			"startTime": "10:00am",
+			"endTime": "5:00pm",
+			"year": "2018",
+			"location": "UMBC University Center Ballroom",
+			"moreInfo": "http://umbccd.umbc.edu/dawgctf"
+		},
+		{
+			"id": "21",
 			"name": "VT Summit",
 			"startDate": "March 17",
 			"endDate": "March 17",
@@ -210,7 +221,7 @@
 			"moreInfo": "https://competitivecyber.club/articles/vtsummit/"
 		},
 		{
-			"id": "20",
+			"id": "22",
 			"name": "UMDCTF (Time Tentative)",
 			"startDate": "April 7",
 			"endDate": "April 7",
@@ -221,7 +232,7 @@
 			"moreInfo": "http://csec.umd.edu/"
 		},
 		{
-			"id": "21",
+			"id": "23",
 			"name": "STEM CTF: Cyber Challenge 2018",
 			"startDate": "April 20",
 			"endDate": "April 21",
