@@ -165,6 +165,19 @@ description: "Mason Competitive Cyber is a cybersecurity organization at George 
       console.log('JSON data loaded')
       $.each(data["meetings"], function(i, item) {
       console.log('Iterating')
+        time = item["to"]
+        if (time.includes('pm')) {
+          time = time.split('pm')[0]
+          hour = time.split(':')[0]
+          min = time.split(':')[1]
+          hour = parseInt(hour) + 12
+          time = hour + ":" + min
+        } else {
+          time = time.split('am')[0]
+          hour = time.split(':')[0]
+          min = time.split(':')[1]
+          time = hour + ":" + min
+        }
         if ( Date.now() - Date.parse(item["meetingDate"] +  ' ' +  item["year"] + ' ' + time) <= 0) {
           console.log(Date.now() - Date.parse(item["meetingDate"] +  ' ' + item["year"]))
           $("#location").html(item['location'])
