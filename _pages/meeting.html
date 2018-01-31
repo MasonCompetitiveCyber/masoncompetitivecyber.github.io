@@ -175,6 +175,9 @@ function readMeeting(id) {
     if ( id == item['id'] ){
       $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
       data = 'On Wednesday, ' + item['meetingDate'] + ' Yellow Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from 5-6pm.'
+      if (item.hasOwnProperty('guestsignup')){
+        data = data + ' In addition, there is a mandatory signup enforced for this meeting: <a href="' + item['guestsignup'] + '">here</a>'
+      }
       $('#meetingcontent').html(data)
     };
 
