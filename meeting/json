@@ -33,7 +33,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Love our Logs: Using Splunk to Identify Threats and Pattern",
-			"basictopic": "Video Game Reversing (such as NES Emulators)"
+			"basictopic": "Physical Security, Lockpicking, & NFC"
 		},
 		{
 			"id": "4",
@@ -44,7 +44,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Hardware with Chuck",
-			"basictopic": "Physical Security, Lockpicking, & NFC"
+			"basictopic": "Host Based Forensics"
 		},
 		{
 			"id": "5",
@@ -55,7 +55,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Post-Exploitation: Understanding your position and Priv-Esc",
-			"basictopic": "Host Based Forensics"
+			"basictopic": "Video Game Reversing"
 		},
 		{
 			"id": "6",
