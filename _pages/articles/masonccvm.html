@@ -1,0 +1,20 @@
+---
+layout: article
+permalink: /articles/ccops/
+title: A Look Inside CC's Ops
+description: "Mason CC"
+---
+
+<h3>We're Cheap.</h3>
+<p>We are college students. We are a new org without major funding. GMU is willing to fund us, but not to pay for infrastructure. This means we try not to rent or own servers.<br>
+When necessary, like for CTF lessons, we use EC2 instances, but overall we try to build a sustainable
+infrastructure model that is able to run after we graduate at a negligible cost. Here we'll go over what we use to run our day to day ops.
+</p>
+<h3>Website</h3>
+<p>Our website runs on Github Pages using Jekyll for templating. It is open source at <a href="https://github.com/MasonCompetitiveCyber/masoncompetitivecyber.github.io">our GitHub</a>. The templating means we can write scalable content and don't have to update dozens of files when we want to make a minor version change. For SSL, CloudFlare is used on it's free plan. It is set to secure, which bumps HTTP requests to HTTPS.
+</p>
+<h3>Slack Invite System</h3>
+<p>One of our better more prominent features is that we use a Lambda function, <a href="https://gist.github.com/mike-bailey/52fcfb42ba0087755118bfb07676e21c">available here</a>, that automatically invites people to . We use AWS API Gateway to route requests to the function with the standard Lambda integration. This kind of setup is commonly referred to as "serverless" infrastructure because you only pay for runtime, not for actual rented server time. It's about $3.50 for a million requests last I checked, so divide that by about 100 thousand, throw in logging in CloudWatch and other bells and whistles, and that's what we get. 
+</p>
+<h3>CiCi Bot</h3>
+<p>Our bot runs on <a href="https://labs.vse.gmu.edu/index.php/Systems/Zeus">Zeus</a>, a GMU cluster available basically to engineering students. It supports a variety of modules and while I'm (Michael Bailey) more familiar with Ruby slackbots as that's my work, it supports really old Ruby and recent Python. After hardening my account to prevent token leakage, we run our bot by SSH'ing in and invoking `nohup` to keep it live. Zeus only cleans orphaned processes, which it does not qualify as. The code is available at <a href="https://git.gmu.edu">GMU's Git server run by SRCT</a>, of which Michael Bailey is the System Administrator, so he has root on it.</p>
