@@ -51,11 +51,12 @@
 			"meetingDate": "February 28",
 			"from": "5:00pm",
 			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room B",
+			"location": "Johnson Center Meeting Room D",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Post-Exploitation: Understanding your position and Priv-Esc",
-			"basictopic": "Video Game Reversing"
+			"signup": "https://competitivecyber.club/articles/dhs/",
+			"advtopic": "William Burke IV DHS Red Teaming Talk",
+			"basictopic": "William Burke IV DHS Red Teaming Talk"
 		},
 		{
 			"id": "6",
