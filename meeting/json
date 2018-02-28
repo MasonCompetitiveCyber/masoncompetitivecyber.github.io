@@ -68,7 +68,7 @@
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
 			"basictopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
-			"guestsignup": "https://competitivecyber.club/articles/corey/",
+			"guestsignup": "https://competitivecyber.club/articles/corey/"
 		},
 		{
 			"id": "7",
@@ -91,7 +91,7 @@
 			"advlocation": "Johnson Center Meeting Room B",
 			"advtopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
 			"basictopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
-			"guestsignup": "https://competitivecyber.club/articles/crypsistalk"
+			"guestsignup": "https://competitivecyber.club/articles/crypsistalk/"
 		},
 		{
 			"id": "9",
@@ -114,7 +114,7 @@
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Satoko Odagawa, Career Services",
 			"basictopic": "Satoko Odagawa, Career Services",
-			"guestsignup": "https://competitivecyber.club/articles/corey/"
+			"guestsignup": "https://competitivecyber.club/articles/careersvc/"
 		},
 		{
 			"id": "11",
@@ -147,7 +147,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Best Of Defcon Screening & Hopefully Snacks",
-			"basictopic": "Best Of Defcon Screening & Hopefully Snacks",
+			"basictopic": "Best Of Defcon Screening & Hopefully Snacks"
 		}
 	]
 }
