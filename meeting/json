@@ -67,7 +67,8 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
 			"advtopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
-			"basictopic": "Corey Sheldon of Fedora, Ameridea on System Hardening"
+			"basictopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
+			"guestsignup": "https://competitivecyber.club/articles/corey/",
 		},
 		{
 			"id": "7",
@@ -87,9 +88,10 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room E (likely cancellation)",
-			"advtopic": "Pending DFIR Speaker",
-			"basictopic": "Pending DFIR Speaker"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
+			"basictopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
+			"guestsignup": "https://competitivecyber.club/articles/crypsistalk"
 		},
 		{
 			"id": "9",
@@ -99,8 +101,8 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Pending Hardware Speaker",
-			"basictopic": "Pending Hardware Speaker"
+			"advtopic": "Cyber Fusion 2017 Simulation: Problem Sets and Walkthroughs from the Real Event",
+			"basictopic": "[no topic selected]"
 		},
 		{
 			"id": "10",
@@ -110,8 +112,9 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Pending Career Services Speaker",
-			"basictopic": "Pending Career Services Speaker"
+			"advtopic": "Satoko Odagawa, Career Services",
+			"basictopic": "Satoko Odagawa, Career Services",
+			"guestsignup": "https://competitivecyber.club/articles/corey/"
 		},
 		{
 			"id": "11",
@@ -121,7 +124,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Android Security & APK Reverse Engineering",
+			"advtopic": "Wargame: Attack and Defense Simulation with Tips",
 			"basictopic": "[topic not yet declared]"
 		},
 		{
@@ -132,8 +135,8 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Writing Metasploit Payloads",
-			"basictopic": "[topic not yet declared]"
+			"advtopic": "[Pending: Raytheon CSI has been offered this slot]",
+			"basictopic": "[Pending: Raytheon CSI has been offered this slot]"
 		},
 		{
 			"id": "13",
@@ -143,8 +146,8 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Pending Hopeful Cryptography Member Talk",
-			"basictopic": "[topic not yet declared]"
+			"advtopic": "Best Of Defcon Screening & Hopefully Snacks",
+			"basictopic": "Best Of Defcon Screening & Hopefully Snacks",
 		}
 	]
 }
