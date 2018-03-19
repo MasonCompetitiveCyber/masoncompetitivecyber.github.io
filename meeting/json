@@ -78,8 +78,7 @@
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
-			"basictopic": "Antivirus Evasion"
+			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds"
 		},
 		{
 			"id": "8",
