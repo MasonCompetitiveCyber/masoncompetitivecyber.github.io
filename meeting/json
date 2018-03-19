@@ -77,8 +77,9 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
+			"basictopic": "Profiling & Dissecting a Web App: Pwning and Footholds"
 		},
 		{
 			"id": "8",
