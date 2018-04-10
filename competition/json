@@ -222,13 +222,13 @@
 		},
 		{
 			"id": "22",
-			"name": "UMDCTF (Time Tentative)",
-			"startDate": "April 7",
-			"endDate": "April 7",
-			"startTime": "12:01am",
-			"endTime": "11:59pm",
+			"name": "UMDCTF",
+			"startDate": "April 14",
+			"endDate": "April 14",
+			"startTime": "10:00am",
+			"endTime": "5:00pm",
 			"year": "2018",
-			"location": "Unknown, probably UMD",
+			"location": "UMD CSIC 3117",
 			"moreInfo": "http://csec.umd.edu/"
 		},
 		{
