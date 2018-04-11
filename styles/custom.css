@@ -380,7 +380,11 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 
 .dropdown-menu li:hover .sub-menu {visibility:visible;}
 
-.ddmenu.nav-pills li a {font-family: Abel, sans-serif; font-size: 17px; text-shadow: none; line-height: 15px;}
+.ddmenu.nav-pills li a {
+    font-family: Abel, sans-serif; font-size: 17px; text-shadow: none; line-height: 15px;
+    padding-left:15px;
+    padding-right:15px;
+}
 
 .ddmenu .dropdown-menu li a{line-height: 29px; font-size: 15px;}
 
@@ -480,7 +484,3 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
     .navbar .ddmenu {margin-top: 0px;margin-bottom: 0px;}
 
 }
-
-
-
-
