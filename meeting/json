@@ -122,9 +122,9 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Wargame: Attack and Defense Simulation with Tips",
-			"basictopic": "[topic not yet declared]"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Android APK (App) Reversing with Tyler",
+			"basictopic": "Android APK (App) Reversing with Tyler"
 		},
 		{
 			"id": "12",
