@@ -188,17 +188,6 @@
 			"moreInfo": "http://conferences.vmi.edu/cyberfusion/cyber-cup/"
 		},
 		{
-			"id": "18",
-			"name": "CryptoParty CTF",
-			"startDate": "April 29",
-			"endDate": "April 29",
-			"startTime": "10:30am",
-			"endTime": "6:00pm",
-			"year": "2018",
-			"location": "The HUB",
-			"moreInfo": "https://cryptoparty.gmu.io"
-		},
-		{
 			"id": "20",
 			"name": "UMBC DawgCTF",
 			"startDate": "March 11",
@@ -241,5 +230,16 @@
 			"year": "2018",
 			"location": "Online",
 			"moreInfo": "https://mitrestemctf.org/"
+		},
+		{
+			"id": "18",
+			"name": "CryptoParty CTF",
+			"startDate": "April 29",
+			"endDate": "April 29",
+			"startTime": "10:30am",
+			"endTime": "6:00pm",
+			"year": "2018",
+			"location": "The HUB",
+			"moreInfo": "https://cryptoparty.gmu.io"
 		}
 	]}
