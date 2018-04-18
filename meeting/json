@@ -133,9 +133,9 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "[Pending: Raytheon CSI has been offered this slot]",
-			"basictopic": "[Pending: Raytheon CSI has been offered this slot]"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Attack/Defense with Hands-On",
+			"basictopic": "Attack/Defense with Hands-On"
 		},
 		{
 			"id": "13",
@@ -144,9 +144,9 @@
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room D",
-			"advtopic": "Best Of Defcon Screening & Hopefully Snacks",
-			"basictopic": "Best Of Defcon Screening & Hopefully Snacks"
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Best Of Defcon Screening & Bring Food/Snacks",
+			"basictopic": "Best Of Defcon Screening & Bring Food/Snacks"
 		}
 	]
 }
