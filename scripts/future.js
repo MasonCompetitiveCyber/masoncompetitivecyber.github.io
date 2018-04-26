@@ -1,7 +1,7 @@
-var springmode = 0
+var fallmode = 0
 
-function readSpringMeeting(id) {
-    $.getJSON('/meeting/spring?nocache=' + (new Date()).getTime(), null, function(data) {
+function readFutureMeeting(id) {
+    $.getJSON('/meeting/fall?nocache=' + (new Date()).getTime(), null, function(data) {
     console.log('JSON data loaded')
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
     $.each(data["meetings"], function(i, item) {
@@ -14,11 +14,11 @@ function readSpringMeeting(id) {
   })})};
 
 
-function springify(){
+function futurify(){
   var newid = 0
-  if (springmode == 0) {
-    springmode = 1
-    $.getJSON('/meeting/spring?nocache=' + (new Date()).getTime(), null, function(data) {
+  if (fallmode == 0) {
+    fallmode = 1
+    $.getJSON('/meeting/fall?nocache=' + (new Date()).getTime(), null, function(data) {
       console.log('JSON data loaded')
       console.log(data)
       entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
@@ -30,7 +30,7 @@ function springify(){
             if (newid == 0) {
               newid = item['id']
             }
-            entry = entry + "<li class='selectorbs'><a href=javascript:readSpringMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>"
+            entry = entry + "<li class='selectorbs'><a href=javascript:readFutureMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>"
           console.log(entry)
         } else {
           // Do not generate an entry
@@ -38,10 +38,10 @@ function springify(){
         }
       });
       entry = entry + '</ul></button>'
-      readSpringMeeting(newid)
+      readFutureMeeting(newid)
       $("#meetingdrop").html(entry)
     });
-        $.getJSON('/meeting/spring?nocache=' + (new Date()).getTime(), null, function(data) {
+        $.getJSON('/meeting/fall?nocache=' + (new Date()).getTime(), null, function(data) {
           console.log('JSON data loaded')
           console.log(data)
           entry = "<tr><th>Date</th><th>Yellow Track</th><th>Green Track</th></tr>"
@@ -129,6 +129,6 @@ function springify(){
           });
           $("#meetingtopics").html(entry)
         });
-        springmode = 0
+        fallmode = 0
       }
 }
