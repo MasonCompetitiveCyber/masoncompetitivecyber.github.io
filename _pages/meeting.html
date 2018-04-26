@@ -184,7 +184,11 @@ function readMeeting(id) {
     $.each(data["meetings"], function(i, item) {
     if ( id == item['id'] ){
       $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
-      data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from 5-6pm.'
+      if ((item['basictopic'] == item['advtopic'])&&(item['location'] == item['advlocation'])) {
+      data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room'
+      } else {
+      data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to']
+      }
       if (item.hasOwnProperty('guestsignup')){
         data = data + ' <span style="color: red; font-weight: bold">In addition, there is a mandatory signup enforced for this meeting: <a href="' + item['guestsignup'] + '">here</a></span'
       }
