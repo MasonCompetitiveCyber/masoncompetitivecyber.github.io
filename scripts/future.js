@@ -8,9 +8,9 @@ function readFutureMeeting(id) {
     if ( id == item['id'] ){
       $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
       if ((item['basictopic'] == item['advtopic'])&&(item['location'] == item['advlocation'])) {
-      data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to']
+      data = 'On Thursday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to'] + '.'
       } else {
-      data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to']
+      data = 'On Thursday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
       }
       $('#meetingcontent').html(data)
     };
