@@ -1,17 +1,3 @@
-Location 'JC ROOM F' requested for Sep 06 2018.
-Location 'JC ROOM F' requested for Sep 13 2018.
-Location 'JC ROOM F' requested for Sep 20 2018.
-Location 'JC ROOM F' requested for Sep 27 2018.
-Location 'JC ROOM F' requested for Oct 04 2018.
-Location 'JC ROOM A' requested for Oct 11 2018.
-Location 'JC ROOM F' requested for Oct 18 2018.
-Location 'JC ROOM F' requested for Oct 25 2018.
-Location 'JC ROOM F' requested for Nov 01 2018.
-Location 'JC ROOM F' requested for Nov 08 2018.
-Location 'JC ROOM F' requested for Nov 15 2018.
-Location 'JC ROOM F' requested for Nov 29 2018.
-Location 'JC ROOM F' requested for Dec 06 2018.
-
 {
 	"meetings": [
 		{
@@ -21,13 +7,13 @@ Location 'JC ROOM F' requested for Dec 06 2018.
 			"to": "8:00pm",
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room F",
+			"advlocation": "Johnson Center Meeting Room E",
 			"advtopic": "",
 			"basictopic": ""
 		},
 		{
 			"id": "2",
-			"meetingDate": "September 14",
+			"meetingDate": "September 13",
 			"from": "7:00pm",
 			"to": "8:00pm",
 			"location": "Johnson Center Meeting Room E",
@@ -74,9 +60,9 @@ Location 'JC ROOM F' requested for Dec 06 2018.
 			"meetingDate": "October 11",
 			"from": "7:00pm",
 			"to": "8:00pm",
-			"location": "Johnson Center Meeting Room E",
+			"location": "Johnson Center Meeting Room A",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room F",
+			"advlocation": "Johnson Center Meeting Room A",
 			"advtopic": "",
 			"basictopic": ""
 		},
