@@ -1,159 +1,152 @@
 {
 	"meetings": [
-
-		{
-			"id": "0",
-			"meetingDate": "September 6",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room C",
-			"year": "2017",
-			"advlocation": "SUB1 3B",
-			"advtopic": "Hackazon and more",
-			"basictopic": "Club Intro/Training CTF Challenges"
-		},
 		{
 			"id": "1",
-			"meetingDate": "September 13",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "SUB1 3B",
-			"advtopic": "Forensics, Complete with Weird CSAW Problems",
-			"basictopic": "Web Exploitation"
-		},
-		{
-			"id": "2",
-			"meetingDate": "September 20",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "SUB1 3A",
-			"advtopic": "backdoorCTF practice arena",
-			"basictopic": "Linux, Scripting, and Regex"
-		},
-		{
-			"id": "3",
-			"meetingDate": "September 27",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center 239A",
-			"year": "2017",
-			"advlocation": "Johnson Center Meeting Room G",
-			"advtopic": "Sam (of Kudu Dynamics) on CSAW CTF 2017 problems",
-			"basictopic": "Cryptography (not simple ciphers)"
-		},
-		{
-			"id": "4",
-			"meetingDate": "October 4",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center 239A",
-			"advtopic": "Python and Ruby CTF scripting, Regex",
-			"basictopic": "Amazon Web Services EC2"
-		},
-		{
-			"id": "5",
-			"meetingDate": "October 11",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room C",
-			"year": "2017",
-			"advlocation": "CANCELLED: GO TO BASIC IN ROOM C",
-			"advtopic": "CANCELLED: GO TO BASIC IN ROOM C",
-			"basictopic": "Rob Shein of PwC on Car Hacking"
-		},
-		{
-			"id": "6",
-			"meetingDate": "October 18",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center Meeting Room C",
-			"advtopic": "Hardware Hacking with Chuck",
-			"basictopic": "Web Exploitation 2"
-		},
-    {
-      "id": "13",
-      "meetingDate": "October 22",
-      "from": "3:00pm",
-      "to": "6:00pm",
-      "location": "Johnson Center Meeting Room A",
-      "year": "2017",
-      "advlocation": "[none]",
-      "advtopic": "[none]",
-      "basictopic": "Basic Linux with Mike"
-    },
-		{
-			"id": "7",
-			"meetingDate": "October 25",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center 239A",
-			"advtopic": "Shellcode with Chris (caffix)",
-			"basictopic": "Forensics"
-		},
-		{
-			"id": "8",
-			"meetingDate": "November 1",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "Docker: Virtualization for Poor People",
-			"basictopic": "Networking"
-		},
-		{
-			"id": "9",
-			"meetingDate": "November 8",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center 239A",
-			"advtopic": "Format String with Chris (caffix)",
-			"basictopic": "GRIMM Challenge"
-		},
-		{
-			"id": "10",
-			"meetingDate": "November 15",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "HackTheBox.eu (GET AN INVITE)",
-			"basictopic": "Steganography"
-		},
-		{
-			"id": "11",
-			"meetingDate": "November 29",
-			"from": "5:00pm",
-			"to": "6:00pm",
-			"location": "Johnson Center Meeting Room G",
-			"year": "2017",
-			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "DEP and ASLR Bypass with Chris (caffix)",
-			"basictopic": "Intro. Reverse Engineering"
-		},
-		{
-			"id": "12",
-			"meetingDate": "December 6",
+			"meetingDate": "January 31",
 			"from": "5:00pm",
 			"to": "6:00pm",
 			"location": "Johnson Center Meeting Room B",
-			"year": "2017",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room E",
+			"advtopic": "CC Intro + Profiling & Dissecting a Web App: Recon to Scanning",
+			"advby": "",
+			"basictopic": "CC Intro +  Scanning & Attacking Hosts (metasploit/nmap)"
+		},
+		{
+			"id": "2",
+			"meetingDate": "February 7",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room B",
-			"advtopic": "",
-			"basictopic": "GRIMM Meeting <a href='https://competitivecyber.club/articles/grimmco/'>(more)</a>"
+			"guestsignup": "https://competitivecyber.club/articles/powergrid/",
+			"advtopic": "Power Grid Security with PwC",
+			"basictopic": "Power Grid Security with PwC"
+		},
+		{
+			"id": "3",
+			"meetingDate": "February 14",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room D",
+			"advtopic": "Love our Logs: Using Splunk to Identify Threats and Pattern",
+			"basictopic": "Physical Security, Lockpicking, & RFID"
+		},
+		{
+			"id": "4",
+			"meetingDate": "February 21",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Host Based Forensics",
+			"basictopic": "Host Based Forensics"
+		},
+		{
+			"id": "5",
+			"meetingDate": "February 28",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room D",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room D",
+			"guestsignup": "https://competitivecyber.club/articles/dhs/",
+			"advtopic": "William Burke IV DHS Red Teaming Talk",
+			"basictopic": "William Burke IV DHS Red Teaming Talk"
+		},
+		{
+			"id": "6",
+			"meetingDate": "March 7",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room D",
+			"advtopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
+			"basictopic": "Corey Sheldon of Fedora, Ameridea on System Hardening",
+			"guestsignup": "https://competitivecyber.club/articles/corey/"
+		},
+		{
+			"id": "7",
+			"meetingDate": "March 21",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Profiling & Dissecting a Web App: Pwning and Footholds",
+			"basictopic": "Profiling & Dissecting a Web App: Pwning and Footholds"
+		},
+		{
+			"id": "8",
+			"meetingDate": "March 28",
+			"from": "3:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
+			"basictopic": "Kirstie Failey (The Crypsis Group): The Incident Response Process",
+			"guestsignup": "https://competitivecyber.club/articles/crypsistalk/"
+		},
+		{
+			"id": "9",
+			"meetingDate": "April 4",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room D",
+			"advtopic": "Cyber Fusion 2017 Simulation: Problem Sets and Walkthroughs from the Real Event",
+			"basictopic": "Antivirus Evasion"
+		},
+		{
+			"id": "10",
+			"meetingDate": "April 11",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room D",
+			"basictopic": "Paul - CTF Tools CC Uses",
+			"advtopic": "1pwnch - Dirty Magic of Webshell"
+		},
+		{
+			"id": "11",
+			"meetingDate": "April 18",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Android APK (App) Reversing with Tyler",
+			"basictopic": "Android APK (App) Reversing with Tyler"
+		},
+		{
+			"id": "12",
+			"meetingDate": "April 25",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Attack/Defense with Hands-On",
+			"basictopic": "Attack/Defense with Hands-On"
+		},
+		{
+			"id": "13",
+			"meetingDate": "May 2",
+			"from": "5:00pm",
+			"to": "6:00pm",
+			"location": "Johnson Center Meeting Room B",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room B",
+			"advtopic": "Best Of Defcon Screening & Bring Food/Snacks",
+			"basictopic": "Best Of Defcon Screening & Bring Food/Snacks"
 		}
 	]
 }
