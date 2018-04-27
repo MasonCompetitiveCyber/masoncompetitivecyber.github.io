@@ -5,9 +5,9 @@
 			"meetingDate": "September 6",
 			"from": "7:00pm",
 			"to": "8:00pm",
-			"location": "Johnson Center Meeting Room E",
+			"location": "The Hub Meeting Room 1 & 2",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room E",
+			"advlocation": "The Hub Meeting Room 1 & 2",
 			"advtopic": "Welcome to CC",
 			"basictopic": "Welcome to CC"
 		},
@@ -60,9 +60,9 @@
 			"meetingDate": "October 11",
 			"from": "7:00pm",
 			"to": "8:00pm",
-			"location": "Johnson Center Meeting Room A",
+			"location": "The Hub Meeting Room 4",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room A",
+			"advlocation": "The Hub Meeting Room 5",
 			"advtopic": "TBD",
 			"basictopic": "TBD"
 		},
