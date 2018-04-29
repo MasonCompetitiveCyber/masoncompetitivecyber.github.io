@@ -1,0 +1,146 @@
+---
+layout: article
+permalink: /articles/cryptoparty18
+title: CryptoParty CTF 2018 Writeups
+description: "2018 CrpytoParty CTF"
+---
+<h2>CryptoParty 2018 Writeups</h2>
+<b>By Michael Bailey</b>
+
+<h3>GPGee Whiz</h3>
+<p class="solution">
+0x8CF2369BC83FD660 is "my" key on pgp.mit.edu. Note you
+<br /><br />
+It shows an email at root@bombdiggity.competitivecyber.club
+<br /><br />
+dig -t txt bombdiggity.competitivecyber.club
+<br />
+results in a TXT record
+<script src="https://gist.github.com/mike-bailey/2d4edba3e8a02aed85c25e24b68eb2f7.js"></script>
+<br /><br />
+It follows the character set +,=,and a-zA-Z so we should consider base64. We base64 decode it and base64 doesn't break, but it looks compressed.
+<br />
+Try to gunzip it:
+<br />
+<code>
+echo H4sIAMG+l1oAA0ssMq40KE0xTE83zEs3DOECAO1kxYUQAAAA|base64 --decode|gunzip
+<br /><br />
+ar3y0ud1gg1ng1T
+</code>
+</p>
+
+<h3>GPS Coordinates</h3>
+<p class="solution">
+You're provided with tupac.jpg.
+<br /><br />
+Tupac is alive. I know it. Can you help me find out which city he's in?
+<br />
+Try to run exiftool. This was in the hint. Note the GPS Coordinates.
+<br />
+<code>
+GPS Position                    : 20 deg 1' 30.06" N, 75 deg 49' 4.26" W
+<br /><br />
+Flag: Santiago de Cuba
+</code>
+</p>
+
+<h3>Git Good</h3>
+<p class="solution">
+
+Because Michael (Mason CC's president) is an idiot, his Github got hacked. Can you find out who hacked it and maybe get in touch with them?
+<br />
+After scrolling you find https://github.com/mike-bailey/mean-evil-haxxor. In a legendary stupid move, I trusted a key I shouldn't have. However, if you note the commit.
+<br />
+In addition to doing it through the github interface
+<code>
+⇒  git log --show-signature
+gpg: Signature made Thu Mar  1 04:55:10 2018 EST
+gpg:                using RSA key A8BE47B0A92177004AF9CE3462B06F2335F6D858
+gpg: [Something like "no public key"]
+39ca1e0 - (HEAD -> master, origin/master, origin/HEAD) haha hacked. you'll never find me now. (8 weeks ago) <Michael Bailey>
+</code>
+<br /><br />
+<code>
+Search for it in <a href="http://pgp.mit.edu/pks/lookup?search=0x62B06F2335F6D858&op=index">pgp.mit.edu</a>.
+</code>
+<br /><br />
+You get something when you email them in response!
+<code>
+  Drat! You've found my secret address! Well, I guess you can have my flag: gPg33_wh1z_s1gn3d_comm1tz
+</code>
+</p>
+
+<h3>HAXOR</h3>
+<p class="solution">
+Okay, I'll just have one bi(y)te...<br />
+<br />
+7f56545c17565b5b17435f5217435f5e595044
+<br /><br />
+This is a simple XOR Cipher
+<br /><br />
+Consider the following script:
+<br />
+<script src="https://gist.github.com/mike-bailey/6b75b1fbb9c81c8100b646c157b0291f.js"></script>
+<br />
+On execution, displayed flag: Hack all the things
+</code>
+</p>
+
+<h3>MD5eva</h3>
+<p class="solution">
+<code>
+f875135777c17da3cef2ea6eeff5be29
+672d8546fd994a8805a58a9ae60c9e16
+eea145e9133b6dc4d05865ac9c46590f
+b94857f6a905ccd028329b0a8324ac4c
+383b6cd2e295c250a1d160168bb92120
+c26841cc98f760f636f2c4d9d827e18c
+ccb4c19b7dbd16be9d2a43125797659d
+6a76c551e4658c5f4308c862164e4dd9
+da190e616797844b591057d0190e7728
+b1051a9d8893542362ad09051775f8f6
+ec75be852df734a580e2a603a0656025
+7ecc92917e9c4556cc19f457ddc41af8
+da190e616797844b591057d0190e7728
+69171c9442ce2032a1a52868f05f9d1c
+ec75be852df734a580e2a603a0656025
+d543f409229584e2e064495967092514
+166277962e993c138a6b1f0c9b571cc0
+7dd154808b1c676d3d63f3a63e9edabf
+aaec1d22915a22823a4c3f7bc703c9d8
+5d813a4760b2777d5432ecbbf7b3ad4e
+7521e341d48b08f214d1dac0738f16d0
+d5484163cd8d335e6b17663474ff5f2b
+127215aefff6677fa607e6eed5e3ce34
+127215aefff6677fa607e6eed5e3ce34
+</code>
+<br /><br />
+These are unsalted MD5 hashes. Personally, I can't say if it'd work, but <i>hash_identifier</i> in Kali would probably tell you MD5 is at least a candidate. In addition, they're only one character hashed.
+<br /><br />
+Consider the following MD5 cracker that assumes an ordinal range of 127 or below, but cracks instantly:
+<br />
+<script src="https://gist.github.com/mike-bailey/26695b1cf95dda5bbd14baed96b18da0.js"></script>
+<br />
+Flag: Hack all the things
+</code>
+</p>
+
+<h3>Anonymouse</h3>
+<p class="solution">
+<code>
+
+</code>
+<br /><br />
+These are unsalted MD5 hashes. Personally, I can't say if it'd work, but <i>hash_identifier</i> in Kali would probably tell you MD5 is at least a candidate. In addition, they're only one character hashed.
+<br /><br />
+Consider the following MD5 cracker that assumes an ordinal range of 127 or below, but cracks instantly:
+<br />
+<script src="https://gist.github.com/mike-bailey/55792df8c2a974dd06e1e3947639ca49.js"></script>
+<br />
+</code>
+
+After ls'ing around:
+<code>
+this is for cat'ing the flag: http://54.173.122.93:445/index.php?s=cat%20._certainly_notaFlag.txt
+</code>
+</p>
