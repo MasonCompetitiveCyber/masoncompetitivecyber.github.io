@@ -60,11 +60,11 @@ After scrolling you find https://github.com/mike-bailey/mean-evil-haxxor. In a l
 <br />
 In addition to doing it through the github interface
 <code>
-⇒  git log --show-signature
-gpg: Signature made Thu Mar  1 04:55:10 2018 EST
-gpg:                using RSA key A8BE47B0A92177004AF9CE3462B06F2335F6D858
-gpg: [Something like "no public key"]
-39ca1e0 - (HEAD -> master, origin/master, origin/HEAD) haha hacked. you'll never find me now. (8 weeks ago) <Michael Bailey>
+⇒  git log --show-signature<br />
+gpg: Signature made Thu Mar  1 04:55:10 2018 EST<br />
+gpg:                using RSA key A8BE47B0A92177004AF9CE3462B06F2335F6D858<br />
+gpg: [Something like "no public key"]<br />
+39ca1e0 - (HEAD -> master, origin/master, origin/HEAD) haha hacked. you'll never find me now. (8 weeks ago) <Michael Bailey><br />
 </code>
 <br /><br />
 <code>
@@ -96,30 +96,30 @@ On execution, displayed flag: Hack all the things
 <h3>MD5eva</h3>
 <p class="solution">
 <code>
-f875135777c17da3cef2ea6eeff5be29
-672d8546fd994a8805a58a9ae60c9e16
-eea145e9133b6dc4d05865ac9c46590f
-b94857f6a905ccd028329b0a8324ac4c
-383b6cd2e295c250a1d160168bb92120
-c26841cc98f760f636f2c4d9d827e18c
-ccb4c19b7dbd16be9d2a43125797659d
-6a76c551e4658c5f4308c862164e4dd9
-da190e616797844b591057d0190e7728
-b1051a9d8893542362ad09051775f8f6
-ec75be852df734a580e2a603a0656025
-7ecc92917e9c4556cc19f457ddc41af8
-da190e616797844b591057d0190e7728
-69171c9442ce2032a1a52868f05f9d1c
-ec75be852df734a580e2a603a0656025
-d543f409229584e2e064495967092514
-166277962e993c138a6b1f0c9b571cc0
-7dd154808b1c676d3d63f3a63e9edabf
-aaec1d22915a22823a4c3f7bc703c9d8
-5d813a4760b2777d5432ecbbf7b3ad4e
-7521e341d48b08f214d1dac0738f16d0
-d5484163cd8d335e6b17663474ff5f2b
-127215aefff6677fa607e6eed5e3ce34
-127215aefff6677fa607e6eed5e3ce34
+f875135777c17da3cef2ea6eeff5be29<br />
+672d8546fd994a8805a58a9ae60c9e16<br />
+eea145e9133b6dc4d05865ac9c46590f<br />
+b94857f6a905ccd028329b0a8324ac4c<br />
+383b6cd2e295c250a1d160168bb92120<br />
+c26841cc98f760f636f2c4d9d827e18c<br />
+ccb4c19b7dbd16be9d2a43125797659d<br />
+6a76c551e4658c5f4308c862164e4dd9<br />
+da190e616797844b591057d0190e7728<br />
+b1051a9d8893542362ad09051775f8f6<br />
+ec75be852df734a580e2a603a0656025<br />
+7ecc92917e9c4556cc19f457ddc41af8<br />
+da190e616797844b591057d0190e7728<br />
+69171c9442ce2032a1a52868f05f9d1c<br />
+ec75be852df734a580e2a603a0656025<br />
+d543f409229584e2e064495967092514<br />
+166277962e993c138a6b1f0c9b571cc0<br />
+7dd154808b1c676d3d63f3a63e9edabf<br />
+aaec1d22915a22823a4c3f7bc703c9d8<br />
+5d813a4760b2777d5432ecbbf7b3ad4e<br />
+7521e341d48b08f214d1dac0738f16d0<br />
+d5484163cd8d335e6b17663474ff5f2b<br />
+127215aefff6677fa607e6eed5e3ce34<br />
+127215aefff6677fa607e6eed5e3ce34<br />
 </code>
 <br /><br />
 These are unsalted MD5 hashes. Personally, I can't say if it'd work, but <i>hash_identifier</i> in Kali would probably tell you MD5 is at least a candidate. In addition, they're only one character hashed.
@@ -146,8 +146,66 @@ Consider the following MD5 cracker that assumes an ordinal range of 127 or below
 <br />
 </code>
 
-After ls'ing around:
+After running ls and seeing a ._certainly_notaFlag.txt file, this is for cat'ing the flag:
 <code>
-this is for cat'ing the flag: http://54.173.122.93:445/index.php?s=cat%20._certainly_notaFlag.txt
+http://54.173.122.93:445/index.php?s=cat%20._certainly_notaFlag.txt
 </code>
+</p>
+
+
+<h3>ScrapeScoop</h3>
+<p class="solution">
+<br /><br />
+Password is three terms and/or words concatenated. It's important to note people like building wordlists around people's known info. Maybe our website, perhaps?
+<br /><br />
+Key bits here:
+
+<ul>"Our": Mason CC's</ul>
+<ul>I believe we also hinted again at it being CC's site</ul>
+<br />
+I wrote a Ruby script to identify any words and try to unzip. If it detected a fail, try again. If it succeeded, halt execution and wave.
+<br />
+<script src="https://gist.github.com/mike-bailey/43eaa5ba9d9f09b656a8e1dd816f42d4.js"></script>
+<br />
+
+<br /><br />
+Upon unzipping the file, you get flag.txt and it's: .
+</code>
+</p>
+
+<h3>Trivia 1</h3>
+<p class="solution">
+<br /><br />
+Which cipher did Jefferson use to communicate with Livingston about the Louisiana Purchase?
+______'s _____
+
+Hint cost 5
+<br /><br />
+Apologies for the confusion but ____ was meant to offer the format, not exact character length. Hint was "Who's Cipher?"
+<br />
+Flag: Patterson's Cipher
+</p>
+
+
+<h3>Trivia 1</h3>
+<p class="solution">
+<br /><br />
+Real Life Enigma
+<br /><br />
+This was a point of contention. It WAS the Crypto Museum in MD, then someone disproved it and it was the Spy Museum, then it was the Pentagon. Paul did it. It's Paul's fault.
+<br />
+Flag: Pentagon
+</code>
+</p>
+
+<h3>M. Night Shyamalan</h3>
+<p class="solution">
+<br />
+Are you picking up my signs?
+<br /><br />
+Hint cost 3
+<br />I dropped a hint in announcements saying people need to take it literally, and we also provided <a href="https://twitter.com/masoncompcyber/status/990621732892561408">a Tweet of us walking in</a>.
+<br /><br />
+Ultimately, there was a QR code on the back of the sign<br />
+<img src="/images/sign.gif" />
 </p>
