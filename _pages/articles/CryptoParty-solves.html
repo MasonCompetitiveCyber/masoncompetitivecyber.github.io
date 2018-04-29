@@ -134,9 +134,6 @@ Flag: Hack all the things
 
 <h3>Anonymouse</h3>
 <p class="solution">
-<code>
-
-</code>
 <br /><br />
 These are unsalted MD5 hashes. Personally, I can't say if it'd work, but <i>hash_identifier</i> in Kali would probably tell you MD5 is at least a candidate. In addition, they're only one character hashed.
 <br /><br />
@@ -206,6 +203,50 @@ Are you picking up my signs?
 Hint cost 3
 <br />I dropped a hint in announcements saying people need to take it literally, and we also provided <a href="https://twitter.com/masoncompcyber/status/990621732892561408">a Tweet of us walking in</a>.
 <br /><br />
-Ultimately, there was a QR code on the back of the sign<br />
+Ultimately, there was a QR code on the back of the sign as you walk in.<br />
 <img src="/images/sign.gif" width="40%" />
+<br />
+Scanning it results in masoncc{w0w_s0_cre4tive}
 </p>
+
+<h3>(Not Really) Actually Using Enigma</h3>
+<p class="solution">
+<br />Full Challenge text is a bit long:
+<code>
+As the best allied cryptanalyst in WWII, you are our last hope for decrypting these two secret messages from the Germans:
+1)
+MJHGBRSNUNFASVFZQMMHFXWZLI
+2)
+XOMJQJZQSNTNKCEOSXARATABVJSHUWKAAMFSPDAHF
+Luckily, the Germans lost all of their enigma machines and have resorted to using a python enigma emulator. We know three things already
+The first message is HEYHITLERWANTSANEWNICKNAME
+The Germans are using I II III as the rotors
+The plugboard is 'AV BS CG DL FU HZ IN KM OW RX'
+
+Can you tell us what they need to start calling Hitler? (all uppercase no spaces)
+
+Hint Value 5
+</code>
+<br />
+This was called "Not Really" because you probably should've used a python library of some sort to solve. Just about everything was provided but ring settings. Brute forcing it would be relatively trivial, and below is an example if you knew ring settings.
+<br /><br />
+<script src="https://gist.github.com/mike-bailey/aa9e9005b7f19800d4553a555edd49c4.js"></script>
+<br />
+flag: FROMNOWONWEARESUPPOSEDTOCALLHIMKUNGFUHRER
+</p>
+
+<h3>Gotta Golang Fast!</h3>
+<p class="solution">
+<br /><br />
+Google shills must've made this problem!<br />
+<br />
+(note you may need to guess a character of the flag)<br />
+<br /><br />
+Hint value 5
+<br /><br />
+This one was a bit of a red herring. People who actually do reversing probably loaded this into IDA Pro or radare2 or something. While possible, it's a really painful way to do this. It only expects a password file matching a certain hash. That hash is of <a href="https://shattered.io/static/shattered-2.pdf">Google's second SHAttered PDF</a>, which would come up with a quick search. If you rename it to the appropriate .password file in the relative directory, it'd dump flag. The big bit here is that's the <b>only</b> solve method as it uses the actual contents to XOR. Attached below is the source of the binary for further understanding.
+<br />
+<script src="https://gist.github.com/mike-bailey/ce6160cc493f5c15e02a4235fc4da69f.js"></script>
+
+</p>
+
