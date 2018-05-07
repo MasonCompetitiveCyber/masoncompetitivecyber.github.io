@@ -244,9 +244,40 @@ Google shills must've made this problem!<br />
 <br /><br />
 Hint value 5
 <br /><br />
-This one was a bit of a red herring. People who actually do reversing probably loaded this into IDA Pro or radare2 or something. While possible, it's a really painful way to do this. It only expects a password file matching a certain hash. That hash is of <a href="https://shattered.io/static/shattered-2.pdf">Google's second SHAttered PDF</a>, which would come up with a quick search. If you rename it to the appropriate .password file in the relative directory, it'd dump flag. The big bit here is that's the <b>only</b> solve method as it uses the actual contents to XOR. Attached below is the source of the binary for further understanding.
+This one was a bit of a red herring. People who actually do reversing probably loaded this into IDA Pro or radare2 or something. While possible, it's a really painful way to do this due to the standard libraries golang has and how noisy they are from a function perspective. It only expects a password file matching a certain hash. That hash is of <a href="https://shattered.io/static/shattered-2.pdf">Google's second SHAttered PDF</a>, which would come up with a quick search. If you rename it to the appropriate .password file in the relative directory, it'd dump flag. The big bit here is that's the <b>only</b> solve method as it uses the actual contents to XOR. Attached below is the source of the binary for further understanding.
 <br />
 <script src="https://gist.github.com/mike-bailey/ce6160cc493f5c15e02a4235fc4da69f.js"></script>
 
 </p>
 
+
+<h3>Trivia 1</h3>
+<p class="solution">
+<br /><br />
+Real Life Enigma
+<br /><br />
+This was a point of contention. It WAS the Crypto Museum in MD, then someone disproved it and it was the Spy Museum, then it was the Pentagon. Paul did it. It's Paul's fault.
+<br />
+Flag: Pentagon
+</code>
+</p>
+
+<h3>Riscv Business</h3>
+<p class="solution">
+  <br/> <br />
+    Riscv-Buissness performs rounded timing analysis against itself in RISC-V. This binary exploits the fact that QEMU does not apply correct priority to gettimeofday(). Using gettimeofday(), a benchmark is taken before and after a LOT of STDOUT writing. The program takes a benchmark of the first four correct characters, and shows the relative offsets from the "correct" int array. Without a reliable gettimeofday() this problem is a hard number theory problem requiring hundreds of runs and profiling.... However fixing QEMU's passed gettimeofday() with an LD_PRELOAD to pass to your system's gettimeofday will yield substantially more reliable results, making one run of the alphabet reveal every character's relative offset. Alternatively, using an updated version of SPIKE not from Ubuntu repos can do it too I think.
+  <br /><br />
+  <script src="https://gist.github.com/mike-bailey/c9318b33d5bbc142ceacb0c2723f9181.js"></script>
+</p>
+
+<h3>Quick Math</h3>
+
+<p class="solution">
+    quick_math uses your answers to calculate the address of a function to jump to. If you enter the right answers (8, 0, 151, 11) it will jump to a function that will congratulate you on being a math genius. By reversing the binary, you will find the string 'masoncc{XXXXXXXXXXXX}' in an unknown function. By analyzing the way the answers are processed you can craft a set of answers that will instead jump to the win function that prints the flag. the answers are decoded as follows:
+    Each character of your input string is bitshifted right by one and then 29 is added to it. Because the least significant bit is lost, there are two possible characters for each value of the flag that the binary will think is correct. You have to look at the possibilities and figure out the english language flag <code>masoncc{sorry-im-a-bit-rusty}</code>
+
+<br /><br />
+<script src="https://gist.github.com/mike-bailey/a026a6b19356822c419712782310994e.js"></script>
+<br />
+<script src="https://gist.github.com/mike-bailey/569a130d1207916d015e288ed17e8660.js"></script>
+</p>
