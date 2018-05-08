@@ -241,5 +241,16 @@
 			"year": "2018",
 			"location": "The HUB",
 			"moreInfo": "https://cryptoparty.gmu.io"
+		},
+		{
+			"id": "19",
+			"name": "Parsons CTF",
+			"startDate": "May 11",
+			"endDate": "May 11",
+			"startTime": "12:00am",
+			"endTime": "11:59pm",
+			"year": "2018",
+			"location": "Parsons",
+			"moreInfo": "http://competitivecyber.club"
 		}
 	]}
