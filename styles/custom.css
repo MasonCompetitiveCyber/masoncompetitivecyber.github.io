@@ -163,7 +163,7 @@ img.logo {max-width:20%;width:6em;-moz-box-sizing:border-box;-webkit-box-sizing:
 }
 
 #decorative2 {/*opacity:0.95;*/
-
+    background: #369656;
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);
     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);
@@ -328,7 +328,6 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 #divHeaderText {padding-top: 75px; padding-bottom: 0px; border-color: rgb(51, 51, 51); text-align: left;}
 
-#decorative2{background-image:-moz-linear-gradient(bottom,#369656,#40ac62);background-image:-o-linear-gradient(bottom,#369656,#40ac62);background-image:-webkit-gradient(linear,left top, left bottom,from(#369656),to(#40ac62));background-image:-webkit-linear-gradient(bottom,#369656,#40ac62);background-image:linear-gradient(to bottom,#40ac62,#369656);background-image:linear-gradient(bottom,#369656,#40ac62);}
 
 #contentOuterSeparator{margin-top: 0px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; margin-bottom: 25px; height: 0px; background-color: transparent;}
 
