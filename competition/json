@@ -8,6 +8,7 @@
 			"startTime": "12:00am",
 			"endTime": "11:59pm",
 			"year": "2018",
+			"inviteonly": true,
 			"location": "Online (NCL Stadium)",
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		}

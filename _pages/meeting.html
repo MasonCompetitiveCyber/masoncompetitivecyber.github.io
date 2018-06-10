@@ -147,6 +147,9 @@ function readCompetition(id) {
     if ( id == item['id'] ){
       $('#compbutton').html(item['name']+'<span class=\'caret\'></span>')
       data = 'Name:  <b>' + item['name'] + '</b><br>Starts: <b>' +  item['startDate'] + ' ' + item['startTime'] + '</b><br>Ends: <b>' + item['endDate'] + ' ' + item['endTime'] + '</b><br>Location: <b>' + item['location'] + '<br><a href="' + item['moreInfo'] + '">More info</a>'
+      if (item['inviteonly']) {
+      data += "<br />NOTE: This competition is invite-only.<br />Please note you are not promised a spot and<br />if you'd like to participate, you should stay aware with CC's announcements and communications."
+      }
       $('#competitionfield').html(data)
     };
 
