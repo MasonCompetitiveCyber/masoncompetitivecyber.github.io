@@ -11,5 +11,29 @@
 			"inviteonly": true,
 			"location": "Online (NCL Stadium)",
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
+		},
+		{
+			"id": "2",
+			"name": "NCL Fall Regular Season",
+			"startDate": "November 2",
+			"endDate": "November 4",
+			"startTime": "12:00am",
+			"endTime": "11:59pm",
+			"year": "2018",
+			"inviteonly": true,
+			"location": "Online (NCL Stadium)",
+			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
+		},
+		{
+			"id": "3",
+			"name": "NCL Fall Postseason",
+			"startDate": "November 16",
+			"endDate": "November 18",
+			"startTime": "12:00am",
+			"endTime": "11:59pm",
+			"year": "2018",
+			"inviteonly": true,
+			"location": "Online (NCL Stadium)",
+			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		}
 	]}
