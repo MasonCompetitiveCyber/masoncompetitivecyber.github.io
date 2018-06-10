@@ -19,7 +19,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Linux For Security Work (Setup and Customization)",
 			"basictopic": "TBD"
 		},
 		{
@@ -30,7 +30,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Caffix on Angr: A Binary Analysis Framework",
 			"basictopic": "TBD"
 		},
 		{
@@ -41,7 +41,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Tyler Lambert [Topic Unset]",
 			"basictopic": "TBD"
 		},
 		{
@@ -52,7 +52,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk)",
 			"basictopic": "TBD"
 		},
 		{
@@ -63,7 +63,7 @@
 			"location": "The Hub Meeting Room 4",
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 5",
-			"advtopic": "TBD",
+			"advtopic": "Caffix on Heap Exploitation",
 			"basictopic": "TBD"
 		},
 		{
@@ -74,7 +74,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Active Offense: Nmap, Metasploit and More",
 			"basictopic": "TBD"
 		},
 		{
