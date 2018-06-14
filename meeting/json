@@ -8,7 +8,7 @@
 			"location": "The Hub Meeting Room 1 & 2",
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 1 & 2",
-			"advtopic": "Welcome to CC",
+			"advtopic": "Welcome to CC: What do we do and what do you want?",
 			"basictopic": "Welcome to CC"
 		},
 		{
@@ -30,7 +30,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Caffix on Angr: A Binary Analysis Framework",
+			"advtopic": "Caffix (CC Hacker) on Angr: A Binary Analysis Framework",
 			"basictopic": "TBD"
 		},
 		{
@@ -41,7 +41,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Tyler Lambert [Topic Unset]",
+			"advtopic": "Tyler (CC Hacker) [Topic Unset]",
 			"basictopic": "TBD"
 		},
 		{
@@ -52,7 +52,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk)",
+			"advtopic": "All the Lab Options: Learning in Live Environments",
 			"basictopic": "TBD"
 		},
 		{
@@ -63,7 +63,7 @@
 			"location": "The Hub Meeting Room 4",
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 5",
-			"advtopic": "Caffix on Heap Exploitation",
+			"advtopic": "Caffix (CC Hacker) on Heap Exploitation",
 			"basictopic": "TBD"
 		},
 		{
@@ -74,7 +74,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Active Offense: Nmap, Metasploit and More",
+			"advtopic": "Active Offense: Nmap, Metasploit, etc with patriot_down (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -85,7 +85,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "XSS with 1pwnch (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -96,7 +96,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Web App Sec: Bad Code That Isn't PHP with patriot_down (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -107,7 +107,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Quantum Crypto with Cothan (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -118,7 +118,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Exploiting in AWS with patriot_down (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -129,7 +129,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ patriot_down)",
 			"basictopic": "TBD"
 		},
 		{
@@ -140,7 +140,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Career Rountables: Talking Jobs with Members",
 			"basictopic": "TBD"
 		}
 	]
