@@ -19,7 +19,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Linux For Security Work (Setup and Customization)",
+			"advtopic": "Linux For Security Work (Setup and Customization) with Mike (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -52,7 +52,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "All the Lab Options: Learning in Live Environments",
+			"advtopic": "All the Lab Options: Learning in Live Environments with Mike (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -74,7 +74,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Active Offense: Nmap, Metasploit, etc with patriot_down (CC Hacker)",
+			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -96,7 +96,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Web App Sec: Bad Code That Isn't PHP with patriot_down (CC Hacker)",
+			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike (CC Hacker)",
 			"basictopic": "TBD"
 		},
 		{
@@ -129,7 +129,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ patriot_down)",
+			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ Mike)",
 			"basictopic": "TBD"
 		},
 		{
