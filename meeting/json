@@ -20,7 +20,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Linux For Security Work (Setup and Customization) with Mike (CC Hacker)",
-			"basictopic": "TBD"
+			"basictopic": "Linux Privilege Escalation with Paul (CC Hacker)"
 		},
 		{
 			"id": "3",
@@ -31,7 +31,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Caffix (CC Hacker) on Angr: A Binary Analysis Framework",
-			"basictopic": "TBD"
+			"basictopic": "Windows Privilege Escalation with Paul (CC Hacker)"
 		},
 		{
 			"id": "4",
@@ -42,7 +42,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Tyler (CC Hacker) [Topic Unset]",
-			"basictopic": "TBD"
+			"basictopic": "Buffer Overflows with Paul (CC Hacker)"
 		},
 		{
 			"id": "5",
@@ -53,7 +53,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "All the Lab Options: Learning in Live Environments with Mike (CC Hacker)",
-			"basictopic": "TBD"
+			"basictopic": "Gone Phishin’ - malicious docx and pdf files with Paul (CC Hacker)"
 		},
 		{
 			"id": "6",
@@ -64,7 +64,7 @@
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 5",
 			"advtopic": "Caffix (CC Hacker) on Heap Exploitation",
-			"basictopic": "TBD"
+			"basictopic": "Post Exploitation with PowerShell with Paul (CC Hacker)"
 		},
 		{
 			"id": "7",
@@ -75,7 +75,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
-			"basictopic": "TBD"
+			"basictopic": "Fun Raspberry Pi Projects (no not the food) with Paul (CC Hacker)"
 		},
 		{
 			"id": "8",
@@ -86,7 +86,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "XSS with 1pwnch (CC Hacker)",
-			"basictopic": "TBD"
+			"basictopic": "Hardware Hacking with Chuck (CC Hacker)"
 		},
 		{
 			"id": "9",
