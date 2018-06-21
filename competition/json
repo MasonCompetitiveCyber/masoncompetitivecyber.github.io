@@ -1,7 +1,19 @@
 {
 	"competitions": [
 		{
-			"id": "1",
+			"id": "2",
+			"name": "CSAW CTF Qualifiers",
+			"startDate": "September 14",
+			"endDate": "September 14",
+			"startTime": "4:00pm",
+			"endTime": "4:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
+		},
+		{
+			"id": "3",
 			"name": "NCL Fall Preseason",
 			"startDate": "October 19",
 			"endDate": "October 27",
@@ -13,7 +25,7 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "2",
+			"id": "4",
 			"name": "NCL Fall Regular Season",
 			"startDate": "November 2",
 			"endDate": "November 4",
@@ -25,7 +37,19 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "3",
+			"id": "5",
+			"name": "Hack4Troops CTF",
+			"startDate": "November 17",
+			"endDate": "November 17",
+			"startTime": "n/a",
+			"endTime": "n/a",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Not Yet Announced",
+			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
+		},
+		{
+			"id": "6",
 			"name": "NCL Fall Postseason",
 			"startDate": "November 16",
 			"endDate": "November 18",
