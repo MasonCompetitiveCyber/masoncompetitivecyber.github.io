@@ -1,6 +1,18 @@
 {
 	"competitions": [
 		{
+			"id": "1",
+			"name": "Battelle CTF Informal",
+			"startDate": "June 21",
+			"endDate": "June 21",
+			"startTime": "6:00pm",
+			"endTime": "8:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Fairfax Walgreens",
+			"moreInfo": "n/a"
+		},
+		{
 			"id": "2",
 			"name": "CSAW CTF Qualifiers",
 			"startDate": "September 14",
