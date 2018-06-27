@@ -5,7 +5,6 @@ echo "Making this run every 5min in the future"
 echo "*/5 * * * * root meeting next" >> /etc/crontab
 echo "Making run at startup"
 echo "#/bin/bash" > /etc/init.d/updaterscript
-echo "meeting" > /etc/init.d/updaterscript
 echo "/usr/local/bin/meeting next" >> /etc/init.d/updaterscript
 chmod +x /etc/init.d/updaterscript
 update-rc.d updaterscript defaults
