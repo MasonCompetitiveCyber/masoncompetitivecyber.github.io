@@ -7,5 +7,5 @@ echo "Making run at startup"
 echo "#/bin/bash" > /etc/init.d/updaterscript
 echo "meeting" > /etc/init.d/updaterscript
 echo "/usr/local/bin/meeting next" >> /etc/init.d/updaterscript
-echo "chmod +x /etc/init.d/updaterscript"
+chmod +x /etc/init.d/updaterscript
 update-rc.d updaterscript defaults
