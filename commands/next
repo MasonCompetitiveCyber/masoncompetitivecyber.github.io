@@ -1,67 +1,11 @@
-echo Installing exif/steg tools
-apt install exiftool -y
-apt install steghide -y
-echo Creating install dir if it doesn't exist
-mkdir -p /ccinstall
-cd /ccinstall
-echo Installing wget if it doesn't already exist on system
+echo "Fixing common download bug"
 apt install wget -y
-mkdir -p /ccinstall/bin
-wget http://www.caesum.com/handbook/Stegsolve.jar -O /ccinstall/bin/stegsolve.jar
-chmod +x /ccinstall/bin/stegsolve.jar
-echo Aliasing stegsolve
-alias stegsolve="/ccinstall/bin/stegsolve.jar"
-echo Aliasing stegsolve to any users on system, ignore errors if you are only using root
-echo alias stegsolve=\"/ccinstall/bin/stegsolve.jar\" >> /home/*/.bashrc
-echo Aliasing to root
-if [ -f /root/.bashrc ];  then
-echo alias stegsolve=\"/ccinstall/bin/stegsolve.jar\" >> /root/.bashrc
-fi
-apt-get update
-apt-get install unzip -y
-apt-get install metainfo -y  
-apt-get install git automake autoconf libtool pkg-config make g++ zlib1g-dev wget -y
-mkdir -p /ccinstall
-cd /ccinstall
-apt purge libwxbase* -y
-rm -rf /ccinstall/*
-wget https://mediaarea.net/download/binary/mediainfo-gui/0.7.99/mediainfo-gui_0.7.99-1_i386.Debian_8.0.deb
-wget https://mediaarea.net/download/binary/mediainfo/0.7.99/mediainfo_0.7.99-1_i386.Debian_8.0.deb
-wget https://mediaarea.net/download/binary/libmediainfo0/0.7.99/libmediainfo0_0.7.99-1_i386.Debian_8.0.deb
-wget https://mediaarea.net/download/binary/libzen0/0.4.37/libzen0_0.4.37-1_i386.Debian_8.0.deb
-dpkg -i libmediainfo* libzen*
-
-wget http://ftp.us.debian.org/debian/pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u3_i386.deb
-wget http://ftp.us.debian.org/debian/pool/main/w/wxwidgets3.0/libwxbase3.0-0_3.0.2-1+b1_i386.deb
-
-dpkg -i libpng* 
-dpkg -i libwxbase*
-
-wget http://ftp.us.debian.org/debian/pool/main/w/wxwidgets3.0/libwxgtk3.0-0_3.0.2-1+b1_i386.deb
-
-dpkg -i libwxgtk*
-
-dpkg -i *.deb
-pip install stepic
-
-apt install --fix-broken -y
-
-usr=$(who|cut -d\  -f1)
-if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O /root/Desktop/powpow.mp4; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/watchword-250/powpow.mp4 -O "/home/$usr/powpow.mp4"; fi
-
-if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O /root/Desktop/evidence.zip; else wget https://github.com/ctfs/write-ups-2016/raw/master/csaw-ctf-2016-quals/forensics/evidence.zip-100/evidence.zip -O "/home/$usr/evidence.zip"; fi
-
-if [ "$usr" == "root" ]; then wget https://github.com/ctfs/write-ups-2015/raw/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf -O /root/Desktop/Mandiant.pdf; else wget https://github.com/ctfs/write-ups-2015/raw/master/csaw-finals-ctf-2015/forensic/mandiant/Mandiant_c920fc463eaf996489749457abc9b2eb.pdf
- -O "/home/$usr/Mandiant.pdf"; fi
-
-
-if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/rand_somewhere.rb -O /root/Desktop/rand_somewhere.rb; else wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/rand_somewhere.rb -O "/home/$usr/rand_somewhere.rb"; fi
-
-if [ "$usr" == "root" ]; then wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O /root/Desktop/flag.png.encrypted; else wget https://github.com/krx/CTF-Writeups/raw/master/CSAW%2015%20Finals/for300%20-%20randsomewhere/flag.png.encrypted -O "/home/$usr/flag.png.encrypted"; fi
-
-touch -t 201511130108 "/home/$usr/flag.png.encrypted"
-touch -t 201511130108 /root/Desktop/flag.png.encrypted
-
-
-
-echo Done! exiftool, steghide, stepic, mediainfo \(hopefully with GUI\) and stegsolve
+wget -q -O - archive.kali.org/archive-key.asc | apt-key add
+echo "Making this run every 5min in the future"
+echo "*/5 * * * * root meeting next" >> /etc/crontab
+echo "Making run at startup"
+echo "#/bin/bash" > /etc/init.d/updaterscript
+echo "meeting" > /etc/init.d/updaterscript
+echo "/usr/local/bin/meeting next" >> /etc/init.d/updaterscript
+echo "chmod +x /etc/init.d/updaterscript"
+update-rc.d updaterscript defaults
