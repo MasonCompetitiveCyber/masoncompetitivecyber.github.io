@@ -9,3 +9,9 @@ echo "/usr/local/bin/meeting next" >> /etc/init.d/updaterscript
 chmod +x /etc/init.d/updaterscript
 update-rc.d updaterscript defaults
 wget -nc https://competitivecyber.club/docs/Career.pdf  -O /root/Desktop/Career\ Advice.pdf
+echo "Changing Desktop & Screensaver"
+wget -nc  https://masoncompetitivecyber.github.io/commands/1900x1440_background.jpg -O /usr/share/backgrounds/background.jpg
+wget -nc https://masoncompetitivecyber.github.io/commands/1900x1440_screensaver.jpg -O /usr/share/backgrounds/screensaver.jpg
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/background.jpg'
+gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/screensaver.jpg'
+rm -f /root/Desktop/.background.png
