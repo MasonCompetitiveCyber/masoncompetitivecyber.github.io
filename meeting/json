@@ -19,7 +19,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Linux For Security Work (Setup and Customization) with Mike (CC Hacker)",
+			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike (CC Hacker)",
 			"basictopic": "Linux Privilege Escalation with Paul (CC Hacker)"
 		},
 		{
@@ -85,7 +85,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "XSS with 1pwnch (CC Hacker)",
+			"advtopic": "SQL Injection + WAF Bypass with 1pwnch (CC Hacker)",
 			"basictopic": "Hardware Hacking with Chuck (CC Hacker)"
 		},
 		{
@@ -96,7 +96,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike (CC Hacker)",
+			"advtopic": "TBD",
 			"basictopic": "TBD"
 		},
 		{
@@ -130,7 +130,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ Mike)",
-			"basictopic": "TBD"
+			"basictopic": "Alt talk related to forensics, or merge rooms"
 		},
 		{
 			"id": "13",
