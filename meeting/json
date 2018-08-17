@@ -8,7 +8,7 @@
 			"location": "The Hub Meeting Room 1 & 2",
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 1 & 2",
-			"advtopic": "Welcome to CC: What do we do and what do you want?",
+			"advtopic": "Welcome to CC",
 			"basictopic": "Welcome to CC"
 		},
 		{
@@ -19,7 +19,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike (CC Hacker)",
+			"advtopic": "Web App Sec: Crash Course for Beginners",
 			"basictopic": "Linux Privilege Escalation with Paul (CC Hacker)"
 		},
 		{
@@ -41,7 +41,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Tyler (CC Hacker) [Topic Unset]",
+			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
 			"basictopic": "Buffer Overflows with Paul (CC Hacker)"
 		},
 		{
@@ -52,7 +52,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "All the Lab Options: Learning in Live Environments with Mike (CC Hacker)",
+			"advtopic": "2FAwful: An SMS Deep Dive and Why it Sucks",
 			"basictopic": "Gone Phishin’ - malicious docx and pdf files with Paul (CC Hacker)"
 		},
 		{
@@ -74,7 +74,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
+			"advtopic": "Tyler (CC Hacker) [Topic Unset]",
 			"basictopic": "Fun Raspberry Pi Projects (no not the food) with Paul (CC Hacker)"
 		},
 		{
@@ -96,7 +96,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "TBD",
+			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike",
 			"basictopic": "TBD"
 		},
 		{
