@@ -5,6 +5,49 @@ title: Meetings
 description: "Mason CC Meetings"
 ---
 <script src='/scripts/future.js?bust=5'></script>
+<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css' rel='stylesheet' />
+<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js'></script>
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js'></script>
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js'></script>
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/gcal.min.js'></script>
+
+<script>
+  $(document).ready(function() {
+
+$('#calendar').fullCalendar({
+
+  header: {
+    left: 'prev,next today',
+    center: 'title',
+    right: 'month,listYear'
+  },
+
+  displayEventTime: false, // don't show the time column in list view
+
+  // THIS KEY WON'T WORK IN PRODUCTION!!!
+  // To make your own Google API key, follow the directions here:
+  // http://fullcalendar.io/docs/google_calendar/
+  googleCalendarApiKey: 'AIzaSyAOL47lrhCOd_1AD9PMR94_g_Us3_Zhy1g',
+
+  // US Holidays
+  events: 'no3n6f963640hto2vk933tf200@group.calendar.google.com',
+
+  eventClick: function(event) {
+    // opens events in a popup window
+    window.open(event.url, 'gcalevent', 'width=700,height=600');
+    return false;
+  },
+
+  loading: function(bool) {
+    $('#loading').toggle(bool);
+  }
+
+});
+
+});
+
+</script>
 
 <style>
 #pageBody > div.container > div:nth-child(8) > div:nth-child(2) > label {
@@ -120,7 +163,11 @@ Try it Yourself »
 <center>
 <h2>Upcoming Events</h2>
 <p>In addition to Mason CC's meetings and competitions, the following are events we intend to have a presence at:
-<iframe src="https://calendar.google.com/calendar/b/1/embed?title=%20&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=no3n6f963640hto2vk933tf200%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width="80%" height="600" frameborder="0" scrolling="no"></iframe>
+
+  <div id='loading'>loading...</div>
+
+<div id='calendar'></div>
+
   </div>
 <br /><br />
 *A number of events will likely ask you to RSVP. If you don't you may be turned away at the door. Content may change at a moment's notice.
