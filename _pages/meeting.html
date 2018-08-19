@@ -42,11 +42,16 @@ $('#calendar').fullCalendar({
   loading: function(bool) {
     $('#loading').toggle(bool);
   }
-    
+
+
+  
 });
+$(".fc-scroller").ready(function() {
+    $(".fc-scroller").css("height","600px");
+});  
 $(".fc-listYear-button").click();
-$(".fc-scroller").css("height","600px")
 });
+
 
 </script>
 
