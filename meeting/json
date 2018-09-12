@@ -17,11 +17,11 @@
 			"meetingDate": "September 13",
 			"from": "7:00pm",
 			"to": "8:00pm",
-			"location": "Johnson Center Meeting Room E",
+			"location": "CANCELLED FOR WEATHER",
 			"year": "2018",
-			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Web App Sec: Crash Course for Beginners",
-			"basictopic": "Linux Privilege Escalation with Paul (CC Hacker)"
+			"advlocation": "CANCELLED FOR WEATHER",
+			"advtopic": "CANCELLED FOR WEATHER",
+			"basictopic": "CANCELLED FOR WEATHER"
 		},
 		{
 			"id": "3",
