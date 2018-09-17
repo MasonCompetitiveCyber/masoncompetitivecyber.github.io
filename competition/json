@@ -84,5 +84,53 @@
 			"inviteonly": true,
 			"location": "Online (NCL Stadium)",
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
+		},
+		{
+			"id": "8",
+			"name": "Metropolis ",
+			"startDate": "October 6",
+			"endDate": "October 6",
+			"startTime": "9:00am",
+			"endTime": "4:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "University of Maryland, College Park",
+			"moreInfo": "https://www.cyberskyline.com/events/metropolis-2018"
+		},
+		{
+			"id": "9",
+			"name": "P.W.N. University CTF",
+			"startDate": "October 26",
+			"endDate": "October 27",
+			"startTime": "2:18pm",
+			"endTime": "3:19pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "http://university.hctf.fun/"
+		},
+		{
+			"id": "10",
+			"name": "RuCTFE 2018",
+			"startDate": "November 10",
+			"endDate": "November 10",
+			"startTime": "5:00am",
+			"endTime": "2:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://ructfe.org/"
+		},
+		{
+			"id": "11",
+			"name": "TUCTF 2018",
+			"startDate": "November 23",
+			"endDate": "November 25",
+			"startTime": "5:00pm",
+			"endTime": "5:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://tuctf.com/"
 		}
 	]}
