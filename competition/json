@@ -24,8 +24,21 @@
 			"location": "Online",
 			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
 		},
+		
 		{
 			"id": "3",
+			"name": "picoCTF 2018",
+			"startDate": "September 28",
+			"endDate": "October 12",
+			"startTime": "12:00pm",
+			"endTime": "12:00pm",
+			"year": "2018",
+			"inviteonly": true,
+			"location": "Online",
+			"moreInfo": "https://picoctf.com/about"
+		},
+		{
+			"id": "4",
 			"name": "NCL Fall Preseason",
 			"startDate": "October 19",
 			"endDate": "October 27",
@@ -37,7 +50,7 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "4",
+			"id": "5",
 			"name": "NCL Fall Regular Season",
 			"startDate": "November 2",
 			"endDate": "November 4",
@@ -49,7 +62,7 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "5",
+			"id": "6",
 			"name": "Hack4Troops CTF",
 			"startDate": "November 17",
 			"endDate": "November 17",
@@ -61,7 +74,7 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "6",
+			"id": "7",
 			"name": "NCL Fall Postseason",
 			"startDate": "November 16",
 			"endDate": "November 18",
