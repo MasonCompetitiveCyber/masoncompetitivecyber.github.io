@@ -43,7 +43,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
-			"basictopic": "Buffer Overflows with Paul (CC Hacker)"
+			"basictopic": "Dissecting the Sakula Malware with Tyler"
 		},
 		{
 			"id": "5",
