@@ -277,10 +277,12 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("maintitle").innerHTML = "<a href='https://patriotctf.gmu.io'>patriotCTF Registration open</a>";
+        document.getElementById("maintitle").innerHTML = "<a href='https://patriotctf.gmu.io'>pgatriotCTF Registration open</a>";
     }
 }, 1000);
 $("div[class='quotes']").html("patriotCTF") = "<a href='https://patriotctf.gmu.io'>patriotCTF coming soon.</a>";
+$("#meetingbutton").html('<a class="btn btn-large btn-primary" href="https://patriotctf.gmu.io">patriotCTF</a>')
+
 pic = Math.floor(Math.random() * 28) + 1;
 $("#decorative1").css("background-image","url(https://competitivecyber.club/rolodex/"+pic+".jpg)")
 </script>
