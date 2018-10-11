@@ -65,7 +65,7 @@
 			"year": "2018",
 			"advlocation": "The Hub Meeting Room 5",
 			"advtopic": "Caffix (CC Hacker) on Heap Exploitation",
-			"basictopic": "Post Exploitation with PowerShell with Paul (CC Hacker)"
+			"basictopic": "MacOS Security"
 		},
 		{
 			"id": "7",
@@ -76,7 +76,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Tyler (CC Hacker) [Topic Unset]",
-			"basictopic": "Fun Raspberry Pi Projects (no not the food) with Paul (CC Hacker)"
+			"basictopic": "Windows Privilege Escalation with Paul (CC Hacker)"
 		},
 		{
 			"id": "8",
