@@ -87,7 +87,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "SQL Injection + WAF Bypass with 1pwnch (CC Hacker)",
-			"basictopic": "CCDC Interest/Strategy Meeting with Mike"
+			"basictopic": "CCDC Interest Strategy Meeting with Mike"
 		},
 		{
 			"id": "9",
@@ -97,7 +97,7 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Web App Sec: Bad Code That Isn't PHP with Mike",
+			"advtopic": "Web App Sec: Bad Code That Isnt PHP with Mike",
 			"basictopic": "Antiforensics - Covering Your Tracks with Paul"
 		},
 		{
