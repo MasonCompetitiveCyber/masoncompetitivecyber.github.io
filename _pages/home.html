@@ -308,36 +308,6 @@ description: "Mason Competitive Cyber is a cybersecurity organization at George 
 </script>
 
 <script>
-
-    // Set the date we're counting down to
-var countDownDate = new Date("Nov 3, 2018 10:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("maintitle").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("maintitle").innerHTML = "<a href='https://patriotctf.gmu.io'>pgatriotCTF Registration open</a>";
-    }
-}, 1000);
-$("#meetingbutton").html('<a class="btn btn-large btn-primary" href="https://patriotctf.gmu.io">patriotCTF</a>')
 pic = Math.floor(Math.random() * 28) + 1;
 $("#decorative1").css("background-image","url(https://competitivecyber.club/rolodex/"+pic+".jpg)")
 </script>
