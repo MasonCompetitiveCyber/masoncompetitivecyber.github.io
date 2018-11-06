@@ -2,79 +2,6 @@
 	"competitions": [
 		{
 			"id": "1",
-			"name": "Battelle CTF Informal",
-			"startDate": "June 21",
-			"endDate": "June 21",
-			"startTime": "6:00pm",
-			"endTime": "8:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Fairfax Walgreens",
-			"moreInfo": "n/a"
-		},
-		{
-			"id": "2",
-			"name": "CSAW CTF Qualifiers",
-			"startDate": "September 14",
-			"endDate": "September 14",
-			"startTime": "4:00pm",
-			"endTime": "4:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://csaw.engineering.nyu.edu/ctf"
-		},
-		
-		{
-			"id": "3",
-			"name": "picoCTF 2018",
-			"startDate": "September 28",
-			"endDate": "October 12",
-			"startTime": "12:00pm",
-			"endTime": "12:00pm",
-			"year": "2018",
-			"inviteonly": true,
-			"location": "Online",
-			"moreInfo": "https://picoctf.com/about"
-		},
-		{
-			"id": "4",
-			"name": "NCL Fall Preseason",
-			"startDate": "October 19",
-			"endDate": "October 27",
-			"startTime": "12:00am",
-			"endTime": "11:59pm",
-			"year": "2018",
-			"inviteonly": true,
-			"location": "Online (NCL Stadium)",
-			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
-		},
-		{
-			"id": "5",
-			"name": "NCL Fall Regular Season",
-			"startDate": "November 2",
-			"endDate": "November 4",
-			"startTime": "12:00am",
-			"endTime": "11:59pm",
-			"year": "2018",
-			"inviteonly": true,
-			"location": "Online (NCL Stadium)",
-			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
-		},
-		{
-			"id": "6",
-			"name": "Hack4Troops CTF",
-			"startDate": "November 17",
-			"endDate": "November 17",
-			"startTime": "12:00am",
-			"endTime": "11:59pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Not Yet Announced",
-			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
-		},
-		{
-			"id": "7",
 			"name": "NCL Fall Postseason",
 			"startDate": "November 16",
 			"endDate": "November 18",
@@ -86,31 +13,7 @@
 			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
 		},
 		{
-			"id": "8",
-			"name": "Metropolis ",
-			"startDate": "October 6",
-			"endDate": "October 6",
-			"startTime": "9:00am",
-			"endTime": "4:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "University of Maryland, College Park",
-			"moreInfo": "https://www.cyberskyline.com/events/metropolis-2018"
-		},
-		{
-			"id": "9",
-			"name": "P.W.N. University CTF",
-			"startDate": "October 26",
-			"endDate": "October 27",
-			"startTime": "2:18pm",
-			"endTime": "3:19pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "http://university.hctf.fun/"
-		},
-		{
-			"id": "10",
+			"id": "2",
 			"name": "RuCTFE 2018",
 			"startDate": "November 10",
 			"endDate": "November 10",
@@ -119,10 +22,10 @@
 			"year": "2018",
 			"inviteonly": false,
 			"location": "Online",
-			"moreInfo": "https://ructfe.org/"
+			"moreInfo": "https://ructfe.org/ & Please Join #ructf on our Slack"
 		},
 		{
-			"id": "11",
+			"id": "3",
 			"name": "TUCTF 2018",
 			"startDate": "November 23",
 			"endDate": "November 25",
@@ -132,5 +35,41 @@
 			"inviteonly": false,
 			"location": "Online",
 			"moreInfo": "https://tuctf.com/"
+		},
+		{
+			"id": "4",
+			"name": "SquareCTF",
+			"startDate": "November 8",
+			"endDate": "November 14",
+			"startTime": "2:00pm",
+			"endTime": "2:00pm",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://squarectf.com/"
+		},
+		{
+			"id": "5",
+			"name": "HCTF",
+			"startDate": "November 9",
+			"endDate": "November 11",
+			"startTime": "7:00am",
+			"endTime": "7:00am",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://hctf2018.bysec.io/index.en.html"
+		},
+		{
+			"id": "6",
+			"name": "Kaspersky Industrial CTF 2018",
+			"startDate": "November 23",
+			"endDate": "November 24",
+			"startTime": "9:00am",
+			"endTime": "9:00am",
+			"year": "2018",
+			"inviteonly": false,
+			"location": "Online",
+			"moreInfo": "https://ctf.kaspersky.com/"
 		}
 	]}
