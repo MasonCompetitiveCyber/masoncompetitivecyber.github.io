@@ -119,8 +119,8 @@
 			"location": "Johnson Center Meeting Room E",
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
-			"advtopic": "Exploiting in AWS with patriot_down (CC Hacker)",
-			"basictopic": "RSA w/ Zaine Wilson"
+			"advtopic": "RSA with Zaine Wilson",
+			"basictopic": "Cybercrime: The Underground Economy with Paul"
 		},
 		{
 			"id": "12",
@@ -131,7 +131,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ Mike)",
-			"basictopic": "Alt talk related to forensics, or merge rooms"
+			"basictopic": "Threat Modeling with Paul"
 		},
 		{
 			"id": "13",
@@ -142,7 +142,7 @@
 			"year": "2018",
 			"advlocation": "Johnson Center Meeting Room F",
 			"advtopic": "Career Rountables: Talking Jobs with Members",
-			"basictopic": "TBD"
+			"basictopic": "Merge Rooms"
 		}
 	]
 }
