@@ -86,14 +86,14 @@
 		},
 		{
 			"id": "8",
-			"name": "HackFortress at Shmoocon",
+			"name": "HackFortress at Shmoocon (Ticket & Attendee Required)",
 			"startDate": "January 19",
 			"endDate": "January 19",
 			"startTime": "10:00am",
 			"endTime": "???",
 			"year": "2019",
 			"inviteonly": true,
-			"location": "Shmoocon (Must be an attendee)",
+			"location": "Washington Hilton Hotel 1919 Connecticut Ave., NW Washington, DC",
 			"moreInfo": "https://www.shmoocon.org/hack-fortress/"
 		}
 	]}
