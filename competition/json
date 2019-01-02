@@ -92,8 +92,32 @@
 			"startTime": "10:00am",
 			"endTime": "???",
 			"year": "2019",
-			"inviteonly": true,
+			"inviteonly": false,
 			"location": "Washington Hilton Hotel 1919 Connecticut Ave., NW Washington, DC",
 			"moreInfo": "https://www.shmoocon.org/hack-fortress/"
+		},
+		{
+			"id": "9",
+			"name": "CCDC Virtual Qualifiers",
+			"startDate": "February 16",
+			"endDate": "February 16",
+			"startTime": "???",
+			"endTime": "???",
+			"year": "2019",
+			"inviteonly": true,
+			"location": "George Mason University",
+			"moreInfo": "https://maccdc.org"
+		},
+		{
+			"id": "10",
+			"name": "Virginia CyberFusion State Cup",
+			"startDate": "February 22",
+			"endDate": "February 23",
+			"startTime": "???",
+			"endTime": "???",
+			"year": "2019",
+			"inviteonly": true,
+			"location": "Virginia Military Institute",
+			"moreInfo": "https://conferences.vmi.edu/cyberfusion/"
 		}
 	]}
