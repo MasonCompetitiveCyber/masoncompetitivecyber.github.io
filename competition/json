@@ -89,10 +89,10 @@
 			"name": "HackFortress at Shmoocon",
 			"startDate": "January 19",
 			"endDate": "January 19",
-			"startTime": "10:00am"
+			"startTime": "10:00am",
 			"endTime": "???",
 			"year": "2019",
-			"inviteonly": false,
+			"inviteonly": true,
 			"location": "Shmoocon (Must be an attendee)",
 			"moreInfo": "https://www.shmoocon.org/hack-fortress/"
 		}
