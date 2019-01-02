@@ -71,5 +71,29 @@
 			"inviteonly": false,
 			"location": "Online",
 			"moreInfo": "https://ctf.kaspersky.com/"
+		},
+		{
+			"id": "7",
+			"name": "Capture the Flag: Cybersecurity Hackathon!",
+			"startDate": "January 9",
+			"endDate": "January 9",
+			"startTime": "5:30pm",
+			"endTime": "9:30pm",
+			"year": "2019",
+			"inviteonly": false,
+			"location": "SecureSet DC 1101 Wilson Blvd. Ste. 966 Arlington VA 22209",
+			"moreInfo": "https://secureset.com/event/capture-the-flag-cybersecurity-hackathon-dc-010919/"
+		},
+		{
+			"id": "8",
+			"name": "HackFortress at Shmoocon",
+			"startDate": "January 19",
+			"endDate": "January 19",
+			"startTime": "10:00am"
+			"endTime": "???",
+			"year": "2019",
+			"inviteonly": false,
+			"location": "Shmoocon (Must be an attendee)",
+			"moreInfo": "https://www.shmoocon.org/hack-fortress/"
 		}
 	]}
