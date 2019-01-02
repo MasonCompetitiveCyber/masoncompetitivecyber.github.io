@@ -1,0 +1,148 @@
+{
+	"meetings": [
+		{
+			"id": "1",
+			"meetingDate": "September 6",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "The Hub Meeting Room 1 & 2",
+			"year": "2018",
+			"guestsignup": "https://www.eventbrite.com/e/hack-with-cc-mason-cc-fall-18-kickoff-tickets-49401333719?aff=ebdssbdestsearch",
+			"advlocation": "The Hub Meeting Room 1 & 2",
+			"advtopic": "Welcome to CC",
+			"basictopic": "Welcome to CC"
+		},
+		{
+			"id": "2",
+			"meetingDate": "September 13",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "CANCELLED FOR WEATHER",
+			"year": "2018",
+			"advlocation": "CANCELLED FOR WEATHER",
+			"advtopic": "CANCELLED FOR WEATHER",
+			"basictopic": "CANCELLED FOR WEATHER"
+		},
+		{
+			"id": "3",
+			"meetingDate": "September 20",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "TCTF work with Zaine and Joseph (100% hands on, no speaking portion)",
+			"basictopic": "Linux Privilege Escalation with Paul (CC Hacker)"
+		},
+		{
+			"id": "4",
+			"meetingDate": "September 27",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Active Offense: Nmap, Metasploit, etc with Mike (CC Hacker)",
+			"basictopic": "Dissecting the Sakula Malware with Tyler"
+		},
+		{
+			"id": "5",
+			"meetingDate": "October 4",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Exploiting in AWS",
+			"basictopic": "Gone Phishin’ - malicious docx and pdf files with Paul (CC Hacker)"
+		},
+		{
+			"id": "6",
+			"meetingDate": "October 11",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "The Hub Meeting Room 4",
+			"year": "2018",
+			"advlocation": "The Hub Meeting Room 5",
+			"advtopic": "Caffix (CC Hacker) on Heap Exploitation",
+			"basictopic": "MacOS Security"
+		},
+		{
+			"id": "7",
+			"meetingDate": "October 18",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "From XML to IoCs: Rapid DFIR (Crypsis Talk w/ Mike)",
+			"basictopic": "Windows Privilege Escalation with Paul"
+		},
+		{
+			"id": "8",
+			"meetingDate": "October 25",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "SQL Injection + WAF Bypass with 1pwnch (CC Hacker)",
+			"basictopic": "CCDC Interest Strategy Meeting with Mike"
+		},
+		{
+			"id": "9",
+			"meetingDate": "November 1",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Web App Sec: Bad Code That Isnt PHP with Mike",
+			"basictopic": "Antiforensics - Covering Your Tracks with Paul"
+		},
+		{
+			"id": "10",
+			"meetingDate": "November 8",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Quantum Crypto with Cothan (CC Hacker)",
+			"basictopic": "PatriotCTF Challenges Walkthrough"
+		},
+		{
+			"id": "11",
+			"meetingDate": "November 15",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Cryptography with Zaine Wilson",
+			"basictopic": "Cybercrime: The Underground Economy with Paul"
+		},
+		{
+			"id": "12",
+			"meetingDate": "November 29",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Cybercrime with Paul",
+			"basictopic": "EZ Crypto with Zaine"
+		},
+		{
+			"id": "13",
+			"meetingDate": "December 6",
+			"from": "7:00pm",
+			"to": "8:00pm",
+			"location": "Johnson Center Meeting Room E",
+			"year": "2018",
+			"advlocation": "Johnson Center Meeting Room F",
+			"advtopic": "Career Rountables: Talking Jobs with Members",
+			"basictopic": "Merge Rooms"
+		}
+	]
+}
