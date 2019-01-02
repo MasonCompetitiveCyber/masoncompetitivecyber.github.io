@@ -19,8 +19,8 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
-			"basictopic": ""
+			"advtopic": "Writing Secure Code: SASL to Risk Avoidance",
+			"basictopic": "Parsing All the Things / Binary File Format Analysis"
 		},
 		{
 			"id": "3",
@@ -30,8 +30,8 @@
 			"location": "JC Meeting Room D",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
-			"basictopic": ""
+			"advtopic": "The Finer Things of AWS: Exploitability beyond EC2",
+			"basictopic": "Threat Modeling"
 		},
 		{
 			"id": "4",
@@ -41,7 +41,7 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
+			"advtopic": "Yara with Caleb Yu",
 			"basictopic": ""
 		},
 		{
@@ -53,7 +53,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "",
-			"basictopic": ""
+			"basictopic": "CCDC Prep - System Hardening Windows"
 		},
 		{
 			"id": "6",
@@ -96,7 +96,7 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room C",
-			"advtopic": "",
+			"advtopic": "Mass Linux Orchestration: Ansible Playbooks, SSH Certificates, and more",
 			"basictopic": ""
 		},
 		{
@@ -151,7 +151,7 @@
 			"location": "JC Meeting Room F",
 			"year": "2019",
 			"advlocation": "JC Meeting Room G",
-			"advtopic": "",
+			"advtopic": "Hacker Jeopardy",
 			"basictopic": ""
 		}
 	]
