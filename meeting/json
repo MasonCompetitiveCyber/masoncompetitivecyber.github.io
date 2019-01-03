@@ -8,8 +8,8 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
-			"basictopic": ""
+			"advtopic": "Writing Secure Code: SASL to Risk Avoidance",
+			"basictopic": "Parsing All the Things / Binary File Format Analysis"
 		},
 		{
 			"id": "2",
@@ -19,8 +19,8 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "Writing Secure Code: SASL to Risk Avoidance",
-			"basictopic": "Parsing All the Things / Binary File Format Analysis"
+			"advtopic": "[Reserving for Crypsis guest]",
+			"basictopic": "[Reserving for Crypsis guest]"
 		},
 		{
 			"id": "3",
@@ -42,7 +42,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "Yara with Caleb Yu",
-			"basictopic": ""
+			"basictopic": "CCDC Prep - System Hardening Windows"
 		},
 		{
 			"id": "5",
@@ -53,7 +53,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "",
-			"basictopic": "CCDC Prep - System Hardening Windows"
+			"basictopic": ""
 		},
 		{
 			"id": "6",
