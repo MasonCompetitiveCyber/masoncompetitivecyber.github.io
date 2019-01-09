@@ -62,12 +62,11 @@
 			"to": "8:00pm",
 			"location": "NO MEETING",
 			"year": "2019",
-			"cancelled": true,
 			"advlocation": "NO MEETING",
 			"advtopic": "Facilities is doing Maintenance",
-			"basictopic": "Facilities is doing Maintenance"
+			"basictopic": "Facilities is doing Maintenance",
 			"cancelled": true,
-			"reason": "Spring Break",
+			"reason": "Spring Break"
 		},
 		{
 			"id": "7",
@@ -75,7 +74,6 @@
 			"from": "7:00pm",
 			"to": "8:00pm",
 			"location": "NO MEETING",
-			"cancelled": true,
 			"reason": "Spring Break",
 			"year": "2019",
 			"cancelled": true,
