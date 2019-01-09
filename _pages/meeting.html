@@ -56,6 +56,10 @@ $(".fc-listYear-button").click();
 </script>
 
 <style>
+.cancelledmeeting {
+  pointer-events: none;
+  background-color: darkred;
+}
 
 @media (max-width : 600px) {
   .fc-left  {
@@ -242,7 +246,11 @@ $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function(
       if (newbit == 0) {
         newbit = item['id']
       }
+      if (item["cancelled"]) {
+        entry = entry + "<li class='selectorbs cancelledmeeting'><a href=javascript:readCompetition(" + item['id'] + ")> Cancelled " + item["name"] + "</a></li>"
+      } else {
         entry = entry + "<li class='selectorbs'><a href=javascript:readCompetition(" + item['id'] + ")>" + item["name"] + "</a></li>"
+      }
     }
   });
   entry = entry + '</ul></button>'

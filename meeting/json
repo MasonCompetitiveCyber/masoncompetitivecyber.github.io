@@ -19,8 +19,8 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "[Reserving for Crypsis guest]",
-			"basictopic": "[Reserving for Crypsis guest]"
+			"advtopic": "Britton Manahan from The Crypsis Group (Details Pending)",
+			"basictopic": "Britton Manahan from The Crypsis Group (Details Pending)"
 		},
 		{
 			"id": "3",
@@ -30,7 +30,7 @@
 			"location": "JC Meeting Room D",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "The Finer Things of AWS: Exploitability beyond EC2",
+			"advtopic": "Web Application Exploitation feat. PHP",
 			"basictopic": "Threat Modeling"
 		},
 		{
@@ -52,8 +52,8 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
-			"basictopic": ""
+			"advtopic": "[Saved for Guest]",
+			"basictopic": "[Saved for guest]"
 		},
 		{
 			"id": "6",
@@ -62,9 +62,12 @@
 			"to": "8:00pm",
 			"location": "NO MEETING",
 			"year": "2019",
+			"cancelled": true,
 			"advlocation": "NO MEETING",
 			"advtopic": "Facilities is doing Maintenance",
 			"basictopic": "Facilities is doing Maintenance"
+			"cancelled": true,
+			"reason": "Spring Break",
 		},
 		{
 			"id": "7",
@@ -72,7 +75,10 @@
 			"from": "7:00pm",
 			"to": "8:00pm",
 			"location": "NO MEETING",
+			"cancelled": true,
+			"reason": "Spring Break",
 			"year": "2019",
+			"cancelled": true,
 			"advlocation": "NO MEETING",
 			"advtopic": "Spring Break",
 			"basictopic": "Spring Break"
@@ -85,8 +91,8 @@
 			"location": "JC Meeting Room C",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "Spring Break",
-			"basictopic": "Spring Break"
+			"advtopic": "Introduction to Reverse Engineering",
+			"basictopic": ""
 		},
 		{
 			"id": "9",
@@ -96,7 +102,7 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room C",
-			"advtopic": "Mass Linux Orchestration: Ansible Playbooks, SSH Certificates, and more",
+			"advtopic": "Exploit Development",
 			"basictopic": ""
 		},
 		{
@@ -107,7 +113,7 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
+			"advtopic": "The Finer Things of AWS: Exploitability beyond EC2",
 			"basictopic": ""
 		},
 		{
@@ -118,7 +124,7 @@
 			"location": "JC Meeting Room A",
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
-			"advtopic": "",
+			"advtopic": "Python and Ruby in Security",
 			"basictopic": ""
 		},
 		{
@@ -129,7 +135,7 @@
 			"location": "JC Meeting Room C",
 			"year": "2019",
 			"advlocation": "JC Meeting Room G",
-			"advtopic": "",
+			"advtopic": "Mass Linux Orchestration: Ansible Playbooks, SSH Certificates, and more",
 			"basictopic": ""
 		},
 		{
@@ -152,7 +158,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room G",
 			"advtopic": "Hacker Jeopardy",
-			"basictopic": ""
+			"basictopic": "Slideshow Karaoke"
 		}
 	]
 }
