@@ -9,7 +9,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "Writing Secure Code: SASL to Risk Avoidance",
-			"basictopic": "Parsing All the Things / Binary File Format Analysis"
+			"basictopic": "CCDC Prep - System Hardening Windows"
 		},
 		{
 			"id": "2",
@@ -42,7 +42,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "Yara with Caleb Yu",
-			"basictopic": "CCDC Prep - System Hardening Windows"
+			"basictopic": "Windows Registry Deep Dive"
 		},
 		{
 			"id": "5",
@@ -90,7 +90,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "Introduction to Reverse Engineering",
-			"basictopic": ""
+			"basictopic": "Parsing All the Things / Binary File Format Analysis"
 		},
 		{
 			"id": "9",
