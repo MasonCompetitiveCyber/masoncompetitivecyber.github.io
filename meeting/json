@@ -102,7 +102,8 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room C",
 			"advtopic": "Exploit Development with Caffix",
-			"basictopic": ""
+			"basictopic": "Exploit Development with Caffix",
+			"guestsignup": "https://www.eventbrite.com/e/exploit-development-with-chris-caffix-roberts-tickets-54793531929"
 		},
 		{
 			"id": "10",
