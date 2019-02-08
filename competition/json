@@ -2,102 +2,6 @@
 	"competitions": [
 		{
 			"id": "1",
-			"name": "NCL Fall Postseason",
-			"startDate": "November 16",
-			"endDate": "November 18",
-			"startTime": "12:00am",
-			"endTime": "11:59pm",
-			"year": "2018",
-			"inviteonly": true,
-			"location": "Online (NCL Stadium)",
-			"moreInfo": "https://www.nationalcyberleague.org/fall-season"
-		},
-		{
-			"id": "2",
-			"name": "RuCTFE 2018",
-			"startDate": "November 10",
-			"endDate": "November 10",
-			"startTime": "5:00am",
-			"endTime": "2:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://ructfe.org/ & Please Join #ructf on our Slack"
-		},
-		{
-			"id": "3",
-			"name": "TUCTF 2018",
-			"startDate": "November 23",
-			"endDate": "November 25",
-			"startTime": "5:00pm",
-			"endTime": "5:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://tuctf.com/"
-		},
-		{
-			"id": "4",
-			"name": "SquareCTF",
-			"startDate": "November 8",
-			"endDate": "November 14",
-			"startTime": "2:00pm",
-			"endTime": "2:00pm",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://squarectf.com/"
-		},
-		{
-			"id": "5",
-			"name": "HCTF",
-			"startDate": "November 9",
-			"endDate": "November 11",
-			"startTime": "7:00am",
-			"endTime": "7:00am",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://hctf2018.bysec.io/index.en.html"
-		},
-		{
-			"id": "6",
-			"name": "Kaspersky Industrial CTF 2018",
-			"startDate": "November 23",
-			"endDate": "November 24",
-			"startTime": "9:00am",
-			"endTime": "9:00am",
-			"year": "2018",
-			"inviteonly": false,
-			"location": "Online",
-			"moreInfo": "https://ctf.kaspersky.com/"
-		},
-		{
-			"id": "7",
-			"name": "Capture the Flag: Cybersecurity Hackathon!",
-			"startDate": "January 9",
-			"endDate": "January 9",
-			"startTime": "5:30pm",
-			"endTime": "9:30pm",
-			"year": "2019",
-			"inviteonly": false,
-			"location": "SecureSet DC 1101 Wilson Blvd. Ste. 966 Arlington VA 22209",
-			"moreInfo": "https://secureset.com/event/capture-the-flag-cybersecurity-hackathon-dc-010919/"
-		},
-		{
-			"id": "8",
-			"name": "HackFortress at Shmoocon (Ticket & Attendee Required)",
-			"startDate": "January 19",
-			"endDate": "January 19",
-			"startTime": "10:00am",
-			"endTime": "4:00pm",
-			"year": "2019",
-			"inviteonly": false,
-			"location": "Washington Hilton Hotel 1919 Connecticut Ave., NW Washington, DC",
-			"moreInfo": "https://www.shmoocon.org/hack-fortress/"
-		},
-		{
-			"id": "9",
 			"name": "CCDC Virtual Qualifiers",
 			"startDate": "February 11",
 			"endDate": "February 11",
@@ -109,7 +13,7 @@
 			"moreInfo": "https://maccdc.org"
 		},
 		{
-			"id": "10",
+			"id": "2",
 			"name": "Virginia CyberFusion State Cup",
 			"startDate": "February 22",
 			"endDate": "February 23",
@@ -119,5 +23,29 @@
 			"inviteonly": true,
 			"location": "Virginia Military Institute",
 			"moreInfo": "https://conferences.vmi.edu/cyberfusion/"
+		},
+		{
+			"id": "3",
+			"name": "DawgCTF 2019",
+			"startDate": "March 2",
+			"endDate": "March 2",
+			"startTime": "10:00am",
+			"endTime": "6:00pm",
+			"year": "2019",
+			"inviteonly": false,
+			"location": "UMBC",
+			"moreInfo": "https://umbccd.umbc.edu/dawgctf"
+		},
+		{
+			"id": "4",
+			"name": "Virginia Tech Summit",
+			"startDate": "March 23",
+			"endDate": "March 23",
+			"startTime": "9:00am",
+			"endTime": "5:00pm",
+			"year": "2019",
+			"inviteonly": false,
+			"location": "Virginia Tech",
+			"moreInfo": "http://vtcsec.org/summit.html"
 		}
 	]}
