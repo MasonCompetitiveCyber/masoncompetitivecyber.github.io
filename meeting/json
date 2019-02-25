@@ -54,7 +54,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "[Saved for Guest]",
-			"basictopic": "[Saved for guest]"
+			"basictopic": "CyberFusion Challenges Walkthrough"
 		},
 		{
 			"id": "6",
@@ -114,7 +114,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "The Finer Things of AWS: Exploitability beyond EC2",
-			"basictopic": "Threat Intel"
+			"basictopic": "Windows Registry Deep Dive"
 		},
 		{
 			"id": "11",
@@ -125,7 +125,7 @@
 			"year": "2019",
 			"advlocation": "JC Meeting Room F",
 			"advtopic": "Python and Ruby in Security",
-			"basictopic": ""
+			"basictopic": "Threat Intel"
 		},
 		{
 			"id": "12",
