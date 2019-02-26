@@ -26,18 +26,6 @@
 		},
 		{
 			"id": "3",
-			"name": "DawgCTF 2019",
-			"startDate": "March 2",
-			"endDate": "March 2",
-			"startTime": "10:00am",
-			"endTime": "6:00pm",
-			"year": "2019",
-			"inviteonly": false,
-			"location": "UMBC",
-			"moreInfo": "https://umbccd.umbc.edu/dawgctf"
-		},
-		{
-			"id": "4",
 			"name": "Virginia Tech Summit",
 			"startDate": "March 23",
 			"endDate": "March 23",
