@@ -35,5 +35,17 @@
 			"inviteonly": false,
 			"location": "Virginia Tech",
 			"moreInfo": "http://vtcsec.org/summit.html"
+		},
+		{
+			"id": "4",
+			"name": "UMDCTF 2019",
+			"startDate": "April 6",
+			"endDate": "April 6",
+			"startTime": "10:00am",
+			"endTime": "5:30pm",
+			"year": "2019",
+			"inviteonly": false,
+			"location": "UMD",
+			"moreInfo": "http://umdctf.io"
 		}
 	]}
