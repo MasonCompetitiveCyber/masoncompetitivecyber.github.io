@@ -143,11 +143,11 @@
 			"meetingDate": "April 24",
 			"from": "7:00pm",
 			"to": "8:00pm",
-			"location": "JC Meeting Room A",
+			"location": "JC Meeting Room C",
 			"year": "2019",
 			"advlocation": "JC Meeting Room C",
-			"advtopic": "(Unrecorded) Recaps of NCL, CCDC and Cyber Cup",
-			"basictopic": ""
+			"advtopic": "The Hopper: Data Exfiltration over Multiple UDP Protocols",
+			"basictopic": "The Hopper: Data Exfiltration over Multiple UDP Protocols"
 		},
 		{
 			"id": "14",
