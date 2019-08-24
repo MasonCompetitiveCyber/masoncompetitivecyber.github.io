@@ -267,7 +267,9 @@ function readMeeting(id) {
       $('#meetingbutton').html(item['meetingDate']+'<span class=\'caret\'></span>')
       if ((item['basictopic'] == item['advtopic'])&&(item['location'] == item['advlocation'])) {
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to'] + '.'
-      } else {
+      } else if(item['advtopic']==""){
+      data =  'On Wednesday, ' + item['meetingDate'] + ' our meeting topic will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>.'
+      }
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
       }
       if (item.hasOwnProperty('guestsignup')){
