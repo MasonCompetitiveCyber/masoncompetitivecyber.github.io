@@ -1,0 +1,169 @@
+{
+  "meetings": [
+    {
+      "id": "1",
+      "meetingDate": "September 4",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "Welcome to MasonCC!"
+    },
+    {
+      "id": "2",
+      "meetingDate": "September 11",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "3",
+      "meetingDate": "September 18",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "4",
+      "meetingDate": "September 25",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "5",
+      "meetingDate": "October 2",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "6",
+      "meetingDate": "October 9",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room B",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "7",
+      "meetingDate": "October 16",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "8",
+      "meetingDate": "October 23",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "9",
+      "meetingDate": "October 30",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room B",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "10",
+      "meetingDate": "November 6",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "11",
+      "meetingDate": "November 13",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "12",
+      "meetingDate": "November 20",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "13",
+      "meetingDate": "November 27",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "14",
+      "meetingDate": "December 4",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    },
+    {
+      "id": "15",
+      "meetingDate": "December 11",
+      "from": "7:30pm",
+      "to": "8:30pm",
+      "location": "JC Meeting Room C",
+      "year": "2019",
+      "advlocation": "",
+      "advtopic": "",
+      "basictopic": "TBD"
+    }
+  ]
+}
