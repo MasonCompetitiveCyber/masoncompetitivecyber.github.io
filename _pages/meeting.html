@@ -269,7 +269,7 @@ function readMeeting(id) {
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to'] + '.'
       } else if(item['advtopic']==""){
       data =  'On Wednesday, ' + item['meetingDate'] + ' our meeting topic will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>.'
-      }
+      }else{
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
       }
       if (item.hasOwnProperty('guestsignup')){
