@@ -20,7 +20,7 @@
       "year": "2019",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "TBD"
+      "basictopic": "Introduction to web exploitation"
     },
     {
       "id": "3",
@@ -31,7 +31,7 @@
       "year": "2019",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "TBD"
+      "basictopic": "Introduction to cryptography"
     },
     {
       "id": "4",
@@ -42,7 +42,7 @@
       "year": "2019",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "TBD"
+      "basictopic": "Introduction to reverse engineering"
     },
     {
       "id": "5",
