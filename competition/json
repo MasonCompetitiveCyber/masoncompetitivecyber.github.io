@@ -47,5 +47,17 @@
 			"inviteonly": false,
 			"location": "UMD",
 			"moreInfo": "http://umdctf.io"
+		},
+		{
+			"id": "5",
+			"name": "MetaCTF 2019",
+			"startDate": "November 2",
+			"endDate": "November 2",
+			"startTime": "9:00am",
+			"endTime": "4:30pm",
+			"year": "2019",
+			"inviteonly": true,
+			"location": "UVA",
+			"moreInfo": "https://metactf.com/about"
 		}
 	]}
