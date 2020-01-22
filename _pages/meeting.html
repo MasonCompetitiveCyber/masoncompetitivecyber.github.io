@@ -268,11 +268,7 @@ function readMeeting(id) {
       if ((item['basictopic'] == item['advtopic'])&&(item['location'] == item['advlocation'])) {
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to'] + '.'
       } else if(item['advtopic']==""){
-          if(item.hasOwnProperty['Tuesday']){
-            data =  'On Tuesday, ' + item['meetingDate'] + ' our meeting topic will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>.'
-          }else{
-            data =  'On Wednesday, ' + item['meetingDate'] + ' our meeting topic will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>.'
-          }
+          data =  'On '+item['weekday']+', ' + item['meetingDate'] + ' our meeting will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>.'
           
       }else{
       data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
