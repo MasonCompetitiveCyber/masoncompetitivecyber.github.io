@@ -14,7 +14,7 @@
     },
     {
       "id": "2",
-      "meetingDate": "Febuary 4",
+      "meetingDate": "February 4",
       "from": "5:30pm",
       "to": "6:30pm",
       "location": "Hub Room 1",
@@ -26,7 +26,7 @@
     },
     {
       "id": "3",
-      "meetingDate": "Febuary 12",
+      "meetingDate": "February 12",
       "from": "4:30pm",
       "to": "5:30pm",
       "location": "Hub Room 1",
@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "meetingDate": "Febuary 18",
+      "meetingDate": "February 18",
       "from": "4:30pm",
       "to": "5:30pm",
       "location": "Hub Room 1",
@@ -50,7 +50,7 @@
     },
     {
       "id": "5",
-      "meetingDate": "Febuary 26",
+      "meetingDate": "February 26",
       "from": "4:30pm",
       "to": "5:30pm",
       "location": "JC Gold Room",
