@@ -86,7 +86,7 @@
     },
     {
       "id": "8",
-      "meetingDate": "March 25",
+      "meetingDate": "March 24",
       "from": "5:30pm",
       "to": "6:30pm",
       "location": "TCP/IP packets of some kind",
@@ -94,7 +94,7 @@
       "advlocation": "",
       "advtopic": "",
       "basictopic": "More HTB and CCDC Debrief",
-      "weekday":"Wednesday"
+      "weekday":"Tuesday"
     },
     {
       "id": "9",
