@@ -101,10 +101,11 @@
       "meetingDate": "April 1",
       "from": "4:30pm",
       "to": "5:30pm",
-      "location": "JC Meeting Room E",
+      "location": "a discord call, probably",
       "year": "2020",
       "advlocation": "",
       "advtopic": "",
+      "basictopic": "Moar HTB",
       "weekday":"Wednesday"
     },
     {
@@ -112,11 +113,11 @@
       "meetingDate": "April 7",
       "from": "4:30pm",
       "to": "5:30pm",
-      "location": "JC Meeting Room E",
+      "location": "Blackboard Collaborate Ultra. Just kidding, it's in discord",
       "year": "2020",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "",
+      "basictopic": "Steganography Basics",
       "weekday":"Tuesday"
     },
     {
@@ -124,11 +125,11 @@
       "meetingDate": "April 15",
       "from": "4:30pm",
       "to": "5:30pm",
-      "location": "JC Meeting Room F",
+      "location": "discord, live from Zaine's doomsday bunker",
       "year": "2020",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "",
+      "basictopic": "Laying the pipes: pivoting and offensive networking",
       "weekday":"Wednesday"
     },
     {
