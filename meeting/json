@@ -147,13 +147,13 @@
     {
       "id": "13",
       "meetingDate": "April 29",
-      "from": "4:30pm",
-      "to": "5:30pm",
-      "location": "JC Meeting Room E",
+      "from": "5:30pm",
+      "to": "6:30pm",
+      "location": "discord",
       "year": "2020",
       "advlocation": "",
       "advtopic": "",
-      "basictopic": "",
+      "basictopic": "PatriotCTF Challenge Q&A",
       "weekday":"Wednesday"
     }
     
