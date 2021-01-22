@@ -1,0 +1,54 @@
+{
+  "meetings": [
+		{
+		  "id": "1",
+		  "meetingDate": "January 27",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Welcome to MasonCC!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "2",
+		  "meetingDate": "February 3",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Offensive Programming in Golang with @zwilson2",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "3",
+		  "meetingDate": "February 10",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "An awesome topic!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "4",
+		  "meetingDate": "February 17",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "An awesome topic!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "5",
+		  "meetingDate": "February 24",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "An awesome topic!",
+		  "weekday":"Wednesday"
+		}
+	]
+}
