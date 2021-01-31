@@ -3,8 +3,8 @@
 		{
 		  "id": "1",
 		  "meetingDate": "February 3",
-		  "from": "7:30pm",
-		  "to": "8:30pm",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
 		  "location": "On Zoom!",
 		  "year": "2021",
 		  "basictopic": "Welcome to MasonCC!",
@@ -12,13 +12,13 @@
 		},
 		{
 		  "id": "2",
-		  "meetingDate": "February 10",
+		  "meetingDate": "February 9",
 		  "from": "7:30pm",
 		  "to": "8:30pm",
 		  "location": "On Zoom!",
 		  "year": "2021",
 		  "basictopic": "Offensive Programming in Golang with @zwilson2",
-		  "weekday":"Wednesday"
+		  "weekday":"Tuesday"
 		},
 		{
 		  "id": "3",
@@ -32,13 +32,13 @@
 		},
 		{
 		  "id": "4",
-		  "meetingDate": "February 24",
+		  "meetingDate": "February 23",
 		  "from": "7:30pm",
 		  "to": "8:30pm",
 		  "location": "On Zoom!",
 		  "year": "2021",
 		  "basictopic": "An awesome topic!",
-		  "weekday":"Wednesday"
+		  "weekday":"Tuesday"
 		},
 		{
 		  "id": "5",
