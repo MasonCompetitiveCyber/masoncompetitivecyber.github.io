@@ -23,11 +23,11 @@
 		{
 		  "id": "3",
 		  "meetingDate": "February 17",
-		  "from": "7:30pm",
-		  "to": "8:30pm",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
 		  "location": "On Zoom!",
 		  "year": "2021",
-		  "basictopic": "An awesome topic!",
+		  "basictopic": "Offensive Persistence with @aoliveau",
 		  "weekday":"Wednesday"
 		},
 		{
