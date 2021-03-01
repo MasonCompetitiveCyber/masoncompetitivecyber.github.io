@@ -43,11 +43,11 @@
 		{
 		  "id": "5",
 		  "meetingDate": "March 3",
-		  "from": "7:30pm",
-		  "to": "8:30pm",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
 		  "location": "On Zoom!",
 		  "year": "2021",
-		  "basictopic": "An awesome topic!",
+		  "basictopic": "MACCDC Qualifiers Debrief with the MACCDC Team!",
 		  "weekday":"Wednesday"
 		}
 	]
