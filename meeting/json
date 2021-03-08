@@ -49,6 +49,16 @@
 		  "year": "2021",
 		  "basictopic": "MACCDC Qualifiers Debrief with the MACCDC Team!",
 		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "6",
+		  "meetingDate": "March 9",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Yara rules and a few other random threat detection tools with @cyu21!",
+		  "weekday":"Tuesday"
 		}
 	]
 }
