@@ -59,6 +59,16 @@
 		  "year": "2021",
 		  "basictopic": "Yara rules and a few other random threat detection tools with @cyu21!",
 		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "7",
+		  "meetingDate": "March 17",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Lockpicking, Door Attacks, and RFID attacks with Zaine",
+		  "weekday":"Wednesday"
 		}
 	]
 }
