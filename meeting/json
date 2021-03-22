@@ -69,6 +69,26 @@
 		  "year": "2021",
 		  "basictopic": "Lockpicking, Door Attacks, and RFID attacks with Zaine",
 		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "8",
+		  "meetingDate": "March 23",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Pivoting and Offensive Networking with Zaine",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "9",
+		  "meetingDate": "March 31",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Guest Talk with Sounil Yu",
+		  "weekday":"Wednesday"
 		}
 	]
 }
