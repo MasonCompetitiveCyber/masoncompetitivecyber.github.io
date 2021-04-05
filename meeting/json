@@ -89,6 +89,16 @@
 		  "year": "2021",
 		  "basictopic": "Guest Talk with Sounil Yu",
 		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "10",
+		  "meetingDate": "April 6",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Kerberos with @cmperk",
+		  "weekday":"Tuesday"
 		}
 	]
 }
