@@ -99,6 +99,17 @@
 		  "year": "2021",
 		  "basictopic": "Kerberos with @cmperk",
 		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "11",
+		  "meetingDate": "April 14",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Topic TBD!",
+		  "weekday":"Wednesday"
 		}
+
 	]
 }
