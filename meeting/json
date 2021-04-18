@@ -109,6 +109,16 @@
 		  "year": "2021",
 		  "basictopic": "Topic TBD!",
 		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "12",
+		  "meetingDate": "April 20",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Sponsored talk with CACI's Mitch Palmer: Password Cracking",
+		  "weekday":"Wednesday"
 		}
 
 	]
