@@ -1,0 +1,125 @@
+{
+  "meetings": [
+		{
+		  "id": "1",
+		  "meetingDate": "February 3",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Welcome to MasonCC!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "2",
+		  "meetingDate": "February 9",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Offensive Programming in Golang with @zwilson2",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "3",
+		  "meetingDate": "February 17",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Offensive Persistence with @aoliveau",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "4",
+		  "meetingDate": "February 23",
+		  "from": "7:30pm",
+		  "to": "8:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Analyzing Malicious Network Traffic with @Hoa!",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "5",
+		  "meetingDate": "March 3",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "MACCDC Qualifiers Debrief with the MACCDC Team!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "6",
+		  "meetingDate": "March 9",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Yara rules and a few other random threat detection tools with @cyu21!",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "7",
+		  "meetingDate": "March 17",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Lockpicking, Door Attacks, and RFID attacks with Zaine",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "8",
+		  "meetingDate": "March 23",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Pivoting and Offensive Networking with Zaine",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "9",
+		  "meetingDate": "March 31",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Guest Talk with Sounil Yu",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "10",
+		  "meetingDate": "April 6",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Kerberos with @cmperk",
+		  "weekday":"Tuesday"
+		},
+		{
+		  "id": "11",
+		  "meetingDate": "April 14",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Topic TBD!",
+		  "weekday":"Wednesday"
+		},
+		{
+		  "id": "12",
+		  "meetingDate": "April 20",
+		  "from": "6:30pm",
+		  "to": "7:30pm",
+		  "location": "On Zoom!",
+		  "year": "2021",
+		  "basictopic": "Sponsored talk with CACI's Mitch Palmer: Password Cracking",
+		  "weekday":"Wednesday"
+		}
+
+	]
+}
