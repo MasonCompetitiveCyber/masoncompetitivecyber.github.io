@@ -39,34 +39,37 @@ that meets weekly and specializes in competing."
       <div class="span10" style="font-size: 14px;" id="divMain">
 
         <div class="lead">
-          <img class="logo" src="images/transparent_minimal.png" width="10%" height="2em" /><br>
-          <p style="color: grey; font-size: 0.75em"><i>Logo Credit: Katie Gilder</i></p>
+          <img class="logo" src="images/transparent_minimal.png" alt="Logo Credit: Katie Gilder" width="10%"
+            height="2em" /><br>
 
           <h2>Welcome to Mason CC</h2>
 
-          <p style="font-size: 14px;">Mason Competitive Cyber is the sole cybersecurity organization at GMU.
+          <p>Mason Competitive Cyber is the sole cybersecurity organization at GMU.
             <br><br>
-            <br>Our next meeting is at <b><span id="location"></span> on <span id="date"></span> from <span
-                id="start"></span> to <span id="finish"></span></a>.</b> <span id="signup"></span>
-            <br />
+          <div id="meeting-info">
+            <div><strong>Join us at our next meeting!</strong></div>
+            <div><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="location"></span></div>
+            <div><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date"></span></div>
+            <div><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="start"></span> to <span id="finish"></span>
+            </div>
+            <div><i class="fa fa-info-circle" aria-hidden="true"></i> <span id="info"></span></div>
+            <div><span id="signup"></div>
+          </div><br /><br />
           <h3>If you otherwise need to contact us, email us at masoncc@gmu.edu</h3>
-          <br>
           <br>
           </p>
           <hr>
           <h2>Want to Get Involved? Join our Chat!</h2>
-          <p>If you are a George Mason student, enter your NetID below and you should get an email in your inbox!</p>
+          <p>If you are a George Mason student, click below and use your GMU email to sign up!</p>
+
 
           <div class="form-group">
-            <div class="input-append">
-              <form id="joinup" onsubmit="javascript:joinSlack();return false;">
-                <input class="span2" id="netid" style="text-align: right;" type="text">
-                <span class="add-on">@gmu.edu</span>
-            </div><br>
-            <button type="button" id="chatjoin" onclick="javascript:joinSlack();" id="button"
-              class="btn btn-primary btn-large">Join our Slack</button>
+            <a type="button" id="chatjoin" id="button" class="btn btn-primary btn-large"
+              href="https://masoncc.slack.com/join/signup#/domain-signup">Join our Slack</a>
           </div>
           <br>
+          <h6><strong>Faculty/staff?</strong> The Slack is for students only. Feel free to email us instead at
+            masoncc@gmu.edu.</h6>
           <!-- <div id="response"></div>
           <h2>Hate Slack? Join our mailing list!</h2>
           <p class="descript">If you hate Slack but still want notifications, you can subscribe to a list that notifies
@@ -122,6 +125,8 @@ that meets weekly and specializes in competing."
             <td>State Cup</td>
             <td>VMI</td>
             <td><i class="fas fa-medal" style="
+                                  color: gold;
+                              "></i><i class="fas fa-medal" style="
                                   color: gold;
                               "></i><i class="fas fa-medal" style="
                                   color: silver;
@@ -364,8 +369,8 @@ that meets weekly and specializes in competing."
         $("#location").html(item['location'])
         $("#start").html(item['from'])
         $("#finish").html(item['to'])
-        $("#advloc ").html(item['advlocation'])
         $('#date').html(item['meetingDate'])
+        $('#info').html(item['basictopic'])
         if (item.hasOwnProperty('guestsignup')) {
           data = '<span style="font-weight: bold; color: red"> Signup is enforced for this event, please visit <a href="' + item['guestsignup'] + '">the signup page</a> for more.</span>'
           $('#signup').html(data)

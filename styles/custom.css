@@ -483,3 +483,10 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
     .navbar .ddmenu {margin-top: 0px;margin-bottom: 0px;}
 
 }
+
+#meeting-info {
+    border: 3px solid #40ac62;
+    border-radius: 5px;
+    padding: 7px 20px;
+    display: inline-block;
+}
