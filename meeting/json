@@ -10,7 +10,7 @@
 		  "basictopic": "Welcome to MasonCC!",
 		  "weekday":"Wednesday"
 		},
-        {
+    {
 		  "id": "2",
 		  "meetingDate": "September 8",
 		  "from": "6:00pm",
@@ -20,7 +20,7 @@
 		  "basictopic": "TBA",
 		  "weekday":"Wednesday"
 		},
-        {
+    {
 		  "id": "3",
 		  "meetingDate": "September 15",
 		  "from": "6:00pm",
@@ -30,105 +30,105 @@
 		  "basictopic": "TBA",
 		  "weekday":"Wednesday"
 		},
-        {
-          "id": "4",
-          "meetingDate": "September 22",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "5",
-          "meetingDate": "September 29",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "6",
-          "meetingDate": "October 6",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "7",
-          "meetingDate": "October 13",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "8",
-          "meetingDate": "October 20",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "9",
-          "meetingDate": "October 27",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "10",
-          "meetingDate": "November 3",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "11",
-          "meetingDate": "November 10",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "12",
-          "meetingDate": "November 17",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "TBA",
-          "weekday":"Wednesday"
-        },
-        {
-          "id": "13",
-          "meetingDate": "December 1",
-          "from": "6:00pm",
-          "to": "7:00pm",
-          "location": "JC Room B",
-          "year": "2021",
-          "basictopic": "MasonCC Defcon and De-stress",
-          "weekday":"Wednesday"
-        },
+    {
+      "id": "4",
+      "meetingDate": "September 22",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "5",
+      "meetingDate": "September 29",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "6",
+      "meetingDate": "October 6",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "7",
+      "meetingDate": "October 13",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "8",
+      "meetingDate": "October 20",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "9",
+      "meetingDate": "October 27",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "10",
+      "meetingDate": "November 3",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "11",
+      "meetingDate": "November 10",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "12",
+      "meetingDate": "November 17",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "TBA",
+      "weekday":"Wednesday"
+    },
+    {
+      "id": "13",
+      "meetingDate": "December 1",
+      "from": "6:00pm",
+      "to": "7:00pm",
+      "location": "JC Room B",
+      "year": "2021",
+      "basictopic": "MasonCC Defcon and De-stress",
+      "weekday":"Wednesday"
+    }
 	]
 }
