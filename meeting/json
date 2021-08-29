@@ -8,7 +8,8 @@
 		  "location": "JC Room B",
 		  "year": "2021",
 		  "basictopic": "Welcome to MasonCC!",
-		  "weekday":"Wednesday"
+		  "weekday":"Wednesday",
+		  "rsvp":"https://cglink.me/2d7/r1139645"
 		},
     {
 		  "id": "2",
@@ -18,7 +19,8 @@
 		  "location": "JC Room B",
 		  "year": "2021",
 		  "basictopic": "TBA",
-		  "weekday":"Wednesday"
+		  "weekday":"Wednesday",
+		  "rsvp":"https://cglink.me/2d7/r1139680"
 		},
     {
 		  "id": "3",
@@ -28,7 +30,8 @@
 		  "location": "JC Room B",
 		  "year": "2021",
 		  "basictopic": "TBA",
-		  "weekday":"Wednesday"
+		  "weekday":"Wednesday",
+		  "rsvp":"https://cglink.me/2d7/r1139681"
 		},
     {
       "id": "4",
@@ -38,7 +41,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139682"
     },
     {
       "id": "5",
@@ -48,7 +52,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139683"
     },
     {
       "id": "6",
@@ -58,7 +63,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139684"
     },
     {
       "id": "7",
@@ -68,7 +74,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139685"
     },
     {
       "id": "8",
@@ -78,7 +85,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139686"
     },
     {
       "id": "9",
@@ -88,7 +96,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139687"
     },
     {
       "id": "10",
@@ -98,7 +107,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139688"
     },
     {
       "id": "11",
@@ -108,7 +118,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139689"
     },
     {
       "id": "12",
@@ -118,7 +129,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "TBA",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139690"
     },
     {
       "id": "13",
@@ -128,7 +140,8 @@
       "location": "JC Room B",
       "year": "2021",
       "basictopic": "MasonCC Defcon and De-stress",
-      "weekday":"Wednesday"
+      "weekday":"Wednesday",
+      "rsvp":"https://cglink.me/2d7/r1139691"
     }
 	]
 }
