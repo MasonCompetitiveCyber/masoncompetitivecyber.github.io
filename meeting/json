@@ -18,7 +18,7 @@
 		  "to": "7:00pm",
 		  "location": "JC Room B",
 		  "year": "2021",
-		  "basictopic": "TBA",
+		  "basictopic": "Introduction to Linux",
 		  "weekday":"Wednesday",
 		  "rsvp":"https://cglink.me/2d7/r1139680"
 		},
@@ -29,7 +29,7 @@
 		  "to": "7:00pm",
 		  "location": "JC Room B",
 		  "year": "2021",
-		  "basictopic": "TBA",
+		  "basictopic": "CTFs for Beginners",
 		  "weekday":"Wednesday",
 		  "rsvp":"https://cglink.me/2d7/r1139681"
 		},
@@ -40,7 +40,7 @@
       "to": "7:00pm",
       "location": "JC Room B",
       "year": "2021",
-      "basictopic": "TBA",
+      "basictopic": "An Introduction to Post-Quantum Cryptography",
       "weekday":"Wednesday",
       "rsvp":"https://cglink.me/2d7/r1139682"
     },
