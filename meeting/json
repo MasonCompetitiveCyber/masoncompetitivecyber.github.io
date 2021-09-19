@@ -62,7 +62,7 @@
       "to": "7:00pm",
       "location": "JC Room B",
       "year": "2021",
-      "basictopic": "TBA",
+      "basictopic": "Introduction to Assembly and Reverse Engineering",
       "weekday":"Wednesday",
       "rsvp":"https://cglink.me/2d7/r1139684"
     },
@@ -73,7 +73,7 @@
       "to": "7:00pm",
       "location": "JC Room B",
       "year": "2021",
-      "basictopic": "TBA",
+      "basictopic": "Introduction to Linux Binary Exploitation",
       "weekday":"Wednesday",
       "rsvp":"https://cglink.me/2d7/r1139685"
     },
