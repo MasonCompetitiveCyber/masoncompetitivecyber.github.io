@@ -3,11 +3,13 @@
 }
 
 .brand-primary {
-	font-size: 30px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .brand-secondary {
-	font-size: 18px;
+	font-size: 14px;
+	font-weight: lighter;
 }
 
 .nav-item,
@@ -19,6 +21,7 @@ h4,
 h5,
 h6 {
 	font-family: "Cascadia Mono", Consolas, "Courier New", Courier, monospace;
+	font-display: block;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -26,7 +29,7 @@ h6 {
 }
 
 body {
-	padding-top: 8rem;
+	padding-top: 6.7rem;
 }
 
 #decorative1 {
