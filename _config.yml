@@ -41,3 +41,7 @@ defaults:
     values:
       layout: default
       jumbotron: false
+
+sass:
+  sass_dir: assets/css
+  style: compressed

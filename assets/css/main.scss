@@ -1,0 +1,35 @@
+.main-navbar {
+	background-color: #006633;
+}
+
+.brand-primary {
+	font-size: 30px;
+}
+
+.brand-secondary {
+	font-size: 18px;
+}
+
+.nav-item,
+.navbar-brand,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Cascadia Mono", Consolas, "Courier New", Courier, monospace;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+
+body {
+	padding-top: 8rem;
+}
+
+#decorative1 {
+	margin-top: -2rem;
+	margin-bottom: -2rem;
+}
