@@ -33,7 +33,7 @@ body {
 }
 
 body, footer {
-	font-family: 'Source Sans Pro', Roboto, sans-serif;
+	font-family: 'Open Sans', Roboto, sans-serif;
 	font-size: 16px;
 }
 
@@ -83,6 +83,10 @@ body, footer {
 	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.footer {
+	background-color: rgb(245, 245, 245);
 }
 
 @media (min-width: 1400px) {
