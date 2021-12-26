@@ -59,17 +59,34 @@ body, footer {
 	max-width: 140px;
 }
 
+.homepage h1,
+.homepage h2,
+.homepage h3 {
+	text-align: center;
+}
+
 // Sponsors
 
-.homepage .sponsor-img {
+.homepage .sponsors img {
 	max-height: 200px;
+	margin: 10px;
+}
+
+.homepage .sponsors div {
+	text-align: center;
 }
 
 #meeting-info {
-    border: 3px solid #006633;
-    padding: 7px 20px;
-    display: inline-block;
+	border: 3px solid #006633;
+	padding: 7px 20px;
+	display: inline-block;
 	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+@media (min-width: 1400px) {
+	.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+		max-width: 1140px;
+	}
 }

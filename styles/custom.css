@@ -364,14 +364,6 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-.page-content {
-    line-height: 25px;
-}
-
-.page-content a {
-    color: rgb(60, 160, 91);
-}
-
 .sidebox {
     -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 3px;
     -moz-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 3px;
@@ -384,10 +376,6 @@ h1 {
     border-radius: 3px;
     padding: 18px;
     margin-top: 28px;
-}
-
-.sidebar {
-    ;
 }
 
 .sidebox-title {
