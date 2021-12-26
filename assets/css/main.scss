@@ -51,6 +51,10 @@ body, footer {
 	text-align: center;
 }
 
+.homepage {
+	margin-top: 10px;
+}
+
 .homepage .logo {
 	max-width: 140px;
 }
@@ -58,6 +62,14 @@ body, footer {
 // Sponsors
 
 .homepage .sponsor-img {
-	max-width: 500px;
 	max-height: 200px;
+}
+
+#meeting-info {
+    border: 3px solid #006633;
+    padding: 7px 20px;
+    display: inline-block;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }

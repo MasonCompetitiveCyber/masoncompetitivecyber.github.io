@@ -866,10 +866,3 @@ a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse {
     }
 
 }
-
-#meeting-info {
-    border: 3px solid #006633;
-    border-radius: 5px;
-    padding: 7px 20px;
-    display: inline-block;
-}
