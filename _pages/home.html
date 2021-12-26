@@ -15,286 +15,97 @@ that meets weekly and specializes in competing."
     font-size: 12;
     font-style: italic;
   }
-
-  .notification {
-    background-color: darkred;
-    color: white;
-    text-align: center;
-    padding: 5px;
-  }
 </style>
 <!-- <div class="notification">
-  From the CYSE IAB meeting? Feel free to reach out to us at masoncc@gmu.edu! The Slack is student only.
+  [Notification alert here]
 </div> -->
 <div class="container homepage">
+  <div class="content-section center">
+    <img class="logo" src="images/transparent_minimal.png" alt="Logo Credit: Katie Gilder" width="10%"
+      height="2em" /><br>
 
-  <div class="divPanel page-content">
+    <h2>Mason Competitive Cyber</h2>
 
-    <div class="row-fluid">
-      <div class="span10" id="divMain">
+    <h5>Mason CC is the competitive cybersecurity organization at GMU.</h5>
 
-        <div class="center">
-          <img class="logo" src="images/transparent_minimal.png" alt="Logo Credit: Katie Gilder" width="10%"
-            height="2em" /><br>
-
-          <h2>Mason Competitive Cyber</h2>
-
-          <h5>Mason CC is the competitive cybersecurity organization at GMU.</h5>
-
-          <div id="meeting-info">
-            <div><strong>Join us at our next meeting!</strong></div>
-            <div><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="location"></span></div>
-            <div><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date"></span></div>
-            <div><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="start"></span> to <span id="finish"></span>
-            </div>
-            <div><i class="fa fa-info-circle" aria-hidden="true"></i> <span id="info"></span></div>
-            <div><span id="signup"></div>
-          </div>
-          <p>If you otherwise need to contact us, email us at masoncc@gmu.edu</p>
-          <hr>
-          <h3>Want to Get Involved? Join our Chat!</h3>
-          <p>If you are a George Mason student, click below and use your GMU email to sign up!</p>
-
-
-          <div class="form-group">
-            <a type="button" id="chatjoin" id="button" class="btn btn-primary btn-large"
-              href="https://masoncc.slack.com/join/signup#/domain-signup">Join our Slack</a>
-          </div>
-          <br>
-          <p><strong>Faculty/staff?</strong> The Slack is for students only. Feel free to email us instead at
-            masoncc@gmu.edu.</p>
-          <!-- <div id="response"></div>
-          <h2>Hate Slack? Join our mailing list!</h2>
-          <p class="descript">If you hate Slack but still want notifications, you can subscribe to a list that notifies
-            you if meetings are coming up or competitions are being organized.</p><br />
-          <p class="fineprint">The mailing list is not a replacement for Slack. If you want to get further involved in
-            CC, including competing, activity in Slack is needed. Repeated requests for information will only get you
-            referred to the appropriate source.</p>
-          </form>
-          <div class="form-group">
-            <form id="joinemail" action="https://club.us18.list-manage.com/subscribe/post" method="POST">
-              <input type="hidden" name="u" value="f74cc9ffc33dcd2cb19db29b6">
-              <input type="hidden" name="id" value="3e14d1a163">
-              <input type="hidden" name="orig-lang" value="1">
-              Email: <input type="email" name="MERGE0" id="MERGE0" class="span2" placeholder="test@example.com"
-                style="text-align: right;"><br />
-              First: <input type="text" name="MERGE1" id="MERGE1" class="span3" value=""><br />
-              Last: <input type="text" name="MERGE2" id="MERGE2" class="span3" value="">
-              <br>
-              <button type="submit" id="clubjoin" id="button" class="btn btn-primary btn-large">Subscribe to
-                list</button>
-          </div> -->
-        </div>
-      </div><br>
+    <div id="meeting-info">
+      <div><strong>Join us at our next meeting!</strong></div>
+      <div><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="location"></span></div>
+      <div><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date"></span></div>
+      <div><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="start"></span> to <span id="finish"></span>
+      </div>
+      <div><i class="fa fa-info-circle" aria-hidden="true"></i> <span id="info"></span></div>
+      <div><span id="signup"></div>
     </div>
-
-    <!-- <hr />
-    <div class="row-fluid">
-      <h3 style="text-align: center;">Places Board</h3>
-      <div class="span3">
-      </div>
-      <div class="span6">
-
-        <table class="table">
-          <tr>
-            <td>MetaCTF</td>
-            <td>UVA</td>
-            <td><i class="fas fa-medal" style="
-                                color: gold;
-                            "></i></td>
-            <td>Chris Issing, Brandon Wong, Caleb Yu, Roberto Basurto</td>
-          </tr>
-          <tr>
-            <td>Metropolis</td>
-            <td>UMD</td>
-            <td><i class="fas fa-medal" style="
-                                color: #CD7F32;
-                            "></i><i class="fas fa-medal" style="
-                                    color: #CD7F32;
-                                "></i></td>
-            <td>Roberto Basurto, Hoa Luu, 1pwnch, cothan, Chuck Tran, Zaine Wilson, Chris Issing, Michael Bailey</td>
-          </tr>
-          <tr>
-            <td>State Cup</td>
-            <td>VMI</td>
-            <td><i class="fas fa-medal" style="
-                                  color: gold;
-                              "></i><i class="fas fa-medal" style="
-                                  color: gold;
-                              "></i><i class="fas fa-medal" style="
-                                  color: silver;
-                              "></i></td>
-            <td>2018: 1st, 2019: 2nd, 2020: 1st</td>
-          </tr>
-          <tr>
-            <td>VT Summit</td>
-            <td>Virginia Tech</td>
-            <td><i class="fas fa-medal" style="
-                                        color: gold;
-                                    "></i><i class="fas fa-medal" style="
-                                        color: silver;
-                                    "></i></td>
-            <td>2018: 1st, 2nd, 2019: 1st</td>
-          </tr>
-          <tr>
-            <td>Cyberdawg CTF</td>
-            <td>UMBC</td>
-            <td><i class="fas fa-medal" style="
-                                color: CD7F32;
-                            "></i><i class="fas fa-medal" style="
-                                        color: silver;
-                                    "></i></td>
-            <td>2018: 3rd, 2019: 1st</td>
-          </tr>
-        </table>
-      </div>
-    </div> -->
-
-    <!-- <div class="row-fluid">
-      <div class="span2"></div>
-      <div class="span8" style="text-align: center">
-        <hr>
-        <center>
-          <h3>Club Updates</h3>
-        </center>
-      </div>
-      <div class="span2"></div>
-    </div>
-    <br />
-    <div class="row-fluid">
-      <div class="span3">
-        <p>
-          <img src="https://c1.staticflickr.com/5/4841/45656711942_807b4b5f9b_o.jpg" class="img-polaroid"
-            style="float: right; padding-top: 1%; max-width: 15em; padding-bottom: 1%" align="right">
-        </p>
-      </div>
-      <div class="span9">
-        <h3>Mason CC hosts successful regional CTF event</h3>
-
-        <p><i>patriotCTF</i>, Mason CC's first regional cybersecurity competition, went off without a hitch. Multiple
-          colleges were in attendance, as well as our industry sponsor and some solid prizes. <a
-            href="/articles/patriotctf/">See More</a><br><br>
-        </p>
-      </div>
-    </div>
-    <br /><br />
-    <div class="row-fluid">
-      <div class="span3">
-        <p>
-          <img src="/images/report.jpg" class="img-polaroid" style="float: right; max-width: 15em; padding-bottom: 1%"
-            align="right">
-        </p>
-      </div>
-      <div class="span9">
-        <h3>Mason CC Releases AY17-18 Report</h3>
-
-        <p>Mason CC, ahead of their last meeting and CryptoParty, released a report <a
-            href="docs/AY1718_CCReport.pdf">here</a> <b>(LARGE PDF WARNING: 77MB)</b> on our activities of our last
-          year.<br><br>
-        </p>
-      </div>
-
-    </div>
-    <br /><br />
-    <div class="row-fluid">
-      <div class="span3">
-        <p>
-          <img src="https://media.azpm.org/master/image/2017/9/29/spot/dhslogo.jpg" class="img-polaroid"
-            style="float: right; padding-top: 1%; max-width: 15em; padding-bottom: 1%" align="right">
-        </p>
-      </div>
-      <div class="span9">
-        <h3>Department of Homeland Security to Visit</h3>
-
-        <p>Mason CC is happy to welcome William Burke IV to Mason CC to discuss red teaming in the context of his work
-          at the Department of Homeland Security. While registration has already locked, for more information feel free
-          to see <a href="https://competitivecyber.club/articles/dhs/">our signup article</a>.<br><br>
-        </p>
-      </div>
-    </div>
-
-    <a href="/oldnews/">Older News</a><br><br>
-
-    <div class="span3">
-    </div>
+    <p>If you otherwise need to contact us, email us at masoncc@gmu.edu</p>
   </div>
-  <hr style="border-style: inset; margin-top: 25px; border-width: 1px;"> -->
-    <hr>
 
-    <div class="sponsors">
-      <h3>Gold Sponsors</h3>
-      <p class="center">Thank you to the following companies for providing Mason CC with major support and/or
-        donations:</p>
+  <hr>
 
-      <div>
-        <a href="https://catalog.gmu.edu/courses/cyse/">
-          <img src="images/GMUVSE.png">
-        </a>
-        <h3>George Mason's CYSE Program</h3>
-      </div>
-      <p>
-        The Cyber Security Engineering program at George Mason University is a relatively new undergraduate bachelors
-        program at George Mason University is, to quote them, "concerned with the development of cyber-resilient systems
-        which include the protection of physical as well as computer and network systems." A number of students in Mason
-        CC are CYSE majors and we are proud to received support from them, both financially and in advising.<br /><br />
-      </p>
+  <div class="content-section center">
+    <h3>Want to Get Involved? Join our Chat!</h3>
+    <p>If you are a George Mason student, click below and use your GMU email to sign up!</p>
+    <div class="form-group">
+      <a type="button" id="chatjoin" id="button" class="btn btn-primary btn-large"
+        href="https://masoncc.slack.com/join/signup#/domain-signup">Join our Slack</a>
+    </div>
+    <br>
+    <p><strong>Faculty/staff?</strong> The Slack is for students only. Feel free to email us instead at
+      masoncc@gmu.edu.</p>
+  </div>
 
-      <div>
-        <a href="https://careers.caci.com/">
-          <img src="images/caci.png">
-        </a>
-        <h3>CACI</h3>
-      </div>
-      <p>
-        CACI provides expertise and technology to enterprise and mission customers in support of national security
-        missions and government transformation for defense, intelligence, and civilian customers. In addition to
-        internal
-        contacts, members can see their <a href="https://careers.caci.com/">careers page</a> for internship and job
-        opportunities.
-      </p>
+  <hr>
 
-      <div>
-        <a href="https://warcollar.com/">
-          <img src="images/warcollar.png">
-        </a>
-        <h3>WarCollar Industries</h3>
-      </div>
+  <div class="content-section sponsors">
+    <h3>Gold Sponsors</h3>
+    <p class="center">Thank you to the following companies for providing Mason CC with major support and/or
+      donations:</p>
 
-      <p>
-        WarCollar Industries, a veteran-owned small business, maintains a team of cybersecurity experts committed to
-        protecting complicated data and distribution systems and providing decision makers with the most accurate
-        assessment of residual risk possible. We work with our clients to solve the toughest challenges in the
-        ever-evolving digital landscape. Services include network defense, computer network attack, secure network
-        design,
-        penetration testing and vulnerability assessment. WarCollar enables its clients to find, fix, stop, and
-        ultimately
-        solve cybersecurity problems across their entire enterprise.
-      </p>
+    <div>
+      <a href="https://catalog.gmu.edu/courses/cyse/">
+        <img src="images/GMUVSE.png">
+      </a>
+      <h3>George Mason's CYSE Program</h3>
+    </div>
+    <p>
+      The Cyber Security Engineering program at George Mason University is a relatively new undergraduate bachelors
+      program at George Mason University is, to quote them, "concerned with the development of cyber-resilient systems
+      which include the protection of physical as well as computer and network systems." A number of students in Mason
+      CC are CYSE majors and we are proud to received support from them, both financially and in advising.<br /><br />
+    </p>
+
+    <div>
+      <a href="https://careers.caci.com/">
+        <img src="images/caci.png">
+      </a>
+      <h3>CACI</h3>
+    </div>
+    <p>
+      CACI provides expertise and technology to enterprise and mission customers in support of national security
+      missions and government transformation for defense, intelligence, and civilian customers. In addition to
+      internal
+      contacts, members can see their <a href="https://careers.caci.com/">careers page</a> for internship and job
+      opportunities.
+    </p>
+
+    <div>
+      <a href="https://warcollar.com/">
+        <img src="images/warcollar.png">
+      </a>
+      <h3>WarCollar Industries</h3>
     </div>
 
-    <br />
-
-    <div class="row-fluid">
-      <div class="span2"></div>
-      <div class="span8 sidebar">
-        <div class="sidebox" style="margin-top: 0px">
-          <h3 class="sidebox-title">Upcoming Competitions</h3>
-          <p>
-          <div id="comps"></div>
-          </p>
-        </div>
-        <br />
-      </div>
-      <div class="span2"></div>
-      <br>
-    </div><br><br>
-
-
-
+    <p>
+      WarCollar Industries, a veteran-owned small business, maintains a team of cybersecurity experts committed to
+      protecting complicated data and distribution systems and providing decision makers with the most accurate
+      assessment of residual risk possible. We work with our clients to solve the toughest challenges in the
+      ever-evolving digital landscape. Services include network defense, computer network attack, secure network
+      design,
+      penetration testing and vulnerability assessment. WarCollar enables its clients to find, fix, stop, and
+      ultimately
+      solve cybersecurity problems across their entire enterprise.
+    </p>
   </div>
-</div>
-<div id="footerInnerSeparator"></div>
-</div>
 </div>
 
 
