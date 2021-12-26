@@ -33,23 +33,6 @@ h3, h4, h5, h6 {
     line-height: 1.5 !important
 }
 
-.lead {
-    text-align: center;
-}
-
-.lead h2 {
-    font-size: 33px;
-    line-height: 45px;
-}
-
-.lead h3 {
-    font-size: 17px;
-}
-
-.lead h3 a {
-    font-size: inherit !important;
-}
-
 
 /* Contact */
 
@@ -66,85 +49,6 @@ ul#contact-info .field {
 
 ul#contact-info {
     list-style: none;
-}
-
-
-/* Grid */
-
-#tiles li {
-    width: 240px !important;
-    background-color: #ffffff;
-    border: 1px solid #dedede;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    padding: 10px !important;
-    margin-right: 7px;
-    margin-bottom: 7px;
-    float: left;
-}
-
-#tiles li img {
-    margin-bottom: 10px;
-}
-
-#tiles li div.meta {
-    color: #999;
-    text-transform: uppercase;
-    font-size: 10px;
-    margin: 0;
-}
-
-#tiles li h4 {
-    line-height: 1.5;
-    margin: 0 0 5px 0;
-}
-
-#tiles li h4 a {
-    line-height: inherit;
-    margin: 0;
-    text-decoration: inherit;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    font-style: inherit;
-}
-
-#tiles li p {
-    font-size: 12px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-#tiles li a {
-    font-size: 12px;
-}
-
-#tiles li .more_link {
-    font-size: smaller;
-    line-height: 2;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    white-space: nowrap;
-    display: block;
-    margin: 5px 0 0 0;
-}
-
-#tiles li blockquote {
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    color: #999;
-    border: none;
-    font-size: 150%;
-    font-style: italic;
-    font-family: Georgia, Times, serif;
-}
-
-#tiles li blockquote small {
-    font-size: 11px;
-    font-style: normal;
 }
 
 
@@ -195,22 +99,6 @@ ul#contact-info {
 }
 
 
-/* Footer elements */
-
-.social_bookmarks a {
-    font-size: smaller !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.copyright {
-    font-size: smaller;
-    letter-spacing: 1px;
-}
-
-
 /* Responsive Image */
 
 img {
@@ -221,50 +109,6 @@ img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-img.logo {
-    max-width: 20%;
-    width: 6em;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* Responsive Video from Zurb Foundation. Copyright (c) 2011 ZURB, http://www.zurb.com/ License: MIT */
-
-.flex-video {
-    position: relative;
-    padding-top: 25px;
-    padding-bottom: 67.5%;
-    height: 0;
-    margin-bottom: 16px;
-    overflow: hidden;
-}
-
-.flex-video.widescreen {
-    padding-bottom: 57.25%;
-}
-
-.flex-video.vimeo {
-    padding-top: 0;
-}
-
-.flex-video iframe, .flex-video object, .flex-video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-    .flex-video {
-        padding-top: 0;
-    }
-
-}
-
 
 /* Additional */
 
@@ -576,25 +420,6 @@ h1 {
     height: 85px;
 }
 
-#divFooter {
-    background-color: transparent;
-    color: rgb(41, 41, 41);
-    padding-top: 32px;
-    line-height: 22px;
-    font-size: 12px;
-    text-transform: none;
-    background-image: url(chruch.png);
-    background-repeat: repeat repeat;
-}
-
-#divFooter a {
-    color: rgb(54, 150, 86);
-}
-
-#divFooter h3 {
-    color: rgb(41, 41, 41);
-}
-
 h2 {
     font-weight: normal;
     font-style: normal;
@@ -710,38 +535,6 @@ a.btn-info, a.btn-success, a.btn-warning, a.btn-danger, a.btn-inverse {
     border-top-color: rgb(51, 51, 51);
     border-top-width: 0px;
     border-top-style: solid;
-}
-
-h3, .page-content h3 a {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    line-height: 45px;
-}
-
-h4, .page-content h4 a {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 21px;
-    line-height: 45px;
-}
-
-h5, .page-content h5 a {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    line-height: 45px;
-}
-
-h6, .page-content h6 a {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    line-height: 45px;
 }
 
 .line-separator {
@@ -1029,21 +822,6 @@ h6, .page-content h6 a {
 
     body {
         padding-top: 0px
-    }
-
-
-    #divFooter {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #divBoxed>#divFooter {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
     }
 
 
