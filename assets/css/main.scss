@@ -28,18 +28,9 @@ h6 {
 	color: white;
 }
 
-body {
-	padding-top: 6.7rem;
-}
-
 body, footer {
 	font-family: 'Open Sans', Roboto, sans-serif;
 	font-size: 16px;
-}
-
-#decorative1 {
-	margin-top: -2rem;
-	margin-bottom: -2rem;
 }
 
 .main-navbar .navbar-nav .nav-item {
@@ -81,7 +72,7 @@ body, footer {
 	margin-bottom: 40px;
 }
 
-#meeting-info {
+#meeting-box {
 	border: 3px solid #006633;
 	padding: 7px 20px;
 	display: inline-block;
@@ -108,6 +99,12 @@ body, footer {
 	color: white;
 	text-align: center;
 	padding: 5px;
+}
+
+.jumbo-logo {
+	max-width: 220px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @media (min-width: 1400px) {

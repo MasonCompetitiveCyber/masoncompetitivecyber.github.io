@@ -21,21 +21,20 @@ that meets weekly and specializes in competing."
 </div> -->
 <div class="container homepage">
   <div class="content-section center">
-    <img class="logo" src="images/transparent_minimal.png" alt="Logo Credit: Katie Gilder" width="10%"
-      height="2em" /><br>
 
     <h2>Mason Competitive Cyber</h2>
 
     <h5>Mason CC is the competitive cybersecurity organization at GMU.</h5>
 
-    <div id="meeting-info">
+    <div id="meeting-box">
       <div><strong>Join us at our next meeting!</strong></div>
-      <div><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="location"></span></div>
-      <div><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date"></span></div>
-      <div><i class="fa fa-clock-o" aria-hidden="true"></i> <span id="start"></span> to <span id="finish"></span>
+      <div id="meeting-location" hidden><i class="fas fa-map-marker" aria-hidden="true"></i> <span></span></div>
+      <div id="meeting-date" hidden><i class="fas fa-calendar" aria-hidden="true"></i> <span></span></div>
+      <div id="meeting-time" hidden><i class="fas fa-clock" aria-hidden="true"></i> <span></span>
       </div>
-      <div><i class="fa fa-info-circle" aria-hidden="true"></i> <span id="info"></span></div>
-      <div><span id="signup"></div>
+      <div id="meeting-info" hidden><i class="fas fa-info-circle" aria-hidden="true"></i> <span></span></div>
+      <div id="meeting-register" hidden><a></a></div>
+      <div id="meeting-no-scheduled" hidden>No meetings scheduled yet. Come back later!</div>
     </div>
     <p>If you otherwise need to contact us, email us at masoncc@gmu.edu</p>
   </div>
@@ -110,30 +109,10 @@ that meets weekly and specializes in competing."
 
 
 <script>
-  $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function (data) {
-    console.log('JSON data loaded')
-    console.log(data)
-    entry = ""
-    $.each(data["competitions"], function (i, item) {
-      console.log('Iterating')
-      console.log(Date.parse(item["startDate"] + ' ' + item["year"]))
-      if (Date.now() - Date.parse(item["startDate"] + ' ' + item["year"]) < 0) {
-        console.log(Date.now() - Date.parse(item["startDate"] + item["year"]))
-        if (item["startDate"] == item["endDate"]) {
-          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a><br>'
-        } else {
-          entry = entry + "<br>" + item["name"] + ' at ' + item["location"] + ' on ' + item["startDate"] + ', ' + item["startTime"] + ' to ' + item["endDate"] + ', ' + item["endTime"] + '|' + '<a href="' + item["moreInfo"] + '">More info</a><br>'
-        }
-        console.log(entry)
-      }
-    });
-    $("#comps").html(entry)
-  });
-  $.getJSON('/meeting/json', null, function (data) {
-    console.log('JSON data loaded')
-    $.each(data["meetings"], function (i, item) {
-      console.log('Iterating')
-      time = item["to"]
+  getJSON("/meeting/json", function (err, data) {
+    var found = data["meetings"].some(function (meeting) {
+      console.log(meeting);
+      time = meeting["to"]
       if (time.includes('pm')) {
         time = time.split('pm')[0]
         hour = time.split(':')[0]
@@ -146,23 +125,61 @@ that meets weekly and specializes in competing."
         min = time.split(':')[1]
         time = hour + ":" + min
       }
-      if (Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"] + ' ' + time) <= 0) {
-        console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
-        $("#location").html(item['location'])
-        $("#start").html(item['from'])
-        $("#finish").html(item['to'])
-        $('#date').html(item['meetingDate'])
-        $('#info').html(item['basictopic'])
-        if (item.hasOwnProperty('guestsignup')) {
-          data = '<span style="font-weight: bold; color: red"> Signup is enforced for this event, please visit <a href="' + item['guestsignup'] + '">the signup page</a> for more.</span>'
-          $('#signup').html(data)
-        }
-        return false;
-      } else {
-        console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
+
+      var parsedDate = Date.parse(meeting["meetingDate"] + ' ' + meeting["year"] + ' ' + time)
+      if (parsedDate > Date.now()) {
+        document.querySelector("#meeting-location span").innerText = meeting["location"];
+        document.querySelector("#meeting-location").hidden = false;
+        document.querySelector("#meeting-time span").innerText = meeting["from"] + " to " + meeting["to"];
+        document.querySelector("#meeting-time").hidden = false;
+        document.querySelector("#meeting-date span").innerText = meeting["meetingDate"];
+        document.querySelector("#meeting-date").hidden = false;
+        document.querySelector("#meeting-info span").innerText = meeting["basictopic"];
+        document.querySelector("#meeting-info").hidden = false;
+        document.querySelector("#meeting-register a").innerText = "RSVP";
+        document.querySelector("#meeting-register a").href = meeting["rsvp"];
+        document.querySelector("#meeting-register").hidden = false;
+        return true;
       }
     });
+
+    if (!found) {
+      document.getElementById("meeting-no-scheduled").hidden = false;
+    }
   });
+
+  // $.getJSON('/meeting/json', null, function (data) {
+  //   $.each(data["meetings"], function (i, item) {
+  //     time = item["to"]
+  //     if (time.includes('pm')) {
+  //       time = time.split('pm')[0]
+  //       hour = time.split(':')[0]
+  //       min = time.split(':')[1]
+  //       hour = parseInt(hour) + 12
+  //       time = hour + ":" + min
+  //     } else {
+  //       time = time.split('am')[0]
+  //       hour = time.split(':')[0]
+  //       min = time.split(':')[1]
+  //       time = hour + ":" + min
+  //     }
+  //     if (Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"] + ' ' + time) <= 0) {
+  //       console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
+  //       $("#location").html(item['location'])
+  //       $("#start").html(item['from'])
+  //       $("#finish").html(item['to'])
+  //       $('#date').html(item['meetingDate'])
+  //       $('#info').html(item['basictopic'])
+  //       if (item.hasOwnProperty('guestsignup')) {
+  //         data = '<span style="font-weight: bold; color: red"> Signup is enforced for this event, please visit <a href="' + item['guestsignup'] + '">the signup page</a> for more.</span>'
+  //         $('#signup').html(data)
+  //       }
+  //       return false;
+  //     } else {
+  //       console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
+  //     }
+  //   });
+  // });
 
 </script>
 

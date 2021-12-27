@@ -1,18 +1,5 @@
 /***** BASE CSS *****/
 
-/* Headline Text */
-
-#subtitle {
-    display: inline-block !important
-}
-
-/* Header Area */
-
-#decorative1 {
-    margin-top: -2px;
-    padding-top: 2px;
-}
-
 /* Responsive Image */
 
 img {
@@ -34,9 +21,6 @@ img {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat no-repeat;
-    -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.7);
 }
 
 .breadcrumbs {
@@ -45,42 +29,6 @@ img {
 
 .breadcrumbs a {
     color: rgb(60, 160, 91);
-}
-
-#subtitle {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1px;
-    margin-top: 11px;
-    color: rgb(255, 255, 255);
-    text-shadow: none;
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.9;
-    padding: 3px 10px;
-    background-position: initial initial;
-    background-repeat: initial initial;
-}
-
-#divHeaderText {
-    padding-top: 75px;
-    padding-bottom: 0px;
-    border-color: rgb(51, 51, 51);
-    text-align: left;
-}
-
-#headerSeparator {
-    margin-top: 7px;
-    border-top-color: rgb(51, 51, 51);
-    border-top-width: 0px;
-    border-top-style: solid;
-}
-
-#headerSeparator2 {
-    margin-top: 45px;
-    margin-bottom: 18px;
 }
 
 .dropdown-menu {
@@ -148,11 +96,6 @@ img {
 }
 
 @media (max-width: 767px) {
-
-    #divHeaderText {
-        margin: 0px;
-        padding: 10px 0px;
-    }
 
     .ddmenu {
         margin-top: 0px;
