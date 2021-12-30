@@ -6,24 +6,11 @@ description: "Mason Competitive Cyber is a cybersecurity organization at George 
 that meets weekly and specializes in competing."
 ---
 
-<style>
-  .descript {
-    font-size: 14;
-  }
-
-  .fineprint {
-    font-size: 12;
-    font-style: italic;
-  }
-</style>
 <!-- <div class="notification">
   [Notification alert here]
 </div> -->
 <div class="container homepage">
   <div class="content-section center">
-
-    <h2>Mason Competitive Cyber</h2>
-
     <h5>Mason CC is the competitive cybersecurity organization at GMU.</h5>
 
     <div id="meeting-box">
@@ -148,57 +135,9 @@ that meets weekly and specializes in competing."
     }
   });
 
-  // $.getJSON('/meeting/json', null, function (data) {
-  //   $.each(data["meetings"], function (i, item) {
-  //     time = item["to"]
-  //     if (time.includes('pm')) {
-  //       time = time.split('pm')[0]
-  //       hour = time.split(':')[0]
-  //       min = time.split(':')[1]
-  //       hour = parseInt(hour) + 12
-  //       time = hour + ":" + min
-  //     } else {
-  //       time = time.split('am')[0]
-  //       hour = time.split(':')[0]
-  //       min = time.split(':')[1]
-  //       time = hour + ":" + min
-  //     }
-  //     if (Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"] + ' ' + time) <= 0) {
-  //       console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
-  //       $("#location").html(item['location'])
-  //       $("#start").html(item['from'])
-  //       $("#finish").html(item['to'])
-  //       $('#date').html(item['meetingDate'])
-  //       $('#info').html(item['basictopic'])
-  //       if (item.hasOwnProperty('guestsignup')) {
-  //         data = '<span style="font-weight: bold; color: red"> Signup is enforced for this event, please visit <a href="' + item['guestsignup'] + '">the signup page</a> for more.</span>'
-  //         $('#signup').html(data)
-  //       }
-  //       return false;
-  //     } else {
-  //       console.log(Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"]))
-  //     }
-  //   });
-  // });
-
 </script>
 
 <script>
-  (function () {
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-    function showNextQuote() {
-      ++quoteIndex;
-      quotes.eq(quoteIndex % quotes.length)
-        .fadeIn(2000)
-        .delay(2000)
-        .fadeOut(2000, showNextQuote);
-    }
-    showNextQuote();
-  })();
-  pic = Math.floor(Math.random() * 28) + 1;
-  $("#decorative1").css("background-image", "url(https://competitivecyber.club/rolodex/" + pic + ".jpg)")
+  pic = Math.floor(Math.random() * 14) + 1;
+  $("#decorative1").css("background-image", "url(/rolodex/" + pic + ".jpg)")
 </script>
-
-<script
-  type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: { width: 320, visible: { min: 2, max: 6 } } });</script>
