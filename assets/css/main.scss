@@ -139,21 +139,18 @@ body, footer {
 	}
 }
 
-#decorative1 {
+#home-jumbo {
 	margin-top: -40px;
 	padding-top: 150px;
 	padding-bottom: 150px;
+	-webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
 }
 
 .breadcrumbs {
     margin-bottom: 20px;
-}
-
-#decorative1 {
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat no-repeat;
 }
 
 tr.disabled {
