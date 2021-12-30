@@ -18,20 +18,21 @@ description: "Mason CC Meetings"
     </div>
     <div id="meeting-no-scheduled" hidden>No future meetings are scheduled yet. Come back later!</div>
   </div>
-
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">Date</th>
-        <th scope="col">Topic</th>
-        <th scope="col">Time</th>
-        <th scope="col">Location</th>
-        <th scope="col">RSVP</th>
-      </tr>
-    </thead>
-    <tbody id="meeting-table">
-    </tbody>
-  </table>
+  <div class="table-container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Topic</th>
+          <th scope="col">Time</th>
+          <th scope="col">Location</th>
+          <th scope="col">RSVP</th>
+        </tr>
+      </thead>
+      <tbody id="meeting-table">
+      </tbody>
+    </table>
+  </div>
   <div id='meetingcontent'></div><br />
   <h3>Future Competitions<div id="cdrop" style='padding-left: 3%' class="btn-group" aria-labelledby="dropdownMenuLink">
     </div><br><br></h3>
@@ -42,7 +43,6 @@ description: "Mason CC Meetings"
   getJSON("/meeting/json", function (err, data) {
     var meetingTable = document.getElementById("meeting-table");
     data["meetings"].forEach(function (meeting) {
-      console.log(meeting);
       time = meeting["to"]
       if (time.includes('pm')) {
         time = time.split('pm')[0]
@@ -77,7 +77,6 @@ description: "Mason CC Meetings"
     });
 
     var found = data["meetings"].some(function (meeting) {
-      console.log(meeting);
       time = meeting["to"]
       if (time.includes('pm')) {
         time = time.split('pm')[0]
