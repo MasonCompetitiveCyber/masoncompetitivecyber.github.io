@@ -19,7 +19,7 @@ var Konami = {}; (function (d, e) { var f = d.sequence = function () { var b = A
 
 document.addEventListener("keyup",
     Konami.code(function () {
-        audio = new Audio("random/mainframe.wav");
+        audio = new Audio("/random/mainframe.wav");
         audio.play();
         audio.loop = true;
     })
