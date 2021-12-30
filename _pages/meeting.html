@@ -4,228 +4,112 @@ permalink: /meeting/
 title: Meetings
 description: "Mason CC Meetings"
 ---
-<script src='/scripts/future.js?bust=5'></script>
-<link href='/fullcal/fullcalendar.min.css' rel='stylesheet' />
-<link href='/fullcal/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-<script src='/fullcal/moment.min.js'></script>
-<script src='/fullcal/jquery.min.js'></script>
-<script src='/fullcal/fullcalendar.min.js'></script>
-<script src='/fullcal/gcal.min.js'></script>
+
+<div class='row-fluid'>
+  <h3>Meeting Info</h3>
+
+  <div>
+    <div id="next-meeting" hidden>
+      The next meeting is <strong id="meeting-info"></strong>
+      on <strong id="meeting-date"></strong>
+      in <strong id="meeting-location"></strong>
+      from <strong id="meeting-time"></strong>.
+      <a id="meeting-register">RSVP</a>
+    </div>
+    <div id="meeting-no-scheduled" hidden>No future meetings are scheduled yet. Come back later!</div>
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Topic</th>
+        <th scope="col">Time</th>
+        <th scope="col">Location</th>
+        <th scope="col">RSVP</th>
+      </tr>
+    </thead>
+    <tbody id="meeting-table">
+    </tbody>
+  </table>
+  <div id='meetingcontent'></div><br />
+  <h3>Future Competitions<div id="cdrop" style='padding-left: 3%' class="btn-group" aria-labelledby="dropdownMenuLink">
+    </div><br><br></h3>
+  <div id='competitionfield'></div>
+</div>
 
 <script>
-  $(document).ready(function () {
-
-    $('#calendar').fullCalendar({
-      defaultView: 'month',
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,listYear'
-      },
-
-      displayEventTime: false, // don't show the time column in list view
-
-      // THIS KEY WON'T WORK IN PRODUCTION!!!
-      // To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyCEKERIuxQFUqokdasIO7MSBKUGMe0yvDk',
-
-      // US Holidays
-      events: 'no3n6f963640hto2vk933tf200@group.calendar.google.com',
-
-      eventClick: function (event) {
-        // opens events in a popup window
-        window.open(event.url, 'gcalevent', 'width=700,height=600');
-        return false;
-      },
-
-      loading: function (bool) {
-        $('#loading').toggle(bool);
+  getJSON("/meeting/json", function (err, data) {
+    var meetingTable = document.getElementById("meeting-table");
+    data["meetings"].forEach(function (meeting) {
+      console.log(meeting);
+      time = meeting["to"]
+      if (time.includes('pm')) {
+        time = time.split('pm')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        hour = parseInt(hour) + 12
+        time = hour + ":" + min
+      } else {
+        time = time.split('am')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        time = hour + ":" + min
       }
 
+      row = meetingTable.insertRow();
+      th = document.createElement("th");
+      th.innerText = meeting["meetingDate"];
+      th.scope = "row";
+      row.appendChild(th);
+      row.insertCell().appendChild(document.createTextNode(meeting["basictopic"]));
+      row.insertCell().appendChild(document.createTextNode(meeting["from"].replaceAll(":00", "") + " to " + meeting["to"].replaceAll(":00", "")));
+      row.insertCell().appendChild(document.createTextNode(meeting["location"]));
+      rsvp_link = document.createElement('a');
+      rsvp_link.href = meeting["rsvp"];
+      rsvp_link.innerText = "RSVP";
+      row.insertCell().appendChild(rsvp_link);
 
+      var parsedDate = Date.parse(meeting["meetingDate"] + ' ' + meeting["year"] + ' ' + time);
+      if (Date.now() > parsedDate) {
+        row.classList.add("disabled");
+      }
+    });
 
+    var found = data["meetings"].some(function (meeting) {
+      console.log(meeting);
+      time = meeting["to"]
+      if (time.includes('pm')) {
+        time = time.split('pm')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        hour = parseInt(hour) + 12
+        time = hour + ":" + min
+      } else {
+        time = time.split('am')[0]
+        hour = time.split(':')[0]
+        min = time.split(':')[1]
+        time = hour + ":" + min
+      }
+
+      var parsedDate = Date.parse(meeting["meetingDate"] + ' ' + meeting["year"] + ' ' + time)
+      if (parsedDate > Date.now()) {
+        document.getElementById("meeting-location").innerText = meeting["location"];
+        document.getElementById("meeting-time").innerText = meeting["from"] + " to " + meeting["to"];
+        document.getElementById("meeting-date").innerText = meeting["meetingDate"];
+        document.getElementById("meeting-info").innerText = meeting["basictopic"];
+        document.getElementById("meeting-register").innerText = "RSVP";
+        document.getElementById("meeting-register").href = meeting["rsvp"];
+        document.getElementById("next-meeting").hidden = false;
+        return true;
+      }
     });
-    $(".fc-scroller").ready(function () {
-      $(".fc-scroller").css("height", "600px");
-    });
-    $(".fc-listYear-button").click();
+
+    if (!found) {
+      document.getElementById("meeting-no-scheduled").hidden = false;
+    }
   });
 
-
-</script>
-
-<style>
-  .cancelledmeeting {
-    pointer-events: none;
-    background-color: darkred;
-  }
-
-  @media (max-width : 600px) {
-    .fc-left {
-      visibility: hidden;
-    }
-
-    .fc-scroller {
-      height: 300px !important
-    }
-
-    .fc-toolbar {
-      display: none;
-    }
-
-    .fc-right {
-      visibility: hidden;
-    }
-  }
-
-  .fc-center {
-    visibility: hidden;
-  }
-
-  .fc-event-dot {
-    background-color: green;
-  }
-
-
-  .fc {
-    width: 70%;
-  }
-
-
-  #pageBody>div.container>div:nth-child(8)>div:nth-child(2)>label {
-    margin-bottom: 0px;
-    margin-top: 5px;
-  }
-
-  .btn-group {
-    padding-left: 10%;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  /* The switch - the box around the slider */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 30;
-    height: 17px;
-  }
-
-  /* Hide default HTML checkbox */
-  .switch input {
-    display: none;
-  }
-
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  input:checked+.slider {
-    background-color: #2d7845;
-  }
-
-  input:focus+.slider {
-    box-shadow: 0 0 1px #2d7845;
-  }
-
-  input:checked+.slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-</style><br><br>
-<div class='row-fluid'>
-  <div class='span1'></div>
-  <div class='span10'>
-    <center><br><br><a href="https://videos.competitivecyber.club"><button type="button" style="padding-right: 10px;"
-          id="button" class="btn btn-info btn-medium">Meeting Recordings</button></a>
-
-      <a href="/links/"><button type="button" style="padding-right: 10px;" id="button"
-          class="btn btn-info btn-medium">Key Links</button></a>
-      <br /><br />
-    </center>
-  </div>
-  <div class='span1'></div>
-</div>
-
-<br><br>
-
-
-
-<div class='row-fluid'>
-  <div class='span1' style="text-align: right;"></div>
-  <div class='span5' style='text-align: center;'>
-    <h3>Meeting Info
-      <div id="meetingdrop" class="btn-group" style='padding-left: 3%' aria-labelledby="dropdownMenuLink"></div><br>
-      <br>
-    </h3><br>
-    <div id='meetingcontent'></div><br />
-  </div>
-  <div class='span5' style='text-align: center;'>
-    <h3>Future Competitions<div id="cdrop" style='padding-left: 3%' class="btn-group"
-        aria-labelledby="dropdownMenuLink"></div><br><br></h3>
-    <div id='competitionfield'></div>
-  </div>
-  <div class='span1' style="text-align: right;"></div>
-</div>
-<br><br>
-<br><br>
-</div>
-
-<hr>
-<center>
-  <h2>Upcoming Events</h2>
-  <p>In addition to Mason CC's meetings and competitions, the following are events we intend to have a presence at:
-
-  <div id='loading'>loading...</div>
-
-  <div id='calendar'></div>
-
-  </div>
-  <br />
-</center>
-<br><br>
-
-
-<div id="footerInnerSeparator"></div>
-</div>
-
-</div>
-
-<script>
 
 
   function readCompetition(id) {
@@ -247,6 +131,8 @@ description: "Mason CC Meetings"
   };
 
 
+
+
   var newbit = 0;
   $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function (data) {
     entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
@@ -266,90 +152,5 @@ description: "Mason CC Meetings"
     entry = entry + '</ul></button>'
     readCompetition(newbit)
     $("#cdrop").html(entry)
-  });
-
-  function readMeeting(id) {
-    $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function (data) {
-      console.log('JSON data loaded')
-      entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-      $.each(data["meetings"], function (i, item) {
-        if (id == item['id']) {
-          $('#meetingbutton').html(item['meetingDate'] + '<span class=\'caret\'></span>')
-          if ((item['basictopic'] == item['advtopic']) && (item['location'] == item['advlocation'])) {
-            data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, and Green Track will be in the same room from ' + item['from'] + ' til ' + item['to'] + '.'
-          } else if (item['advtopic'] == "" || !item.hasOwnProperty('advtopic')) {
-            data = 'On ' + item['weekday'] + ', ' + item['meetingDate'] + ' our meeting will be <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
-
-          } else {
-            data = 'On Wednesday, ' + item['meetingDate'] + ' Gold Track will be going over <b>' + item['basictopic'] + '</b> in <b>' + item['location'] + '</b>, whereas Green Track will be going over <b>' + item['advtopic'] + '</b> at <b>' + item['advlocation'] + '</b> from ' + item['from'] + ' til ' + item['to'] + '.'
-          }
-          if (item.hasOwnProperty('guestsignup')) {
-            data = data + ' <span style="color: red; font-weight: bold">In addition, there is a mandatory signup enforced for this meeting: <a href="' + item['guestsignup'] + '">here</a></span'
-          }
-          $('#meetingcontent').html(data)
-        };
-
-      })
-    })
-  };
-  var newid = 0
-  $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function (data) {
-    console.log('JSON data loaded')
-    console.log(data)
-    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='meetingbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-    $.each(data["meetings"], function (i, item) {
-
-      time = '18:30'
-      if (Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"] + ' ' + time) <= 0) {
-        console.log(Date.now() - Date.parse(item["meetingDate"] + item["year"]))
-        if (newid == 0) {
-          newid = item['id']
-        }
-        if (item["cancelled"]) {
-          entry = entry + "<li class='selectorbs cancelledmeeting'><a href=javascript:readMeeting(" + item['id'] + ")> Cancelled " + item["meetingDate"] + "</a></li>"
-        } else {
-          entry = entry + "<li class='selectorbs'><a href=javascript:readMeeting(" + item['id'] + ")>" + item["meetingDate"] + "</a></li>"
-        }
-        console.log(entry)
-      } else {
-        // Do not generate an entry
-        entry = entry
-      }
-    });
-    entry = entry + '</ul></button>'
-    readMeeting(newid)
-    $("#meetingdrop").html(entry)
-  });
-  $.getJSON('/meeting/json?nocache=' + (new Date()).getTime(), null, function (data) {
-    console.log('JSON data loaded')
-    console.log(data)
-    entry = "<tr><th>Date</th><th>Gold Topic</th><th>Green Topic</th></tr>"
-    $.each(data["meetings"], function (i, item) {
-      console.log('Iterating')
-      console.log(Date.parse(item["meetingDate"] + ' ' + item["year"]))
-      time = item["to"]
-      if (time.includes('pm')) {
-        time = time.split('pm')[0]
-        hour = time.split(':')[0]
-        min = time.split(':')[1]
-        hour = parseInt(hour) + 12
-        time = hour + ":" + min
-      } else {
-        time = time.split('am')[0]
-        hour = time.split(':')[0]
-        min = time.split(':')[1]
-        time = hour + ":" + min
-      }
-      if (Date.now() - Date.parse(item["meetingDate"] + ' ' + item["year"] + ' ' + time) <= 0) {
-        console.log(item["meetingDate"])
-        console.log(time)
-        console.log(Date.now() - Date.parse(item["meetingDate"] + item["year"] + ' ' + time))
-        entry = entry + "<tr><td>" + item["meetingDate"] + '</td><td>' + item["basictopic"] + '</td><td>' + item["advtopic"] + '</td></tr>'
-        console.log(entry)
-      } else {
-        entry = entry + "<tr><td><b>✓</b><strike>" + item["meetingDate"] + '</strike></td><td><strike>' + item["basictopic"] + '</strike></td><td><strike>' + item["advtopic"] + '</strike></td></tr>'
-      }
-    });
-    $("#meetingtopics").html(entry)
   });
 </script>

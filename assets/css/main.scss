@@ -1,5 +1,6 @@
 .main-navbar {
 	background-color: #006633;
+	margin-bottom: 40px;
 }
 
 .brand-primary {
@@ -139,8 +140,25 @@ body, footer {
 }
 
 #decorative1 {
+	margin-top: -40px;
 	padding-top: 150px;
 	padding-bottom: 150px;
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+
+#decorative1 {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+tr.disabled {
+	background-color: #e7e7e7;
+	font-style: italic;
 }
 
 @media (min-width: 1400px) {

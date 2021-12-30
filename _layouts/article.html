@@ -1,26 +1,27 @@
 {% include base_path %}
 
 <html lang="{{ site.locale | slice: 0,2 }}">
-  <head>
-    {% include head.html %}
-  </head>
 
-  <body>
-    <div class="container">
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  <div class="container">
 
     <div class="divPanel page-content">
 
-        <div class="breadcrumbs">
-                <a href="/">Home</a> &nbsp;/&nbsp; <span>{{ page.title }}</span>
-        </div> 
+      <div class="breadcrumbs">
+        <a href="/">Home</a> &nbsp;/&nbsp; <span>{{ page.title }}</span>
+      </div>
 
       {{ content }}
 
     </div>
   </div>
 
-    <div id="footer">
-      {% include footer.html %}
-    </div>
-  </body>
+
+  {% include footer.html %}
+</body>
+
 </html>

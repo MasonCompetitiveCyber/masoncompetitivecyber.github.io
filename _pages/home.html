@@ -15,12 +15,14 @@ that meets weekly and specializes in competing."
 
     <div id="meeting-box">
       <div><strong>Join us at our next meeting!</strong></div>
-      <div id="meeting-location" hidden><i class="fas fa-map-marker" aria-hidden="true"></i> <span></span></div>
-      <div id="meeting-date" hidden><i class="fas fa-calendar" aria-hidden="true"></i> <span></span></div>
-      <div id="meeting-time" hidden><i class="fas fa-clock" aria-hidden="true"></i> <span></span>
+      <div id="next-meeting" hidden>
+        <div id="meeting-location"><i class="fas fa-map-marker" aria-hidden="true"></i> <span></span></div>
+        <div id="meeting-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span></span></div>
+        <div id="meeting-time"><i class="fas fa-clock" aria-hidden="true"></i> <span></span>
+        </div>
+        <div id="meeting-info"><i class="fas fa-info-circle" aria-hidden="true"></i> <span></span></div>
+        <div id="meeting-register"><a></a></div>
       </div>
-      <div id="meeting-info" hidden><i class="fas fa-info-circle" aria-hidden="true"></i> <span></span></div>
-      <div id="meeting-register" hidden><a></a></div>
       <div id="meeting-no-scheduled" hidden>No meetings scheduled yet. Come back later!</div>
     </div>
     <p>If you otherwise need to contact us, email us at masoncc@gmu.edu</p>
@@ -116,16 +118,12 @@ that meets weekly and specializes in competing."
       var parsedDate = Date.parse(meeting["meetingDate"] + ' ' + meeting["year"] + ' ' + time)
       if (parsedDate > Date.now()) {
         document.querySelector("#meeting-location span").innerText = meeting["location"];
-        document.querySelector("#meeting-location").hidden = false;
         document.querySelector("#meeting-time span").innerText = meeting["from"] + " to " + meeting["to"];
-        document.querySelector("#meeting-time").hidden = false;
         document.querySelector("#meeting-date span").innerText = meeting["meetingDate"];
-        document.querySelector("#meeting-date").hidden = false;
         document.querySelector("#meeting-info span").innerText = meeting["basictopic"];
-        document.querySelector("#meeting-info").hidden = false;
         document.querySelector("#meeting-register a").innerText = "RSVP";
         document.querySelector("#meeting-register a").href = meeting["rsvp"];
-        document.querySelector("#meeting-register").hidden = false;
+        document.getElementById("next-meeting").hidden = false;
         return true;
       }
     });
