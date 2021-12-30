@@ -5,7 +5,7 @@ title: Meetings
 description: "Mason CC Meetings"
 ---
 
-<div class='row-fluid'>
+<div>
   <h3>Meeting Info</h3>
 
   <div>
@@ -33,10 +33,6 @@ description: "Mason CC Meetings"
       </tbody>
     </table>
   </div>
-  <div id='meetingcontent'></div><br />
-  <h3>Future Competitions<div id="cdrop" style='padding-left: 3%' class="btn-group" aria-labelledby="dropdownMenuLink">
-    </div><br><br></h3>
-  <div id='competitionfield'></div>
 </div>
 
 <script>
@@ -107,49 +103,5 @@ description: "Mason CC Meetings"
     if (!found) {
       document.getElementById("meeting-no-scheduled").hidden = false;
     }
-  });
-
-
-
-  function readCompetition(id) {
-    $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function (data) {
-      console.log('JSON data loaded')
-      entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to select meeting<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-      $.each(data["competitions"], function (i, item) {
-        if (id == item['id']) {
-          $('#compbutton').html(item['name'] + '<span class=\'caret\'></span>')
-          data = 'Name:  <b>' + item['name'] + '</b><br>Starts: <b>' + item['startDate'] + ' ' + item['startTime'] + '</b><br>Ends: <b>' + item['endDate'] + ' ' + item['endTime'] + '</b><br>Location: <b>' + item['location'] + '<br><a href="' + item['moreInfo'] + '">More info</a></b>'
-          if (item['inviteonly']) {
-            data += "<br />NOTE: This competition is invite-only.<br />Please note you are not promised a spot and<br />if you'd like to participate, you should stay aware with CC's announcements and communications."
-          }
-          $('#competitionfield').html(data)
-        };
-
-      })
-    })
-  };
-
-
-
-
-  var newbit = 0;
-  $.getJSON('/competition/json?nocache=' + (new Date()).getTime(), null, function (data) {
-    entry = "<button type='button' class='btn btn-primary dropdown-toggle' id='compbutton' data-toggle='dropdown'>Click to pick competition<span class='caret'></span></button> <ul class='dropdown-menu' role='menu'>"
-    $.each(data["competitions"], function (i, item) {
-      console.log(Date.parse(item["endDate"] + ' ' + item["year"]))
-      if (Date.now() - Date.parse(item["endDate"] + ' ' + item["year"] + ' ' + '23:59') < 0) {
-        if (newbit == 0) {
-          newbit = item['id']
-        }
-        if (item["cancelled"]) {
-          entry = entry + "<li class='selectorbs cancelledmeeting'><a href=javascript:readCompetition(" + item['id'] + ")> Cancelled " + item["name"] + "</a></li>"
-        } else {
-          entry = entry + "<li class='selectorbs'><a href=javascript:readCompetition(" + item['id'] + ")>" + item["name"] + "</a></li>"
-        }
-      }
-    });
-    entry = entry + '</ul></button>'
-    readCompetition(newbit)
-    $("#cdrop").html(entry)
   });
 </script>
