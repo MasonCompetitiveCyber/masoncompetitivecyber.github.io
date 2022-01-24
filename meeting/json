@@ -1,148 +1,48 @@
 {
-  "meetings": [
+	"meetings": [
 		{
-		  "id": "1",
-		  "meetingDate": "September 1",
-		  "from": "6:00pm",
-		  "to": "7:00pm",
-		  "location": "JC Room B",
-		  "year": "2021",
-		  "basictopic": "Welcome to MasonCC!",
-		  "weekday":"Wednesday",
-		  "rsvp":"https://cglink.me/2d7/r1139645"
+			"id": "1",
+			"meetingDate": "February 2",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Welcome to MasonCC!",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139692"
 		},
-    {
-		  "id": "2",
-		  "meetingDate": "September 8",
-		  "from": "6:00pm",
-		  "to": "7:00pm",
-		  "location": "JC Room B",
-		  "year": "2021",
-		  "basictopic": "Introduction to Linux",
-		  "weekday":"Wednesday",
-		  "rsvp":"https://cglink.me/2d7/r1139680"
+		{
+			"id": "2",
+			"meetingDate": "February 9",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Introduction to CTFs",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139693"
 		},
-    {
-		  "id": "3",
-		  "meetingDate": "September 15",
-		  "from": "6:00pm",
-		  "to": "7:00pm",
-		  "location": "JC Room B",
-		  "year": "2021",
-		  "basictopic": "CTFs for Beginners",
-		  "weekday":"Wednesday",
-		  "rsvp":"https://cglink.me/2d7/r1139681"
+		{
+			"id": "3",
+			"meetingDate": "February 16",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Introduction to Cryptography",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139694"
 		},
-    {
-      "id": "4",
-      "meetingDate": "September 22",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "An Introduction to Post-Quantum Cryptography",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139682"
-    },
-    {
-      "id": "5",
-      "meetingDate": "September 29",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "So you want to write some Malware...",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139683"
-    },
-    {
-      "id": "6",
-      "meetingDate": "October 6",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Introduction to Assembly and Reverse Engineering",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139684"
-    },
-    {
-      "id": "7",
-      "meetingDate": "October 13",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Introduction to Linux Binary Exploitation",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139685"
-    },
-    {
-      "id": "8",
-      "meetingDate": "October 20",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Introduction to OSINT",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139686"
-    },
-    {
-      "id": "9",
-      "meetingDate": "October 27",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "NCL Individual Game Recap",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139687"
-    },
-    {
-      "id": "10",
-      "meetingDate": "November 3",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Introduction to Log File Analysis",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139688"
-    },
-    {
-      "id": "11",
-      "meetingDate": "November 10",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Introduction to Red Teaming",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139689"
-    },
-    {
-      "id": "12",
-      "meetingDate": "November 17",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "Talk from WarCollar Industries",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139690"
-    },
-    {
-      "id": "13",
-      "meetingDate": "December 1",
-      "from": "6:00pm",
-      "to": "7:00pm",
-      "location": "JC Room B",
-      "year": "2021",
-      "basictopic": "MasonCC Defcon and De-stress",
-      "weekday":"Wednesday",
-      "rsvp":"https://cglink.me/2d7/r1139691"
-    }
+		{
+			"id": "4",
+			"meetingDate": "February 23",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Tech Talk from CACI",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139695"
+		}
 	]
 }
-
