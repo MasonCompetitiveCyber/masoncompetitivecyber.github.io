@@ -43,6 +43,39 @@
 			"basictopic": "Tech Talk from CACI",
 			"weekday": "Wednesday",
 			"rsvp": "https://cglink.me/2d7/r1139695"
+		},
+		{
+			"id": "4",
+			"meetingDate": "March 2",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Introduction to Web Exploitation",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139696"
+		},
+		{
+			"id": "4",
+			"meetingDate": "March 9",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "TBA",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139697"
+		},
+		{
+			"id": "4",
+			"meetingDate": "March 23",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "CACI Career/Resume Panel",
+			"weekday": "Wednesday",
+			"rsvp": "https://cglink.me/2d7/r1139698"
 		}
 	]
 }
