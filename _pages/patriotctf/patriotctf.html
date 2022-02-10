@@ -1,0 +1,193 @@
+---
+layout: default
+permalink: /patriotctf/
+title: Meetings
+description: "PatriotCTF 2022"
+---
+
+<head>
+    <link rel="stylesheet" href="/assets/patriotctf/css/style.css" />
+    <meta property="og:title" content="patriotCTF">
+    <meta property="og:description" content="Mason CC's CTF running in April.">
+    <meta property="og:image" content="/assets/patriotctf/img/patriotctf2021.png">
+    <title>patriotCTF</title>
+</head>
+
+<body>
+
+    <canvas class="background" id="backgroundCanvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script>
+        function canvas() {
+            backgroundCanvas.width = window.innerWidth;
+            backgroundCanvas.height = window.innerHeight;
+        }
+
+        window.onresize = window.onload = function () {
+            canvas();
+            Particles.init({
+                selector: '.background',
+                color: [
+                    "#006634",
+                    "#FFCC33",
+                ],
+                connectParticles: true,
+            });
+        };
+
+
+    </script>
+
+    <section>
+        <div class="container">
+            <h1 class="title">
+                <img src="/assets/patriotctf/img/patriotctf2021-banner-semitransparent.png"
+                    style="width: 90%; margin-left: auto; margin-right: auto; display: block;"
+                    title="Logo by Alfredo Basurto">
+            </h1>
+            <h5 class="subtitle center">
+                PatriotCTF 2022 <br>Hosted by Mason CC<br />April 29 @ 5:00pm - May 1 @ 5:00pm
+            </h5>
+        </div>
+    </section>
+    <!--<div class="container is-fluid">
+         <div class="notification">
+            <b>patriotCTF</b> is Mason CC's Capture the Flag (<a href="https://ctftime.org/ctf-wtf/">what is that?</a>) hosted <b>ONLINE, due to COVID-19</b>. Like all CTFs, it will feature challenges in cybersecurity that stretches the existing skillset of hackers while encouraging learning. You can compete with a team of up to 5 players to answer a series of challenges in topics like forensics, web exploitation, reverse engineering and more. <b>Registration will be open soon.</b>
+            <br /><br /><br />
+            Logo by Alfredo Basurto
+         </div>
+      </div>-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card text-white">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-pencil-alt"></i>Registration</h5>
+                            <p class="card-text">
+                                <b>Please register using a .edu email address.</b>
+                                Before registering a team, please take a look at our rules below.
+                            </p>
+                            <a href="https://pctf.competitivecyber.club" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-gift"></i>Prizes</h5>
+                            <p class="card-text">
+                                <b> Prizes TBD </b>
+                            <ul>
+                                <li>We're trying to figure out the logistics of shipping t-shirts to people ;)
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card text-white">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-list"></i>Rules</h5>
+                            <p class="card-text">
+                            <ol>
+                                <li>Teams may have up to four players</li>
+                                <li>Only student teams are eligible for prizes. If you are a team made up of students,
+                                    then please checkmark the box that states "Competing For Prizes" when creating your
+                                    team.</li>
+                                <li>If an eligible team wins a prize, then the CTF organizers will contact the team and
+                                    ask them to provide proof that each team member is a student at an educational
+                                    institution before the prizes are given.</li>
+                                <li>If your team is ineligible for obtaining a prize, then it will be hidden from the
+                                    scoreboard. This makes it easier for eligible teams to figure out where they stand.
+                                </li>
+                                <li>You are not allowed to receive help from people who are not a part of your team.
+                                    (Online resources are permitted.)</li>
+                                <li>You are not allowed to attack the CTF infrastructure or anything used to host the
+                                    CTF unless a challenge specifies otherwise. If you identify a security vulnerability
+                                    within the CTF infrastructure that has nothing to do with a challenge, then please
+                                    contact masoncc@gmu.edu with details.</li>
+                                <li>The purpose of this competition is to teach students cybersecurity and ethical
+                                    hacking. Please do not use any of the knowledge that you gain from this competition
+                                    to conduct illegal activities. If you decide to do so anyways, then we are not
+                                    responsible for your actions.</li>
+                                <li>Please contact masoncc@gmu.edu if there are any issues.</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-white">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-handshake"></i>Sponsors</h5>
+                            <p class="card-text sponsors">
+                                <a href="https://catalog.gmu.edu/courses/cyse/">
+                                    <img src="/assets/patriotctf/img/VSE.png">
+                                </a><br>
+                                <a href="https://careers.caci.com/">
+                                    <img src="/images/caci-dark.png">
+                                </a><br>
+                                <br />
+                                <a href="https://warcollar.com/">
+                                    <img src="/images/warcollar.png">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card text-white">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bomb"></i>Challenge Categories</h5>
+                            <p class="card-text">
+                            <table class="table text-white">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">About</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="meeting-table">
+                                    <tr>
+                                        <td>Cryptography</td>
+                                        <td>Code breaking, cipher smashing, and math that fights back!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reverse Engineering</td>
+                                        <td>Figuring out how things work, then breaking those things!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reconnaissance</td>
+                                        <td>Who's shooting those cyber bullets at me?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Forensics</td>
+                                        <td>PCAPs and file carving and memory dumps (oh my!)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web</td>
+                                        <td>The attack surface of the modern world!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programming and Scripting</td>
+                                        <td>The art of making something else do the tedious work for you!
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>

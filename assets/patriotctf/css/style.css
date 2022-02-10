@@ -1,0 +1,60 @@
+.bad-at-frontend {
+  background-color: black;
+  color: white;
+}
+
+.subtitle {
+  color: #ffcc33;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.notification {
+  color: white;
+  background-color: darkgrey;
+}
+
+.card {
+  background-color: #004b1db6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  min-width: 10%;
+  max-width: 10%;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.card-title i {
+  padding-right: 15px;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: -1;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+.sponsors {
+  text-align: center;
+}
+
+.sponsors img {
+  max-height: 200px;
+  margin: 15px 0;
+}
+
+.footer {
+  color: white;
+  background-color: #111111;
+}
