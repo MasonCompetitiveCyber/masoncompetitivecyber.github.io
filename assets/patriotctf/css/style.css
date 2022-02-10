@@ -1,6 +1,5 @@
-.bad-at-frontend {
+body {
   background-color: black;
-  color: white;
 }
 
 .subtitle {
@@ -33,12 +32,19 @@
   padding-right: 15px;
 }
 
-.background {
+#backgroundCanvas {
   position: fixed;
   left: 0;
   top: 0;
   background-color: black;
   z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  #backgroundCanvas {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .card-title {

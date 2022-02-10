@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /patriotctf/
-title: Meetings
+title: PatriotCTF 2022
 description: "PatriotCTF 2022"
 ---
 
@@ -10,7 +10,6 @@ description: "PatriotCTF 2022"
     <meta property="og:title" content="patriotCTF">
     <meta property="og:description" content="Mason CC's CTF running in April.">
     <meta property="og:image" content="/assets/patriotctf/img/patriotctf2021.png">
-    <title>patriotCTF</title>
 </head>
 
 <body>
@@ -24,15 +23,26 @@ description: "PatriotCTF 2022"
         }
 
         window.onresize = window.onload = function () {
-            canvas();
-            Particles.init({
-                selector: '.background',
-                color: [
-                    "#006634",
-                    "#FFCC33",
-                ],
-                connectParticles: true,
-            });
+            var is_mobile = false;
+
+            if (window.getComputedStyle(document.getElementById("backgroundCanvas")).display == "none") {
+                is_mobile = true;
+            }
+
+            console.log(is_mobile);
+
+            if (!is_mobile) {
+                canvas();
+                Particles.init({
+                    selector: '.background',
+                    color: [
+                        "#006634",
+                        "#FFCC33",
+                    ],
+                    connectParticles: true,
+                });
+            }
+
         };
 
 
@@ -60,19 +70,20 @@ description: "PatriotCTF 2022"
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="card text-white">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-pencil-alt"></i>Registration</h5>
                             <p class="card-text">
                                 <b>Please register using a .edu email address.</b>
-                                Before registering a team, please take a look at our rules below.
+                                Before registering a team, please take a look at our rules below. You must first
+                                register a user account, and then you can create or join a team.
                             </p>
                             <a href="https://pctf.competitivecyber.club" class="btn btn-primary">Register</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="card text-white">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-gift"></i>Prizes</h5>
@@ -89,7 +100,7 @@ description: "PatriotCTF 2022"
             </div>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="card text-white">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-list"></i>Rules</h5>
@@ -121,7 +132,7 @@ description: "PatriotCTF 2022"
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="card text-white">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-handshake"></i>Sponsors</h5>
@@ -144,7 +155,7 @@ description: "PatriotCTF 2022"
 
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="card text-white">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-bomb"></i>Challenge Categories</h5>
