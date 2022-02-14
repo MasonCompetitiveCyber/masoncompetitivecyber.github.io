@@ -44,8 +44,6 @@ description: "PatriotCTF 2022"
             }
 
         };
-
-
     </script>
 
     <section>
@@ -57,6 +55,7 @@ description: "PatriotCTF 2022"
             <h5 class="subtitle center">
                 PatriotCTF 2022 <br>Hosted by Mason CC<br />April 29 @ 5:00pm - May 1 @ 5:00pm
             </h5>
+            <h5 class="subtitle center"><span id="countdown"></span></h5>
         </div>
     </section>
     <!--<div class="container is-fluid">
@@ -74,9 +73,9 @@ description: "PatriotCTF 2022"
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-pencil-alt"></i>Registration</h5>
                             <p class="card-text">
-                                <b>Please register using a .edu email address.</b>
                                 Before registering a team, please take a look at our rules below. You must first
-                                register a user account, and then you can create or join a team.
+                                register a user account, and then you can create or join a team. <br />
+                                <b>Student teams: please register using your school email address.</b>
                             </p>
                             <a href="https://pctf.competitivecyber.club" class="btn btn-primary">Register</a>
                         </div>
@@ -87,9 +86,9 @@ description: "PatriotCTF 2022"
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-gift"></i>Prizes</h5>
                             <p class="card-text">
-                                <b> Prizes TBD </b>
+                                <b> Prizes are currently TBD </b>
                             <ul>
-                                <li>We're trying to figure out the logistics of shipping t-shirts to people ;)
+                                <li>We're in the process of figuring out prizes and t-shirts.
                                 </li>
                             </ul>
                             </p>
@@ -188,7 +187,7 @@ description: "PatriotCTF 2022"
                                         <td>The attack surface of the modern world!</td>
                                     </tr>
                                     <tr>
-                                        <td>Programming and Scripting</td>
+                                        <td>Programming</td>
                                         <td>The art of making something else do the tedious work for you!
                                         </td>
                                     </tr>
@@ -201,3 +200,48 @@ description: "PatriotCTF 2022"
             </div>
     </section>
 </body>
+
+<script>
+    // Countdown
+    var start = new Date('04/29/2022 5:00 PM EDT');
+    var end = new Date('05/1/2022 5:00 PM EDT');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        document.getElementById('countdown').innerHTML = ""
+
+        var now = new Date();
+        if (start - now < 0 && end - now >= 0) {
+            // After start, before end
+            var distance = end - now;
+            document.getElementById('countdown').innerHTML += 'Ending in ';
+        } else if (end - now < 0) {
+            // After end
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'Competition has ended. Thanks for playing!';
+            return;
+        } else {
+            // Before start
+            var distance = start - now
+            document.getElementById('countdown').innerHTML += 'Starting in ';
+        }
+
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML += days + 'days ';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+
+    showRemaining()
+    timer = setInterval(showRemaining, 1000);
+</script>
