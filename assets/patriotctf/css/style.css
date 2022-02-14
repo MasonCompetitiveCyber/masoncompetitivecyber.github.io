@@ -47,8 +47,9 @@ body {
 }
 
 #countdown {
-  border: 2px solid #ffcc33;
   padding: 8px;
+  color: black;
+  background-color: #ffcc33d0;
 }
 
 @media screen and (max-width: 768px) {
