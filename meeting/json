@@ -9,7 +9,6 @@
 			"year": "2022",
 			"basictopic": "Welcome to MasonCC!",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139692"
 		},
 		{
 			"id": "2",
@@ -20,7 +19,6 @@
 			"year": "2022",
 			"basictopic": "Introduction to CTFs",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139693"
 		},
 		{
 			"id": "3",
@@ -31,7 +29,6 @@
 			"year": "2022",
 			"basictopic": "Introduction to Cryptography",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139694"
 		},
 		{
 			"id": "4",
@@ -42,10 +39,9 @@
 			"year": "2022",
 			"basictopic": "CACI Talk: Tunneling and pivoting through target networks using secure connections and proxies",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139695"
 		},
 		{
-			"id": "4",
+			"id": "5",
 			"meetingDate": "March 2",
 			"from": "6:00pm",
 			"to": "7:00pm",
@@ -53,10 +49,9 @@
 			"year": "2022",
 			"basictopic": "Introduction to Web Exploitation",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139696"
 		},
 		{
-			"id": "4",
+			"id": "6",
 			"meetingDate": "March 9",
 			"from": "6:00pm",
 			"to": "7:00pm",
@@ -64,10 +59,19 @@
 			"year": "2022",
 			"basictopic": "Introduction to Game Hacking",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139697"
 		},
 		{
-			"id": "4",
+			"id": "7",
+			"meetingDate": "March 16",
+			"from": "none",
+			"to": "none",
+			"location": "none",
+			"year": "none",
+			"basictopic": "Spring break, no meeting!",
+			"weekday": "Wednesday",
+		},
+		{
+			"id": "8",
 			"meetingDate": "March 23",
 			"from": "6:00pm",
 			"to": "7:00pm",
@@ -75,7 +79,16 @@
 			"year": "2022",
 			"basictopic": "CACI Career/Resume Panel",
 			"weekday": "Wednesday",
-			"rsvp": "https://cglink.me/2d7/r1139698"
+		},
+		{
+			"id": "10",
+			"meetingDate": "March 30",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Introduction to Hack The Box",
+			"weekday": "Wednesday",
 		}
 	]
 }
