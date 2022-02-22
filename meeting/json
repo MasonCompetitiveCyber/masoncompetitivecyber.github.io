@@ -8,7 +8,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Welcome to MasonCC!",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "2",
@@ -18,7 +18,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Introduction to CTFs",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "3",
@@ -28,7 +28,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Introduction to Cryptography",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "4",
@@ -38,7 +38,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "CACI Talk: Tunneling and pivoting through target networks using secure connections and proxies",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "5",
@@ -48,7 +48,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Introduction to Web Exploitation",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "6",
@@ -58,7 +58,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Introduction to Game Hacking",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "7",
@@ -68,7 +68,7 @@
 			"location": "none",
 			"year": "none",
 			"basictopic": "Spring break, no meeting!",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "8",
@@ -78,7 +78,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "CACI Career/Resume Panel",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		},
 		{
 			"id": "10",
@@ -88,7 +88,7 @@
 			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Introduction to Hack The Box",
-			"weekday": "Wednesday",
+			"weekday": "Wednesday"
 		}
 	]
 }
