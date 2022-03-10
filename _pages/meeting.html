@@ -14,7 +14,6 @@ description: "Mason CC Meetings"
       on <strong id="meeting-date"></strong>
       in <strong id="meeting-location"></strong>
       from <strong id="meeting-time"></strong>.
-      <a id="meeting-register">RSVP</a>
     </div>
     <div id="meeting-no-scheduled" hidden>No future meetings are scheduled yet. Come back later!</div>
   </div>
@@ -26,7 +25,6 @@ description: "Mason CC Meetings"
           <th scope="col">Topic</th>
           <th scope="col">Time</th>
           <th scope="col">Location</th>
-          <th scope="col">RSVP</th>
         </tr>
       </thead>
       <tbody id="meeting-table">
@@ -61,10 +59,6 @@ description: "Mason CC Meetings"
       row.insertCell().appendChild(document.createTextNode(meeting["basictopic"]));
       row.insertCell().appendChild(document.createTextNode(meeting["from"].replaceAll(":00", "") + " to " + meeting["to"].replaceAll(":00", "")));
       row.insertCell().appendChild(document.createTextNode(meeting["location"]));
-      rsvp_link = document.createElement('a');
-      rsvp_link.href = meeting["rsvp"];
-      rsvp_link.innerText = "RSVP";
-      row.insertCell().appendChild(rsvp_link);
 
       var parsedDate = Date.parse(meeting["meetingDate"] + ' ' + meeting["year"] + ' ' + time);
       if (Date.now() > parsedDate) {
@@ -93,8 +87,6 @@ description: "Mason CC Meetings"
         document.getElementById("meeting-time").innerText = meeting["from"] + " to " + meeting["to"];
         document.getElementById("meeting-date").innerText = meeting["meetingDate"];
         document.getElementById("meeting-info").innerText = meeting["basictopic"];
-        document.getElementById("meeting-register").innerText = "RSVP";
-        document.getElementById("meeting-register").href = meeting["rsvp"];
         document.getElementById("next-meeting").hidden = false;
         return true;
       }

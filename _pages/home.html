@@ -21,7 +21,6 @@ that meets weekly and specializes in competing."
         <div id="meeting-time"><i class="fas fa-clock" aria-hidden="true"></i> <span></span>
         </div>
         <div id="meeting-info"><i class="fas fa-info-circle" aria-hidden="true"></i> <span></span></div>
-        <div id="meeting-register"><a></a></div>
       </div>
       <div id="meeting-no-scheduled" hidden>No meetings scheduled yet. Come back later!</div>
     </div>
@@ -99,7 +98,6 @@ that meets weekly and specializes in competing."
 <script>
   getJSON("/meeting/json", function (err, data) {
     var found = data["meetings"].some(function (meeting) {
-      console.log(meeting);
       time = meeting["to"]
       if (time.includes('pm')) {
         time = time.split('pm')[0]
@@ -120,8 +118,6 @@ that meets weekly and specializes in competing."
         document.querySelector("#meeting-time span").innerText = meeting["from"] + " to " + meeting["to"];
         document.querySelector("#meeting-date span").innerText = meeting["meetingDate"];
         document.querySelector("#meeting-info span").innerText = meeting["basictopic"];
-        document.querySelector("#meeting-register a").innerText = "RSVP";
-        document.querySelector("#meeting-register a").href = meeting["rsvp"];
         document.getElementById("next-meeting").hidden = false;
         return true;
       }
