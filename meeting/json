@@ -61,16 +61,6 @@
 			"weekday": "Wednesday"
 		},
 		{
-			"id": "7",
-			"meetingDate": "March 16",
-			"from": "none",
-			"to": "none",
-			"location": "none",
-			"year": "2022",
-			"basictopic": "Spring break, no meeting!",
-			"weekday": "Wednesday"
-		},
-		{
 			"id": "8",
 			"meetingDate": "March 23",
 			"from": "6:00pm",
