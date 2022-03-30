@@ -82,3 +82,12 @@ body {
   color: white;
   background-color: #111111;
 }
+
+a {
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: #008b35;
+}
