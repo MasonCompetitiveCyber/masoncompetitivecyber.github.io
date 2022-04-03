@@ -1,16 +1,16 @@
 .main-navbar {
-	background-color: #006633;
-	margin-bottom: 40px;
+  background-color: #006633;
+  margin-bottom: 40px;
 }
 
 .brand-primary {
-	font-size: 20px;
-	font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .brand-secondary {
-	font-size: 14px;
-	font-weight: lighter;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 .nav-item,
@@ -21,154 +21,158 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Cascadia Mono", Consolas, "Courier New", Courier, monospace;
-	font-display: block;
+  font-family: "Cascadia Mono", Consolas, "Courier New", Courier, monospace;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: white;
+  color: white;
 }
 
-body, footer {
-	font-family: 'Open Sans', Roboto, sans-serif;
-	font-size: 16px;
+body,
+footer {
+  font-family: "Open Sans", Roboto, sans-serif;
+  font-size: 16px;
 }
 
 .main-navbar .navbar-nav .nav-item {
-	margin-left: 5px;
-	margin-right: 5px;	
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .homepage {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .homepage .logo {
-	max-width: 140px;
+  max-width: 140px;
 }
 
 .homepage h1,
 .homepage h2,
 .homepage h3 {
-	text-align: center;
+  text-align: center;
 }
 
 // Sponsors
 
 .homepage .sponsors img {
-	max-height: 200px;
-	margin: 10px;
+  max-height: 200px;
+  margin: 10px;
 }
 
 .homepage .sponsors div {
-	text-align: center;
+  text-align: center;
 }
 
 .homepage .content-section {
-	margin-top: 40px;
-	margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #meeting-box {
-	border: 3px solid #006633;
-	padding: 7px 20px;
-	display: inline-block;
-	font-size: 18px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+  border: 3px solid #006633;
+  padding: 7px 20px;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .footer {
-	background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
 }
 
 .footer .footer-links > a {
-	margin-right: 10px;
-	text-decoration: none;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 .footer .footer-links > a > i {
-	margin-right: 5px;
+  margin-right: 5px;
 }
 
 .notification {
-	background-color: rgb(192, 0, 0);
-	color: white;
-	text-align: center;
-	padding: 5px;
+  background-color: rgb(192, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
 .jumbo-logo {
-	max-width: 180px;
-	width: 30vw;
-	margin: 10px;
+  max-width: 180px;
+  width: 30vw;
+  margin: 10px;
 }
 
 @keyframes blink {
-	50% {
-	  opacity: 0;
-	}
+  50% {
+    opacity: 0;
+  }
 }
 
 .jumbo-content .blink {
-	animation: blink 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+  animation: blink 1.2s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
-
 .jumbo-content {
-	background-color: rgba(255, 255, 255, 0.92);
-	padding: 10px;
-	border-radius: 20px;
-	display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-flex;
 }
 
 .jumbo-content h1 {
-	font-weight: bold;
-	text-align: left;
-	align-self: flex-end;
-	font-size: 7vw;
+  font-weight: bold;
+  text-align: left;
+  align-self: flex-end;
+  font-size: 7vw;
 }
 
 @media screen and (min-width: 600px) {
-	.jumbo-content h1 {
-		font-size: 42px;
-	}
+  .jumbo-content h1 {
+    font-size: 42px;
+  }
 }
 
 #home-jumbo {
-	margin-top: -40px;
-	padding-top: 150px;
-	padding-bottom: 150px;
-	-webkit-background-size: cover;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat no-repeat;
+  margin-top: -40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat no-repeat;
 }
 
 .breadcrumbs {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 tr.disabled {
-	background-color: #e7e7e7;
-	font-style: italic;
+  background-color: #e7e7e7;
+  font-style: italic;
 }
 
 .table-container {
-	width: 100%;
-	overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
 @media (min-width: 1400px) {
-	.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-		max-width: 1140px;
-	}
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
 }
