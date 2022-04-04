@@ -79,6 +79,26 @@
 			"year": "2022",
 			"basictopic": "Introduction to Hack The Box",
 			"weekday": "Wednesday"
+		},
+		{
+			"id": "11",
+			"meetingDate": "April 6",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Hack The Box Live",
+			"weekday": "Wednesday"
+		},
+		{
+			"id": "12",
+			"meetingDate": "April 13",
+			"from": "6:00pm",
+			"to": "7:00pm",
+			"location": "JC Room B",
+			"year": "2022",
+			"basictopic": "Intro to CTF Forensics",
+			"weekday": "Wednesday"
 		}
 	]
 }
