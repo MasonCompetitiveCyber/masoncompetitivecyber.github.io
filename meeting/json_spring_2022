@@ -2,32 +2,32 @@
 	"meetings": [
 		{
 			"id": "1",
-			"meetingDate": "August 31",
+			"meetingDate": "February 2",
 			"from": "6:00pm",
 			"to": "7:00pm",
-			"location": "JC Room C",
+			"location": "JC Room B",
 			"year": "2022",
 			"basictopic": "Welcome to MasonCC!",
 			"weekday": "Wednesday"
 		},
 		{
 			"id": "2",
-			"meetingDate": "September 7",
+			"meetingDate": "February 9",
 			"from": "6:00pm",
 			"to": "7:00pm",
-			"location": "JC Room C",
+			"location": "JC Room B",
 			"year": "2022",
-			"basictopic": "Introduction to Linux",
+			"basictopic": "Introduction to CTFs",
 			"weekday": "Wednesday"
 		},
 		{
 			"id": "3",
-			"meetingDate": "September 14",
+			"meetingDate": "February 16",
 			"from": "6:00pm",
 			"to": "7:00pm",
-			"location": "JC Room C",
+			"location": "JC Room B",
 			"year": "2022",
-			"basictopic": "Linux Privilege Esclation",
+			"basictopic": "Introduction to Cryptography",
 			"weekday": "Wednesday"
 		},
 		{
