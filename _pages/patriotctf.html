@@ -28,113 +28,111 @@ description: "PatriotCTF 2024"
   -->
     
     <canvas class="background" id="backgroundCanvas"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-    <script>
-        function canvas() {
-            backgroundCanvas.width = window.innerWidth;
-            backgroundCanvas.height = window.innerHeight;
-        }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script>
+  function canvas() {
+    backgroundCanvas.width = window.innerWidth;
+    backgroundCanvas.height = window.innerHeight;
+  }
 
-        window.onresize = window.onload = function () {
-            var is_mobile = false;
+  window.onresize = window.onload = function () {
+    var is_mobile = false;
 
-            if (window.getComputedStyle(document.getElementById("backgroundCanvas")).display == "none") {
-                is_mobile = true;
-            }
+    if (window.getComputedStyle(document.getElementById("backgroundCanvas")).display == "none") {
+      is_mobile = true;
+    }
 
-            console.log(is_mobile);
+    console.log(is_mobile);
 
-            if (!is_mobile) {
-                canvas();
-                Particles.init({
-                    selector: '.background',
-                    color: [
-                        "#006634",
-                        "#FFCC33",
-                    ],
-                    connectParticles: true,
-                });
-            }
+    if (!is_mobile) {
+      canvas();
+      Particles.init({
+        selector: '.background',
+        color: [
+          "#006634",
+          "#FFCC33",
+        ],
+        connectParticles: true,
+      });
+    }
 
-        };
-    </script>
-
-    <section>
-        <div class="container">
-            <div class="title">
-                <img src="/assets/patriotctf/img/patriotctf2021-banner-semitransparent.png"
-                    title="Logo by Alfredo Basurto">
-            </div>
-            <h5 class="subtitle center">
-               PatriotCTF 2024 <br>Hosted by MasonCC<br />Virtual, September 20 @ 6:00pm EDT - September 22 @ 6:00pm EDT
-            </h5>
-            <h5 class="subtitle center"><span id="countdown"></span></h5>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-pencil-alt"></i>Registration</h5>
-                            <p class="card-text">
-                                Before registering a team, please take a look at our rules below. You must first
+  };
+</script>
+<div class="homepage">
+<section>
+  <div class="container">
+    <div class="title">
+      <img src="https://competitivecyber.club/assets/patriotctf/img/patriotctf2021-banner-semitransparent.png"
+           title="Logo by Alfredo Basurto">
+    </div>
+    <h5 class="subtitle center">
+      PatriotCTF 2024 <br>Hosted by MasonCC<br />Virtual, September 20 @ 6:00pm EDT - September 22 @ 6:00pm EDT
+    </h5>
+    <h5 class="subtitle center"><span id="countdown"></span></h5>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-pencil-alt"></i>Registration</h5>
+            <p class="card-text">
+              Before registering a team, please take a look at our rules below. You must first
               register a user account, and then you can create or join a team. After registering, join
               our Discord which will be used during the competition.<br />
               <b>Student teams: please register using your school email address. If you don't recieve our email, check your spam folder.</b>
-                            </p>
-                            <a href="https://pctf.competitivecyber.club/register" class="btn btn-primary"><i class="fa fa-user-plus"></i> Registration</a>
-                            <a href="https://pctf.competitivecyber.club/scoreboard" class="btn btn-primary"><i class="fas fa-list"></i> Scoreboard</a>
-                            <a href="https://discord.gg/gvsJmn8hqA" class="btn btn-primary"><i
-                                    class="fab fa-discord"></i> Discord</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-info-circle"></i>About</h5>
-                            <p class="card-text">
-                                PatriotCTF is a beginner-friendly <a
-                                    href="https://ctfd.io/whats-a-ctf/">capture-the-flag</a> competition hosted by GMU's
-                                cybersecurity club, MasonCC. All are welcome to participate, including students and
-                                security professionals. Challenges will range from beginner to expert, so there should
-                                be something for everyone. This is a jeopardy-style CTF, meaning there will be various
-                                challenges from the different categories described below.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-gift"></i>Prizes</h5>
-                            <p class="card-text">
-                                Prizes will be awarded to the top 3 teams.
-                            <ul>
-                                <li>1st place: Prizes $500</li>
-                                <li>2nd place: Prizes $250</li>
-                                <li>3rd place: Prizes $100</li>
-                            </ul>
-                                The top student team will also receive a prize.
-                            <ul>
-                                <li>Student 1st place: Prizes $250</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-list"></i>Rules</h5>
-                            <p class="card-text">
-                            <ol>
-                                <li>Teams may have as many members as they want. Prizes will be sent to the team captain to be distributed as they see fit.</li>
-                               <li>Any given team is only eligible for one prize category.
+            </p>
+            <a href="https://pctf.competitivecyber.club/register" class="btn btn-primary">Register</a>
+            <a href="https://discord.gg/gvsJmn8hqA" class="btn btn-primary"><i class="fab fa-discord"></i> Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-info-circle"></i>About</h5>
+            <p class="card-text">
+              PatriotCTF is a beginner-friendly <a
+                                                   href="https://ctfd.io/whats-a-ctf/">capture-the-flag</a> competition hosted by GMU's
+              cybersecurity club, MasonCC. All are welcome to participate, including students and
+              security professionals. Challenges will range from beginner to expert, so there should
+              be something for everyone. This is a jeopardy-style CTF, meaning there will be various
+              challenges from the different categories described below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-white">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-gift"></i>Prizes <span class="badge badge-success" style="background-color: #063;">New</span></h5>
+            <p class="card-text">
+            <ul>
+              <li>Prizes will be awarded to the top 3 teams.</li>
+              <ul>
+                <li>1st place: $500</li>
+                <li>2nd place: $250</li>
+                <li>3rd place: $100</li>
+              </ul>
+              <li>The top student team will also receive a prize.</li>
+              <ul>
+                <li>Student 1st place: Prizes $250</li>
+              </ul>
+            </ul>
+            </p>
+        </div>
+      </div>
+      <div class="card text-white">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-list"></i>Rules</h5>
+          <p class="card-text">
+          <ol>
+            <li>Teams may have as many members as they want. Multiple teams are allowed per school.</li>
+            <li>Any given team is only eligible for one prize category.
               <ol type="a">
                 <li>In order to be eligible for the student prize, all
                   members of your team must be enrolled at a secondary or postsecondary
@@ -144,99 +142,89 @@ description: "PatriotCTF 2024"
                   institution before the prizes are given.</li>
                 <li>Team members cannot be a citizen of a
                   country
-                  sanctioned by the U.S. and cannot have helped create this CTF.
-                  </li>
+                  sanctioned by the U.S. and cannot have helped create this CTF.</li>
                 <li>Prizes are not legally guaranteed and MasonCC is not responsible for any
                   loss, nonreceipt, or misuse of prizes.</li>
                 <li>Prize money is deducted to teams not individual players. Teams are responsible for deciding on how to split prize money amongst themselves.</li>
               </ol>
             </li>
-                                <li>You are not allowed to receive help from people who are not a part of your team.
-                                    (Online resources are permitted.)</li>
-                                <li>You are only permitted to play for one team, playing for multiple teams, flag sharing, or otherwise attempting to gain an unfair 
-                                    advantage over other teams is not permitted.</li>
-                                <li>You are not allowed to attack the CTF infrastructure or anything used to host the
-                                    CTF unless a challenge specifies otherwise. If you identify a security vulnerability
-                                    within the CTF infrastructure that has nothing to do with a challenge, then please
-                                    contact masoncc@gmu.edu with details.</li>
-                                <li>The purpose of this competition is to teach students cybersecurity and ethical
-                                    hacking. Please do not use any of the knowledge that you gain from this competition
-                                    to conduct illegal activities. If you decide to do so anyways, then we are not
-                                    responsible for your actions.</li>
-                                <li> Breaking any of these rules will result in removal from the scoreboards and an automatic disqualification from prize eligibility.</li>
-                                <li>Please contact one of the exec members on Discord if there are any issues.</li>
-                            </ol>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-handshake"></i>Sponsors</h5>
-                            <p class="card-text sponsors">
-                                <a href="https://catalog.gmu.edu/courses/cyse/">
-                                    <img src="/assets/patriotctf/img/VSE.png">
-                                </a><br>
-                                <a href="https://careers.caci.com/">
-                                    <img src="/images/caci-dark.png">
-                                </a><br>
-                                <br />
+            <li>You are not allowed to receive help from people who are not a part of your team.
+              (Online resources are permitted.)</li>
+            <li>You are only permitted to play for one team, playing for multiple teams, flag sharing, or otherwise attempting to gain an unfair advantage over other teams is not permitted.</li>
+            <li>You are not allowed to attack the CTF infrastructure or anything used to host the
+              CTF unless a challenge specifies otherwise. If you identify a security vulnerability
+              within the CTF infrastructure that has nothing to do with a challenge, then please
+              contact masoncc@gmu.edu with details.</li>
+            <li>The purpose of this competition is to teach students cybersecurity and ethical
+              hacking. Please do not use any of the knowledge that you gain from this competition
+              to conduct illegal activities. If you decide to do so anyways, then we are not
+              responsible for your actions.</li>
+            <li>Breaking any of these rules will result in removal from the scoreboards and an automatic disqualification from prize eligibility.</li>
+            <li>Please contact one of the exec members on Discord if there are any issues.</li>
+          </ol>
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card text-white">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-handshake"></i>Sponsors</h5>
+        <p class="card-text sponsors">
+          <a href="https://catalog.gmu.edu/courses/cyse/">
+            <img src="https://competitivecyber.club/assets/patriotctf/img/VSE.png">
+          </a><br>
+          <a href="https://careers.caci.com/">
+            <img src="https://competitivecyber.club/images/caci-dark.png">
+          </a><br>
+          <br />
           <a href="https://www.battelle.org/careers">
             <img src="https://competitivecyber.club/images/pctf24battellelogo.jpg">
           </a>
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card text-white">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-bomb"></i>Challenge Categories</h5>
-                            <p class="card-text">
-                            <table class="table text-white">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">About</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="meeting-table">
-                                    <tr>
-                                        <td>Cryptography</td>
-                                        <td>Code breaking, cipher smashing, and math that fights back!</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Reverse Engineering</td>
-                                        <td>Figuring out how things work, then breaking those things!</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pwn</td>
-                                        <td>Playing with bytes and bits!</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Forensics</td>
-                                        <td>PCAPs and file carving and memory dumps (oh my!)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web</td>
-                                        <td>The attack surface of the modern world!</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-12">
-
-                </div>
-            </div>
-    </section>
-
+        </p>
+      </div>
+    </div>
+    <div class="card text-white">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-bomb"></i>Challenge Categories</h5>
+        <p class="card-text">
+        <table class="table text-white">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">About</th>
+            </tr>
+          </thead>
+          <tbody id="meeting-table">
+            <tr>
+              <td>Cryptography</td>
+              <td>Code breaking, cipher smashing, and math that fights back!</td>
+            </tr>
+            <tr>
+              <td>Reverse Engineering</td>
+              <td>Figuring out how things work, then breaking those things!</td>
+            </tr>
+            <tr>
+              <td>Pwn</td>
+              <td>Playing with bytes and bits!</td>
+            </tr>
+            <tr>
+              <td>Forensics</td>
+              <td>PCAPs and file carving and memory dumps (oh my!)</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>The attack surface of the modern world!</td>
+            </tr>
+          </tbody>
+        </table>
+        </p>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+</div>
 
 <script>
     // Countdown
